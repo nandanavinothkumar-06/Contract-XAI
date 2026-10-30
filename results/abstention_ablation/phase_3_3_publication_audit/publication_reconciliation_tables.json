@@ -1,0 +1,2640 @@
+{
+  "unperturbed": {
+    "FULL_EVIDENCE_AWARE": {
+      "total_seeds": 30,
+      "matched_sample_size": 28,
+      "included_seeds": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        126,
+        127,
+        128,
+        129,
+        130
+      ],
+      "excluded_count": 2,
+      "excluded_seeds": [
+        {
+          "seed": 109,
+          "status": "MATCHED_COVERAGE_UNACHIEVED",
+          "coverage_difference": 0.4783,
+          "policy_ufc": 0.5217391304347826,
+          "reason": "Coverage difference (0.4783) exceeded prespecified tolerance of 0.02"
+        },
+        {
+          "seed": 125,
+          "status": "MATCHED_COVERAGE_UNACHIEVED",
+          "coverage_difference": 0.5294,
+          "policy_ufc": 0.47058823529411764,
+          "reason": "Coverage difference (0.5294) exceeded prespecified tolerance of 0.02"
+        }
+      ],
+      "paired_delta_ufr_records": [
+        {
+          "seed": 101,
+          "policy_ufc": 0.43478260869565216,
+          "matched_baseline_tau": 0.66,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.37037037037037035,
+          "policy_ufr": 0.3333333333333333,
+          "paired_delta_ufr": 0.037
+        },
+        {
+          "seed": 102,
+          "policy_ufc": 0.42857142857142855,
+          "matched_baseline_tau": 0.76,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4,
+          "policy_ufr": 0.25,
+          "paired_delta_ufr": 0.15
+        },
+        {
+          "seed": 103,
+          "policy_ufc": 0.6086956521739131,
+          "matched_baseline_tau": 0.53,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.47368421052631576,
+          "policy_ufr": 0.17647058823529413,
+          "paired_delta_ufr": 0.2972
+        },
+        {
+          "seed": 104,
+          "policy_ufc": 0.5,
+          "matched_baseline_tau": 0.63,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.53125,
+          "policy_ufr": 0.42857142857142855,
+          "paired_delta_ufr": 0.1027
+        },
+        {
+          "seed": 105,
+          "policy_ufc": 0.5,
+          "matched_baseline_tau": 0.54,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5483870967741935,
+          "policy_ufr": 0.3,
+          "paired_delta_ufr": 0.2484
+        },
+        {
+          "seed": 106,
+          "policy_ufc": 0.7368421052631579,
+          "matched_baseline_tau": 0.57,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4444444444444444,
+          "policy_ufr": 0.17647058823529413,
+          "paired_delta_ufr": 0.268
+        },
+        {
+          "seed": 107,
+          "policy_ufc": 0.38095238095238093,
+          "matched_baseline_tau": 0.83,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.42105263157894735,
+          "policy_ufr": 0.2,
+          "paired_delta_ufr": 0.2211
+        },
+        {
+          "seed": 108,
+          "policy_ufc": 0.5294117647058824,
+          "matched_baseline_tau": 0.59,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5333333333333333,
+          "policy_ufr": 0.3076923076923077,
+          "paired_delta_ufr": 0.2256
+        },
+        {
+          "seed": 110,
+          "policy_ufc": 0.5217391304347826,
+          "matched_baseline_tau": 0.55,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.35714285714285715,
+          "policy_ufr": 0.07692307692307693,
+          "paired_delta_ufr": 0.2802
+        },
+        {
+          "seed": 111,
+          "policy_ufc": 0.631578947368421,
+          "matched_baseline_tau": 0.57,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.37037037037037035,
+          "policy_ufr": 0.14285714285714285,
+          "paired_delta_ufr": 0.2275
+        },
+        {
+          "seed": 112,
+          "policy_ufc": 0.5263157894736842,
+          "matched_baseline_tau": 0.61,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4482758620689655,
+          "policy_ufr": 0.23076923076923078,
+          "paired_delta_ufr": 0.2175
+        },
+        {
+          "seed": 113,
+          "policy_ufc": 0.44,
+          "matched_baseline_tau": 0.76,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.35714285714285715,
+          "policy_ufr": 0.15384615384615385,
+          "paired_delta_ufr": 0.2033
+        },
+        {
+          "seed": 114,
+          "policy_ufc": 0.5454545454545454,
+          "matched_baseline_tau": 0.63,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.3448275862068966,
+          "policy_ufr": 0.29411764705882354,
+          "paired_delta_ufr": 0.0507
+        },
+        {
+          "seed": 115,
+          "policy_ufc": 0.5882352941176471,
+          "matched_baseline_tau": 0.79,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4090909090909091,
+          "policy_ufr": 0.2857142857142857,
+          "paired_delta_ufr": 0.1234
+        },
+        {
+          "seed": 116,
+          "policy_ufc": 0.375,
+          "matched_baseline_tau": 0.51,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5483870967741935,
+          "policy_ufr": 0.1,
+          "paired_delta_ufr": 0.4484
+        },
+        {
+          "seed": 117,
+          "policy_ufc": 0.48,
+          "matched_baseline_tau": 0.55,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.3448275862068966,
+          "policy_ufr": 0.07692307692307693,
+          "paired_delta_ufr": 0.2679
+        },
+        {
+          "seed": 118,
+          "policy_ufc": 0.7142857142857143,
+          "matched_baseline_tau": 0.54,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4166666666666667,
+          "policy_ufr": 0.0625,
+          "paired_delta_ufr": 0.3542
+        },
+        {
+          "seed": 119,
+          "policy_ufc": 0.3333333333333333,
+          "matched_baseline_tau": 0.61,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5862068965517241,
+          "policy_ufr": 0.14285714285714285,
+          "paired_delta_ufr": 0.4433
+        },
+        {
+          "seed": 120,
+          "policy_ufc": 0.5652173913043478,
+          "matched_baseline_tau": 0.52,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.40625,
+          "policy_ufr": 0.07142857142857142,
+          "paired_delta_ufr": 0.3348
+        },
+        {
+          "seed": 121,
+          "policy_ufc": 0.5294117647058824,
+          "matched_baseline_tau": 0.53,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.46153846153846156,
+          "policy_ufr": 0.18181818181818182,
+          "paired_delta_ufr": 0.2797
+        },
+        {
+          "seed": 122,
+          "policy_ufc": 0.65,
+          "matched_baseline_tau": 0.6,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.42424242424242425,
+          "policy_ufr": 0.07142857142857142,
+          "paired_delta_ufr": 0.3528
+        },
+        {
+          "seed": 123,
+          "policy_ufc": 0.3181818181818182,
+          "matched_baseline_tau": 0.67,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5185185185185185,
+          "policy_ufr": 0.2222222222222222,
+          "paired_delta_ufr": 0.2963
+        },
+        {
+          "seed": 124,
+          "policy_ufc": 0.4444444444444444,
+          "matched_baseline_tau": 0.65,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.48148148148148145,
+          "policy_ufr": 0.38461538461538464,
+          "paired_delta_ufr": 0.0969
+        },
+        {
+          "seed": 126,
+          "policy_ufc": 0.47368421052631576,
+          "matched_baseline_tau": 0.61,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5172413793103449,
+          "policy_ufr": 0.3076923076923077,
+          "paired_delta_ufr": 0.2095
+        },
+        {
+          "seed": 127,
+          "policy_ufc": 0.45454545454545453,
+          "matched_baseline_tau": 0.67,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.32,
+          "policy_ufr": 0.2857142857142857,
+          "paired_delta_ufr": 0.0343
+        },
+        {
+          "seed": 128,
+          "policy_ufc": 0.47368421052631576,
+          "matched_baseline_tau": 0.58,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4827586206896552,
+          "policy_ufr": 0.25,
+          "paired_delta_ufr": 0.2328
+        },
+        {
+          "seed": 129,
+          "policy_ufc": 0.5789473684210527,
+          "matched_baseline_tau": 0.54,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5,
+          "policy_ufr": 0.21428571428571427,
+          "paired_delta_ufr": 0.2857
+        },
+        {
+          "seed": 130,
+          "policy_ufc": 0.5909090909090909,
+          "matched_baseline_tau": 0.53,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.40625,
+          "policy_ufr": 0.1875,
+          "paired_delta_ufr": 0.2188
+        }
+      ],
+      "mean_delta_ufr": 0.2324,
+      "std_delta_ufr": 0.1081,
+      "median_delta_ufr": 0.2302,
+      "iqr_25_75": [
+        0.19,
+        0.2883
+      ],
+      "student_t_ci_95": [
+        0.1905,
+        0.2744
+      ],
+      "bootstrap_ci_95": [
+        0.1927,
+        0.2714
+      ],
+      "t_statistic": 11.3749,
+      "t_p_value": 8.355433023030654e-12,
+      "wilcoxon_statistic": 0.0,
+      "wilcoxon_p_value": 7.450580596923828e-09,
+      "cohen_dz": 2.1497
+    },
+    "VERSION_AWARE": {
+      "total_seeds": 30,
+      "matched_sample_size": 30,
+      "included_seeds": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130
+      ],
+      "excluded_count": 0,
+      "excluded_seeds": [],
+      "paired_delta_ufr_records": [
+        {
+          "seed": 101,
+          "policy_ufc": 0.5217391304347826,
+          "matched_baseline_tau": 0.56,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.40625,
+          "policy_ufr": 0.2727272727272727,
+          "paired_delta_ufr": 0.1335
+        },
+        {
+          "seed": 102,
+          "policy_ufc": 0.47619047619047616,
+          "matched_baseline_tau": 0.58,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4666666666666667,
+          "policy_ufr": 0.38095238095238093,
+          "paired_delta_ufr": 0.0857
+        },
+        {
+          "seed": 103,
+          "policy_ufc": 0.6521739130434783,
+          "matched_baseline_tau": 0.5,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.46153846153846156,
+          "policy_ufr": 0.25,
+          "paired_delta_ufr": 0.2115
+        },
+        {
+          "seed": 104,
+          "policy_ufc": 0.625,
+          "matched_baseline_tau": 0.51,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5,
+          "policy_ufr": 0.391304347826087,
+          "paired_delta_ufr": 0.1087
+        },
+        {
+          "seed": 105,
+          "policy_ufc": 0.5,
+          "matched_baseline_tau": 0.54,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5483870967741935,
+          "policy_ufr": 0.47619047619047616,
+          "paired_delta_ufr": 0.0722
+        },
+        {
+          "seed": 106,
+          "policy_ufc": 0.8421052631578947,
+          "matched_baseline_tau": 0.53,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4634146341463415,
+          "policy_ufr": 0.3333333333333333,
+          "paired_delta_ufr": 0.1301
+        },
+        {
+          "seed": 107,
+          "policy_ufc": 0.47619047619047616,
+          "matched_baseline_tau": 0.53,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.42424242424242425,
+          "policy_ufr": 0.3333333333333333,
+          "paired_delta_ufr": 0.0909
+        },
+        {
+          "seed": 108,
+          "policy_ufc": 0.5294117647058824,
+          "matched_baseline_tau": 0.59,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5333333333333333,
+          "policy_ufr": 0.42105263157894735,
+          "paired_delta_ufr": 0.1123
+        },
+        {
+          "seed": 109,
+          "policy_ufc": 0.6521739130434783,
+          "matched_baseline_tau": 0.53,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.38235294117647056,
+          "policy_ufr": 0.21739130434782608,
+          "paired_delta_ufr": 0.165
+        },
+        {
+          "seed": 110,
+          "policy_ufc": 0.5217391304347826,
+          "matched_baseline_tau": 0.55,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.35714285714285715,
+          "policy_ufr": 0.2,
+          "paired_delta_ufr": 0.1571
+        },
+        {
+          "seed": 111,
+          "policy_ufc": 0.6842105263157895,
+          "matched_baseline_tau": 0.5,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4,
+          "policy_ufr": 0.25,
+          "paired_delta_ufr": 0.15
+        },
+        {
+          "seed": 112,
+          "policy_ufc": 0.5789473684210527,
+          "matched_baseline_tau": 0.56,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.43333333333333335,
+          "policy_ufr": 0.3333333333333333,
+          "paired_delta_ufr": 0.1
+        },
+        {
+          "seed": 113,
+          "policy_ufc": 0.56,
+          "matched_baseline_tau": 0.55,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.3888888888888889,
+          "policy_ufr": 0.2692307692307692,
+          "paired_delta_ufr": 0.1197
+        },
+        {
+          "seed": 114,
+          "policy_ufc": 0.6363636363636364,
+          "matched_baseline_tau": 0.52,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.37142857142857144,
+          "policy_ufr": 0.28,
+          "paired_delta_ufr": 0.0914
+        },
+        {
+          "seed": 115,
+          "policy_ufc": 0.5882352941176471,
+          "matched_baseline_tau": 0.79,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4090909090909091,
+          "policy_ufr": 0.4166666666666667,
+          "paired_delta_ufr": -0.0076
+        },
+        {
+          "seed": 116,
+          "policy_ufc": 0.375,
+          "matched_baseline_tau": 0.51,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5483870967741935,
+          "policy_ufr": 0.35294117647058826,
+          "paired_delta_ufr": 0.1954
+        },
+        {
+          "seed": 117,
+          "policy_ufc": 0.52,
+          "matched_baseline_tau": 0.53,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.3333333333333333,
+          "policy_ufr": 0.2608695652173913,
+          "paired_delta_ufr": 0.0725
+        },
+        {
+          "seed": 118,
+          "policy_ufc": 0.7619047619047619,
+          "matched_baseline_tau": 0.53,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.40540540540540543,
+          "policy_ufr": 0.24,
+          "paired_delta_ufr": 0.1654
+        },
+        {
+          "seed": 119,
+          "policy_ufc": 0.3888888888888889,
+          "matched_baseline_tau": 0.56,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5806451612903226,
+          "policy_ufr": 0.5,
+          "paired_delta_ufr": 0.0806
+        },
+        {
+          "seed": 120,
+          "policy_ufc": 0.6086956521739131,
+          "matched_baseline_tau": 0.5,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4117647058823529,
+          "policy_ufr": 0.22727272727272727,
+          "paired_delta_ufr": 0.1845
+        },
+        {
+          "seed": 121,
+          "policy_ufc": 0.5294117647058824,
+          "matched_baseline_tau": 0.53,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.46153846153846156,
+          "policy_ufr": 0.35294117647058826,
+          "paired_delta_ufr": 0.1086
+        },
+        {
+          "seed": 122,
+          "policy_ufc": 0.7,
+          "matched_baseline_tau": 0.58,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4117647058823529,
+          "policy_ufr": 0.32,
+          "paired_delta_ufr": 0.0918
+        },
+        {
+          "seed": 123,
+          "policy_ufc": 0.4090909090909091,
+          "matched_baseline_tau": 0.51,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.53125,
+          "policy_ufr": 0.25,
+          "paired_delta_ufr": 0.2812
+        },
+        {
+          "seed": 124,
+          "policy_ufc": 0.5555555555555556,
+          "matched_baseline_tau": 0.56,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5151515151515151,
+          "policy_ufr": 0.43478260869565216,
+          "paired_delta_ufr": 0.0804
+        },
+        {
+          "seed": 125,
+          "policy_ufc": 0.5294117647058824,
+          "matched_baseline_tau": 0.55,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5161290322580645,
+          "policy_ufr": 0.4782608695652174,
+          "paired_delta_ufr": 0.0379
+        },
+        {
+          "seed": 126,
+          "policy_ufc": 0.5789473684210527,
+          "matched_baseline_tau": 0.58,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.48484848484848486,
+          "policy_ufr": 0.36363636363636365,
+          "paired_delta_ufr": 0.1212
+        },
+        {
+          "seed": 127,
+          "policy_ufc": 0.5,
+          "matched_baseline_tau": 0.51,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.3870967741935484,
+          "policy_ufr": 0.2727272727272727,
+          "paired_delta_ufr": 0.1144
+        },
+        {
+          "seed": 128,
+          "policy_ufc": 0.5789473684210527,
+          "matched_baseline_tau": 0.55,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.45161290322580644,
+          "policy_ufr": 0.25,
+          "paired_delta_ufr": 0.2016
+        },
+        {
+          "seed": 129,
+          "policy_ufc": 0.5789473684210527,
+          "matched_baseline_tau": 0.54,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5,
+          "policy_ufr": 0.391304347826087,
+          "paired_delta_ufr": 0.1087
+        },
+        {
+          "seed": 130,
+          "policy_ufc": 0.5909090909090909,
+          "matched_baseline_tau": 0.53,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.40625,
+          "policy_ufr": 0.22727272727272727,
+          "paired_delta_ufr": 0.179
+        }
+      ],
+      "mean_delta_ufr": 0.1248,
+      "std_delta_ufr": 0.0574,
+      "median_delta_ufr": 0.1134,
+      "iqr_25_75": [
+        0.091,
+        0.163
+      ],
+      "student_t_ci_95": [
+        0.1034,
+        0.1462
+      ],
+      "bootstrap_ci_95": [
+        0.1048,
+        0.1451
+      ],
+      "t_statistic": 11.9108,
+      "t_p_value": 1.0859434996582572e-12,
+      "wilcoxon_statistic": 1.0,
+      "wilcoxon_p_value": 1.919722783767457e-06,
+      "cohen_dz": 2.1746
+    },
+    "STATUTORY_GROUNDING": {
+      "total_seeds": 30,
+      "matched_sample_size": 30,
+      "included_seeds": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130
+      ],
+      "excluded_count": 0,
+      "excluded_seeds": [],
+      "paired_delta_ufr_records": [
+        {
+          "seed": 101,
+          "policy_ufc": 0.5217391304347826,
+          "matched_baseline_tau": 0.56,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.40625,
+          "policy_ufr": 0.38095238095238093,
+          "paired_delta_ufr": 0.0253
+        },
+        {
+          "seed": 102,
+          "policy_ufc": 0.47619047619047616,
+          "matched_baseline_tau": 0.58,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4666666666666667,
+          "policy_ufr": 0.42105263157894735,
+          "paired_delta_ufr": 0.0456
+        },
+        {
+          "seed": 103,
+          "policy_ufc": 0.6521739130434783,
+          "matched_baseline_tau": 0.5,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.46153846153846156,
+          "policy_ufr": 0.30434782608695654,
+          "paired_delta_ufr": 0.1572
+        },
+        {
+          "seed": 104,
+          "policy_ufc": 0.625,
+          "matched_baseline_tau": 0.51,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5,
+          "policy_ufr": 0.42105263157894735,
+          "paired_delta_ufr": 0.0789
+        },
+        {
+          "seed": 105,
+          "policy_ufc": 0.5,
+          "matched_baseline_tau": 0.54,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5483870967741935,
+          "policy_ufr": 0.38461538461538464,
+          "paired_delta_ufr": 0.1638
+        },
+        {
+          "seed": 106,
+          "policy_ufc": 0.8421052631578947,
+          "matched_baseline_tau": 0.53,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4634146341463415,
+          "policy_ufr": 0.2916666666666667,
+          "paired_delta_ufr": 0.1717
+        },
+        {
+          "seed": 107,
+          "policy_ufc": 0.47619047619047616,
+          "matched_baseline_tau": 0.53,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.42424242424242425,
+          "policy_ufr": 0.42105263157894735,
+          "paired_delta_ufr": 0.0032
+        },
+        {
+          "seed": 108,
+          "policy_ufc": 0.5294117647058824,
+          "matched_baseline_tau": 0.59,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5333333333333333,
+          "policy_ufr": 0.4117647058823529,
+          "paired_delta_ufr": 0.1216
+        },
+        {
+          "seed": 109,
+          "policy_ufc": 0.6521739130434783,
+          "matched_baseline_tau": 0.53,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.38235294117647056,
+          "policy_ufr": 0.30434782608695654,
+          "paired_delta_ufr": 0.078
+        },
+        {
+          "seed": 110,
+          "policy_ufc": 0.5217391304347826,
+          "matched_baseline_tau": 0.55,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.35714285714285715,
+          "policy_ufr": 0.35,
+          "paired_delta_ufr": 0.0071
+        },
+        {
+          "seed": 111,
+          "policy_ufc": 0.6842105263157895,
+          "matched_baseline_tau": 0.5,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4,
+          "policy_ufr": 0.2222222222222222,
+          "paired_delta_ufr": 0.1778
+        },
+        {
+          "seed": 112,
+          "policy_ufc": 0.5789473684210527,
+          "matched_baseline_tau": 0.56,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.43333333333333335,
+          "policy_ufr": 0.4,
+          "paired_delta_ufr": 0.0333
+        },
+        {
+          "seed": 113,
+          "policy_ufc": 0.56,
+          "matched_baseline_tau": 0.55,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.3888888888888889,
+          "policy_ufr": 0.25,
+          "paired_delta_ufr": 0.1389
+        },
+        {
+          "seed": 114,
+          "policy_ufc": 0.6363636363636364,
+          "matched_baseline_tau": 0.52,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.37142857142857144,
+          "policy_ufr": 0.3181818181818182,
+          "paired_delta_ufr": 0.0532
+        },
+        {
+          "seed": 115,
+          "policy_ufc": 0.5882352941176471,
+          "matched_baseline_tau": 0.79,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4090909090909091,
+          "policy_ufr": 0.5,
+          "paired_delta_ufr": -0.0909
+        },
+        {
+          "seed": 116,
+          "policy_ufc": 0.375,
+          "matched_baseline_tau": 0.51,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5483870967741935,
+          "policy_ufr": 0.4117647058823529,
+          "paired_delta_ufr": 0.1366
+        },
+        {
+          "seed": 117,
+          "policy_ufc": 0.52,
+          "matched_baseline_tau": 0.53,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.3333333333333333,
+          "policy_ufr": 0.17647058823529413,
+          "paired_delta_ufr": 0.1569
+        },
+        {
+          "seed": 118,
+          "policy_ufc": 0.7619047619047619,
+          "matched_baseline_tau": 0.53,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.40540540540540543,
+          "policy_ufr": 0.2916666666666667,
+          "paired_delta_ufr": 0.1137
+        },
+        {
+          "seed": 119,
+          "policy_ufc": 0.3888888888888889,
+          "matched_baseline_tau": 0.56,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5806451612903226,
+          "policy_ufr": 0.3333333333333333,
+          "paired_delta_ufr": 0.2473
+        },
+        {
+          "seed": 120,
+          "policy_ufc": 0.6086956521739131,
+          "matched_baseline_tau": 0.5,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4117647058823529,
+          "policy_ufr": 0.2857142857142857,
+          "paired_delta_ufr": 0.1261
+        },
+        {
+          "seed": 121,
+          "policy_ufc": 0.5294117647058824,
+          "matched_baseline_tau": 0.53,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.46153846153846156,
+          "policy_ufr": 0.23076923076923078,
+          "paired_delta_ufr": 0.2308
+        },
+        {
+          "seed": 122,
+          "policy_ufc": 0.7,
+          "matched_baseline_tau": 0.58,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4117647058823529,
+          "policy_ufr": 0.25,
+          "paired_delta_ufr": 0.1618
+        },
+        {
+          "seed": 123,
+          "policy_ufc": 0.4090909090909091,
+          "matched_baseline_tau": 0.51,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.53125,
+          "policy_ufr": 0.375,
+          "paired_delta_ufr": 0.1562
+        },
+        {
+          "seed": 124,
+          "policy_ufc": 0.5555555555555556,
+          "matched_baseline_tau": 0.56,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5151515151515151,
+          "policy_ufr": 0.47619047619047616,
+          "paired_delta_ufr": 0.039
+        },
+        {
+          "seed": 125,
+          "policy_ufc": 0.5294117647058824,
+          "matched_baseline_tau": 0.55,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5161290322580645,
+          "policy_ufr": 0.23076923076923078,
+          "paired_delta_ufr": 0.2854
+        },
+        {
+          "seed": 126,
+          "policy_ufc": 0.5789473684210527,
+          "matched_baseline_tau": 0.58,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.48484848484848486,
+          "policy_ufr": 0.42857142857142855,
+          "paired_delta_ufr": 0.0563
+        },
+        {
+          "seed": 127,
+          "policy_ufc": 0.5,
+          "matched_baseline_tau": 0.51,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.3870967741935484,
+          "policy_ufr": 0.3333333333333333,
+          "paired_delta_ufr": 0.0538
+        },
+        {
+          "seed": 128,
+          "policy_ufc": 0.5789473684210527,
+          "matched_baseline_tau": 0.55,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.45161290322580644,
+          "policy_ufr": 0.4,
+          "paired_delta_ufr": 0.0516
+        },
+        {
+          "seed": 129,
+          "policy_ufc": 0.5789473684210527,
+          "matched_baseline_tau": 0.54,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5,
+          "policy_ufr": 0.3684210526315789,
+          "paired_delta_ufr": 0.1316
+        },
+        {
+          "seed": 130,
+          "policy_ufc": 0.5909090909090909,
+          "matched_baseline_tau": 0.53,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.40625,
+          "policy_ufr": 0.4166666666666667,
+          "paired_delta_ufr": -0.0104
+        }
+      ],
+      "mean_delta_ufr": 0.1034,
+      "std_delta_ufr": 0.083,
+      "median_delta_ufr": 0.1177,
+      "iqr_25_75": [
+        0.0471,
+        0.1571
+      ],
+      "student_t_ci_95": [
+        0.0724,
+        0.1344
+      ],
+      "bootstrap_ci_95": [
+        0.074,
+        0.1329
+      ],
+      "t_statistic": 6.8248,
+      "t_p_value": 1.7051324353053908e-07,
+      "wilcoxon_statistic": 17.0,
+      "wilcoxon_p_value": 3.855675458908081e-07,
+      "cohen_dz": 1.246
+    },
+    "RULE_BASED_METADATA": {
+      "total_seeds": 30,
+      "matched_sample_size": 29,
+      "included_seeds": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130
+      ],
+      "excluded_count": 1,
+      "excluded_seeds": [
+        {
+          "seed": 111,
+          "status": "MATCHED_COVERAGE_UNACHIEVED",
+          "coverage_difference": 0.4211,
+          "policy_ufc": 0.5789473684210527,
+          "reason": "Coverage difference (0.4211) exceeded prespecified tolerance of 0.02"
+        }
+      ],
+      "paired_delta_ufr_records": [
+        {
+          "seed": 101,
+          "policy_ufc": 0.5217391304347826,
+          "matched_baseline_tau": 0.56,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.40625,
+          "policy_ufr": 0.25,
+          "paired_delta_ufr": 0.1562
+        },
+        {
+          "seed": 102,
+          "policy_ufc": 0.47619047619047616,
+          "matched_baseline_tau": 0.58,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4666666666666667,
+          "policy_ufr": 0.38095238095238093,
+          "paired_delta_ufr": 0.0857
+        },
+        {
+          "seed": 103,
+          "policy_ufc": 0.34782608695652173,
+          "matched_baseline_tau": 0.72,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.44,
+          "policy_ufr": 0.47619047619047616,
+          "paired_delta_ufr": -0.0362
+        },
+        {
+          "seed": 104,
+          "policy_ufc": 0.375,
+          "matched_baseline_tau": 0.85,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5333333333333333,
+          "policy_ufr": 0.5714285714285714,
+          "paired_delta_ufr": -0.0381
+        },
+        {
+          "seed": 105,
+          "policy_ufc": 0.6428571428571429,
+          "matched_baseline_tau": 0.35,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5641025641025641,
+          "policy_ufr": 0.42857142857142855,
+          "paired_delta_ufr": 0.1355
+        },
+        {
+          "seed": 106,
+          "policy_ufc": 0.6842105263157895,
+          "matched_baseline_tau": 0.63,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.3870967741935484,
+          "policy_ufr": 0.3333333333333333,
+          "paired_delta_ufr": 0.0538
+        },
+        {
+          "seed": 107,
+          "policy_ufc": 0.7142857142857143,
+          "matched_baseline_tau": 0.36,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.45454545454545453,
+          "policy_ufr": 0.18181818181818182,
+          "paired_delta_ufr": 0.2727
+        },
+        {
+          "seed": 108,
+          "policy_ufc": 0.5882352941176471,
+          "matched_baseline_tau": 0.49,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5588235294117647,
+          "policy_ufr": 0.4090909090909091,
+          "paired_delta_ufr": 0.1497
+        },
+        {
+          "seed": 109,
+          "policy_ufc": 0.391304347826087,
+          "matched_baseline_tau": 0.74,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.375,
+          "policy_ufr": 0.2,
+          "paired_delta_ufr": 0.175
+        },
+        {
+          "seed": 110,
+          "policy_ufc": 0.6521739130434783,
+          "matched_baseline_tau": 0.35,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4634146341463415,
+          "policy_ufr": 0.25,
+          "paired_delta_ufr": 0.2134
+        },
+        {
+          "seed": 112,
+          "policy_ufc": 0.5263157894736842,
+          "matched_baseline_tau": 0.61,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4482758620689655,
+          "policy_ufr": 0.4090909090909091,
+          "paired_delta_ufr": 0.0392
+        },
+        {
+          "seed": 113,
+          "policy_ufc": 0.56,
+          "matched_baseline_tau": 0.55,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.3888888888888889,
+          "policy_ufr": 0.2916666666666667,
+          "paired_delta_ufr": 0.0972
+        },
+        {
+          "seed": 114,
+          "policy_ufc": 0.5909090909090909,
+          "matched_baseline_tau": 0.61,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.3333333333333333,
+          "policy_ufr": 0.3333333333333333,
+          "paired_delta_ufr": 0.0
+        },
+        {
+          "seed": 115,
+          "policy_ufc": 0.7058823529411765,
+          "matched_baseline_tau": 0.4,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5681818181818182,
+          "policy_ufr": 0.4,
+          "paired_delta_ufr": 0.1682
+        },
+        {
+          "seed": 116,
+          "policy_ufc": 0.5416666666666666,
+          "matched_baseline_tau": 0.37,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5135135135135135,
+          "policy_ufr": 0.36,
+          "paired_delta_ufr": 0.1535
+        },
+        {
+          "seed": 117,
+          "policy_ufc": 0.64,
+          "matched_baseline_tau": 0.42,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.3333333333333333,
+          "policy_ufr": 0.2692307692307692,
+          "paired_delta_ufr": 0.0641
+        },
+        {
+          "seed": 118,
+          "policy_ufc": 0.42857142857142855,
+          "matched_baseline_tau": 0.71,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.34782608695652173,
+          "policy_ufr": 0.3333333333333333,
+          "paired_delta_ufr": 0.0145
+        },
+        {
+          "seed": 119,
+          "policy_ufc": 0.6111111111111112,
+          "matched_baseline_tau": 0.36,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5526315789473685,
+          "policy_ufr": 0.391304347826087,
+          "paired_delta_ufr": 0.1613
+        },
+        {
+          "seed": 120,
+          "policy_ufc": 0.34782608695652173,
+          "matched_baseline_tau": 0.81,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.35294117647058826,
+          "policy_ufr": 0.3125,
+          "paired_delta_ufr": 0.0404
+        },
+        {
+          "seed": 121,
+          "policy_ufc": 0.6470588235294118,
+          "matched_baseline_tau": 0.46,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4838709677419355,
+          "policy_ufr": 0.3333333333333333,
+          "paired_delta_ufr": 0.1505
+        },
+        {
+          "seed": 122,
+          "policy_ufc": 0.7,
+          "matched_baseline_tau": 0.58,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4117647058823529,
+          "policy_ufr": 0.22727272727272727,
+          "paired_delta_ufr": 0.1845
+        },
+        {
+          "seed": 123,
+          "policy_ufc": 0.6363636363636364,
+          "matched_baseline_tau": 0.33,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5116279069767442,
+          "policy_ufr": 0.34615384615384615,
+          "paired_delta_ufr": 0.1655
+        },
+        {
+          "seed": 124,
+          "policy_ufc": 0.5,
+          "matched_baseline_tau": 0.62,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5161290322580645,
+          "policy_ufr": 0.45454545454545453,
+          "paired_delta_ufr": 0.0616
+        },
+        {
+          "seed": 125,
+          "policy_ufc": 0.5294117647058824,
+          "matched_baseline_tau": 0.55,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5161290322580645,
+          "policy_ufr": 0.42857142857142855,
+          "paired_delta_ufr": 0.0876
+        },
+        {
+          "seed": 126,
+          "policy_ufc": 0.7368421052631579,
+          "matched_baseline_tau": 0.39,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4473684210526316,
+          "policy_ufr": 0.2916666666666667,
+          "paired_delta_ufr": 0.1557
+        },
+        {
+          "seed": 127,
+          "policy_ufc": 0.4090909090909091,
+          "matched_baseline_tau": 0.68,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.30434782608695654,
+          "policy_ufr": 0.4,
+          "paired_delta_ufr": -0.0957
+        },
+        {
+          "seed": 128,
+          "policy_ufc": 0.6842105263157895,
+          "matched_baseline_tau": 0.44,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.48717948717948717,
+          "policy_ufr": 0.4074074074074074,
+          "paired_delta_ufr": 0.0798
+        },
+        {
+          "seed": 129,
+          "policy_ufc": 0.631578947368421,
+          "matched_baseline_tau": 0.38,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5128205128205128,
+          "policy_ufr": 0.34782608695652173,
+          "paired_delta_ufr": 0.165
+        },
+        {
+          "seed": 130,
+          "policy_ufc": 0.5909090909090909,
+          "matched_baseline_tau": 0.53,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.40625,
+          "policy_ufr": 0.38461538461538464,
+          "paired_delta_ufr": 0.0216
+        }
+      ],
+      "mean_delta_ufr": 0.0994,
+      "std_delta_ufr": 0.0845,
+      "median_delta_ufr": 0.0972,
+      "iqr_25_75": [
+        0.0404,
+        0.1613
+      ],
+      "student_t_ci_95": [
+        0.0672,
+        0.1315
+      ],
+      "bootstrap_ci_95": [
+        0.0688,
+        0.1297
+      ],
+      "t_statistic": 6.3317,
+      "t_p_value": 7.532410132565111e-07,
+      "wilcoxon_statistic": 20.0,
+      "wilcoxon_p_value": 3.084038529448805e-05,
+      "cohen_dz": 1.1758
+    },
+    "FULL_EVIDENCE_AWARE_SENSITIVITY": {
+      "imputed_sample_size": 30,
+      "worst_case_imputed_mean_delta": 0.2169,
+      "worst_case_t_statistic": 9.9148,
+      "worst_case_t_p_value": 8.011758504427768e-11,
+      "worst_case_wilcoxon_p_value": 3.789619441580871e-06,
+      "conclusion_altered": false
+    }
+  },
+  "perturbed": {
+    "FULL_EVIDENCE_AWARE": {
+      "total_seeds": 30,
+      "matched_sample_size": 27,
+      "included_seeds": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        110,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        126,
+        127,
+        128,
+        129,
+        130
+      ],
+      "excluded_count": 3,
+      "excluded_seeds": [
+        {
+          "seed": 109,
+          "status": "MATCHED_COVERAGE_UNACHIEVED",
+          "coverage_difference": 0.5238,
+          "policy_ufc": 0.47619047619047616,
+          "reason": "Coverage difference (0.5238) exceeded prespecified tolerance of 0.02"
+        },
+        {
+          "seed": 111,
+          "status": "MATCHED_COVERAGE_UNACHIEVED",
+          "coverage_difference": 0.45,
+          "policy_ufc": 0.5,
+          "reason": "Coverage difference (0.45) exceeded prespecified tolerance of 0.02"
+        },
+        {
+          "seed": 125,
+          "status": "MATCHED_COVERAGE_UNACHIEVED",
+          "coverage_difference": 0.625,
+          "policy_ufc": 0.375,
+          "reason": "Coverage difference (0.625) exceeded prespecified tolerance of 0.02"
+        }
+      ],
+      "paired_delta_ufr_records": [
+        {
+          "seed": 101,
+          "policy_ufc": 0.38095238095238093,
+          "matched_baseline_tau": 0.72,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.2608695652173913,
+          "policy_ufr": 0.26666666666666666,
+          "paired_delta_ufr": -0.0058
+        },
+        {
+          "seed": 102,
+          "policy_ufc": 0.3333333333333333,
+          "matched_baseline_tau": 0.76,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.48,
+          "policy_ufr": 0.3333333333333333,
+          "paired_delta_ufr": 0.1467
+        },
+        {
+          "seed": 103,
+          "policy_ufc": 0.5,
+          "matched_baseline_tau": 0.62,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.45714285714285713,
+          "policy_ufr": 0.23529411764705882,
+          "paired_delta_ufr": 0.2218
+        },
+        {
+          "seed": 104,
+          "policy_ufc": 0.5555555555555556,
+          "matched_baseline_tau": 0.79,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4090909090909091,
+          "policy_ufr": 0.2857142857142857,
+          "paired_delta_ufr": 0.1234
+        },
+        {
+          "seed": 105,
+          "policy_ufc": 0.4666666666666667,
+          "matched_baseline_tau": 0.61,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.42857142857142855,
+          "policy_ufr": 0.2,
+          "paired_delta_ufr": 0.2286
+        },
+        {
+          "seed": 106,
+          "policy_ufc": 0.7368421052631579,
+          "matched_baseline_tau": 0.57,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4166666666666667,
+          "policy_ufr": 0.17647058823529413,
+          "paired_delta_ufr": 0.2402
+        },
+        {
+          "seed": 107,
+          "policy_ufc": 0.375,
+          "matched_baseline_tau": 0.85,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5882352941176471,
+          "policy_ufr": 0.4,
+          "paired_delta_ufr": 0.1882
+        },
+        {
+          "seed": 108,
+          "policy_ufc": 0.4,
+          "matched_baseline_tau": 0.6,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5517241379310345,
+          "policy_ufr": 0.38461538461538464,
+          "paired_delta_ufr": 0.1671
+        },
+        {
+          "seed": 110,
+          "policy_ufc": 0.5,
+          "matched_baseline_tau": 0.6,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.2916666666666667,
+          "policy_ufr": 0.15384615384615385,
+          "paired_delta_ufr": 0.1378
+        },
+        {
+          "seed": 112,
+          "policy_ufc": 0.5,
+          "matched_baseline_tau": 0.61,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4482758620689655,
+          "policy_ufr": 0.15384615384615385,
+          "paired_delta_ufr": 0.2944
+        },
+        {
+          "seed": 113,
+          "policy_ufc": 0.3157894736842105,
+          "matched_baseline_tau": 0.77,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.46153846153846156,
+          "policy_ufr": 0.46153846153846156,
+          "paired_delta_ufr": 0.0
+        },
+        {
+          "seed": 114,
+          "policy_ufc": 0.5,
+          "matched_baseline_tau": 0.63,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.2413793103448276,
+          "policy_ufr": 0.17647058823529413,
+          "paired_delta_ufr": 0.0649
+        },
+        {
+          "seed": 115,
+          "policy_ufc": 0.5333333333333333,
+          "matched_baseline_tau": 0.79,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4090909090909091,
+          "policy_ufr": 0.2857142857142857,
+          "paired_delta_ufr": 0.1234
+        },
+        {
+          "seed": 116,
+          "policy_ufc": 0.4,
+          "matched_baseline_tau": 0.66,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.52,
+          "policy_ufr": 0.2,
+          "paired_delta_ufr": 0.32
+        },
+        {
+          "seed": 117,
+          "policy_ufc": 0.4782608695652174,
+          "matched_baseline_tau": 0.67,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4444444444444444,
+          "policy_ufr": 0.07692307692307693,
+          "paired_delta_ufr": 0.3675
+        },
+        {
+          "seed": 118,
+          "policy_ufc": 0.6875,
+          "matched_baseline_tau": 0.54,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4722222222222222,
+          "policy_ufr": 0.25,
+          "paired_delta_ufr": 0.2222
+        },
+        {
+          "seed": 119,
+          "policy_ufc": 0.35294117647058826,
+          "matched_baseline_tau": 0.61,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5862068965517241,
+          "policy_ufr": 0.14285714285714285,
+          "paired_delta_ufr": 0.4433
+        },
+        {
+          "seed": 120,
+          "policy_ufc": 0.5238095238095238,
+          "matched_baseline_tau": 0.52,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.40625,
+          "policy_ufr": 0.14285714285714285,
+          "paired_delta_ufr": 0.2634
+        },
+        {
+          "seed": 121,
+          "policy_ufc": 0.5,
+          "matched_baseline_tau": 0.65,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.42857142857142855,
+          "policy_ufr": 0.36363636363636365,
+          "paired_delta_ufr": 0.0649
+        },
+        {
+          "seed": 122,
+          "policy_ufc": 0.6111111111111112,
+          "matched_baseline_tau": 0.6,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.45454545454545453,
+          "policy_ufr": 0.21428571428571427,
+          "paired_delta_ufr": 0.2403
+        },
+        {
+          "seed": 123,
+          "policy_ufc": 0.2727272727272727,
+          "matched_baseline_tau": 0.67,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5185185185185185,
+          "policy_ufr": 0.2222222222222222,
+          "paired_delta_ufr": 0.2963
+        },
+        {
+          "seed": 124,
+          "policy_ufc": 0.4444444444444444,
+          "matched_baseline_tau": 0.65,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4444444444444444,
+          "policy_ufr": 0.3076923076923077,
+          "paired_delta_ufr": 0.1368
+        },
+        {
+          "seed": 126,
+          "policy_ufc": 0.5,
+          "matched_baseline_tau": 0.61,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5172413793103449,
+          "policy_ufr": 0.3076923076923077,
+          "paired_delta_ufr": 0.2095
+        },
+        {
+          "seed": 127,
+          "policy_ufc": 0.42857142857142855,
+          "matched_baseline_tau": 0.57,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.32142857142857145,
+          "policy_ufr": 0.14285714285714285,
+          "paired_delta_ufr": 0.1786
+        },
+        {
+          "seed": 128,
+          "policy_ufc": 0.4666666666666667,
+          "matched_baseline_tau": 0.5,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.42857142857142855,
+          "policy_ufr": 0.25,
+          "paired_delta_ufr": 0.1786
+        },
+        {
+          "seed": 129,
+          "policy_ufc": 0.5789473684210527,
+          "matched_baseline_tau": 0.55,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.375,
+          "policy_ufr": 0.14285714285714285,
+          "paired_delta_ufr": 0.2321
+        },
+        {
+          "seed": 130,
+          "policy_ufc": 0.5454545454545454,
+          "matched_baseline_tau": 0.53,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4375,
+          "policy_ufr": 0.25,
+          "paired_delta_ufr": 0.1875
+        }
+      ],
+      "mean_delta_ufr": 0.1952,
+      "std_delta_ufr": 0.1025,
+      "median_delta_ufr": 0.1882,
+      "iqr_25_75": [
+        0.1373,
+        0.2403
+      ],
+      "student_t_ci_95": [
+        0.1547,
+        0.2358
+      ],
+      "bootstrap_ci_95": [
+        0.157,
+        0.2331
+      ],
+      "t_statistic": 9.9012,
+      "t_p_value": 2.606028106357572e-10,
+      "wilcoxon_statistic": 1.0,
+      "wilcoxon_p_value": 9.315397804049011e-06,
+      "cohen_dz": 1.9055
+    },
+    "VERSION_AWARE": {
+      "total_seeds": 30,
+      "matched_sample_size": 30,
+      "included_seeds": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130
+      ],
+      "excluded_count": 0,
+      "excluded_seeds": [],
+      "paired_delta_ufr_records": [
+        {
+          "seed": 101,
+          "policy_ufc": 0.47619047619047616,
+          "matched_baseline_tau": 0.66,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.25925925925925924,
+          "policy_ufr": 0.2727272727272727,
+          "paired_delta_ufr": -0.0135
+        },
+        {
+          "seed": 102,
+          "policy_ufc": 0.42857142857142855,
+          "matched_baseline_tau": 0.58,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5,
+          "policy_ufr": 0.38095238095238093,
+          "paired_delta_ufr": 0.119
+        },
+        {
+          "seed": 103,
+          "policy_ufc": 0.5454545454545454,
+          "matched_baseline_tau": 0.53,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.47368421052631576,
+          "policy_ufr": 0.3333333333333333,
+          "paired_delta_ufr": 0.1404
+        },
+        {
+          "seed": 104,
+          "policy_ufc": 0.6666666666666666,
+          "matched_baseline_tau": 0.63,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4375,
+          "policy_ufr": 0.34782608695652173,
+          "paired_delta_ufr": 0.0897
+        },
+        {
+          "seed": 105,
+          "policy_ufc": 0.4666666666666667,
+          "matched_baseline_tau": 0.61,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.42857142857142855,
+          "policy_ufr": 0.38095238095238093,
+          "paired_delta_ufr": 0.0476
+        },
+        {
+          "seed": 106,
+          "policy_ufc": 0.8421052631578947,
+          "matched_baseline_tau": 0.53,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4146341463414634,
+          "policy_ufr": 0.36666666666666664,
+          "paired_delta_ufr": 0.048
+        },
+        {
+          "seed": 107,
+          "policy_ufc": 0.5,
+          "matched_baseline_tau": 0.55,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5483870967741935,
+          "policy_ufr": 0.5,
+          "paired_delta_ufr": 0.0484
+        },
+        {
+          "seed": 108,
+          "policy_ufc": 0.4,
+          "matched_baseline_tau": 0.6,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5517241379310345,
+          "policy_ufr": 0.47368421052631576,
+          "paired_delta_ufr": 0.078
+        },
+        {
+          "seed": 109,
+          "policy_ufc": 0.6190476190476191,
+          "matched_baseline_tau": 0.53,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4117647058823529,
+          "policy_ufr": 0.2608695652173913,
+          "paired_delta_ufr": 0.1509
+        },
+        {
+          "seed": 110,
+          "policy_ufc": 0.5,
+          "matched_baseline_tau": 0.6,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.2916666666666667,
+          "policy_ufr": 0.3,
+          "paired_delta_ufr": -0.0083
+        },
+        {
+          "seed": 111,
+          "policy_ufc": 0.55,
+          "matched_baseline_tau": 0.57,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.37037037037037035,
+          "policy_ufr": 0.3,
+          "paired_delta_ufr": 0.0704
+        },
+        {
+          "seed": 112,
+          "policy_ufc": 0.5555555555555556,
+          "matched_baseline_tau": 0.56,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.43333333333333335,
+          "policy_ufr": 0.23809523809523808,
+          "paired_delta_ufr": 0.1952
+        },
+        {
+          "seed": 113,
+          "policy_ufc": 0.5263157894736842,
+          "matched_baseline_tau": 0.55,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4722222222222222,
+          "policy_ufr": 0.38461538461538464,
+          "paired_delta_ufr": 0.0876
+        },
+        {
+          "seed": 114,
+          "policy_ufc": 0.5769230769230769,
+          "matched_baseline_tau": 0.54,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.2647058823529412,
+          "policy_ufr": 0.16,
+          "paired_delta_ufr": 0.1047
+        },
+        {
+          "seed": 115,
+          "policy_ufc": 0.5333333333333333,
+          "matched_baseline_tau": 0.79,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4090909090909091,
+          "policy_ufr": 0.4583333333333333,
+          "paired_delta_ufr": -0.0492
+        },
+        {
+          "seed": 116,
+          "policy_ufc": 0.4,
+          "matched_baseline_tau": 0.66,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.52,
+          "policy_ufr": 0.35294117647058826,
+          "paired_delta_ufr": 0.1671
+        },
+        {
+          "seed": 117,
+          "policy_ufc": 0.5652173913043478,
+          "matched_baseline_tau": 0.53,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4,
+          "policy_ufr": 0.2608695652173913,
+          "paired_delta_ufr": 0.1391
+        },
+        {
+          "seed": 118,
+          "policy_ufc": 0.6875,
+          "matched_baseline_tau": 0.54,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4722222222222222,
+          "policy_ufr": 0.36,
+          "paired_delta_ufr": 0.1122
+        },
+        {
+          "seed": 119,
+          "policy_ufc": 0.4117647058823529,
+          "matched_baseline_tau": 0.56,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5806451612903226,
+          "policy_ufr": 0.5,
+          "paired_delta_ufr": 0.0806
+        },
+        {
+          "seed": 120,
+          "policy_ufc": 0.6190476190476191,
+          "matched_baseline_tau": 0.5,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.38235294117647056,
+          "policy_ufr": 0.2727272727272727,
+          "paired_delta_ufr": 0.1096
+        },
+        {
+          "seed": 121,
+          "policy_ufc": 0.5,
+          "matched_baseline_tau": 0.65,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.42857142857142855,
+          "policy_ufr": 0.47058823529411764,
+          "paired_delta_ufr": -0.042
+        },
+        {
+          "seed": 122,
+          "policy_ufc": 0.6111111111111112,
+          "matched_baseline_tau": 0.6,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.45454545454545453,
+          "policy_ufr": 0.4,
+          "paired_delta_ufr": 0.0545
+        },
+        {
+          "seed": 123,
+          "policy_ufc": 0.4090909090909091,
+          "matched_baseline_tau": 0.51,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.46875,
+          "policy_ufr": 0.1875,
+          "paired_delta_ufr": 0.2812
+        },
+        {
+          "seed": 124,
+          "policy_ufc": 0.5,
+          "matched_baseline_tau": 0.62,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4838709677419355,
+          "policy_ufr": 0.34782608695652173,
+          "paired_delta_ufr": 0.136
+        },
+        {
+          "seed": 125,
+          "policy_ufc": 0.4375,
+          "matched_baseline_tau": 0.55,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5161290322580645,
+          "policy_ufr": 0.4782608695652174,
+          "paired_delta_ufr": 0.0379
+        },
+        {
+          "seed": 126,
+          "policy_ufc": 0.5,
+          "matched_baseline_tau": 0.61,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5172413793103449,
+          "policy_ufr": 0.5,
+          "paired_delta_ufr": 0.0172
+        },
+        {
+          "seed": 127,
+          "policy_ufc": 0.47619047619047616,
+          "matched_baseline_tau": 0.51,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.3225806451612903,
+          "policy_ufr": 0.18181818181818182,
+          "paired_delta_ufr": 0.1408
+        },
+        {
+          "seed": 128,
+          "policy_ufc": 0.4666666666666667,
+          "matched_baseline_tau": 0.5,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.42857142857142855,
+          "policy_ufr": 0.3,
+          "paired_delta_ufr": 0.1286
+        },
+        {
+          "seed": 129,
+          "policy_ufc": 0.5789473684210527,
+          "matched_baseline_tau": 0.55,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.375,
+          "policy_ufr": 0.30434782608695654,
+          "paired_delta_ufr": 0.0707
+        },
+        {
+          "seed": 130,
+          "policy_ufc": 0.5454545454545454,
+          "matched_baseline_tau": 0.53,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4375,
+          "policy_ufr": 0.2727272727272727,
+          "paired_delta_ufr": 0.1648
+        }
+      ],
+      "mean_delta_ufr": 0.0902,
+      "std_delta_ufr": 0.0716,
+      "median_delta_ufr": 0.0887,
+      "iqr_25_75": [
+        0.0481,
+        0.1383
+      ],
+      "student_t_ci_95": [
+        0.0635,
+        0.117
+      ],
+      "bootstrap_ci_95": [
+        0.0656,
+        0.1158
+      ],
+      "t_statistic": 6.9029,
+      "t_p_value": 1.3847932566524898e-07,
+      "wilcoxon_statistic": 17.0,
+      "wilcoxon_p_value": 3.855675458908081e-07,
+      "cohen_dz": 1.2603
+    },
+    "STATUTORY_GROUNDING": {
+      "total_seeds": 30,
+      "matched_sample_size": 29,
+      "included_seeds": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130
+      ],
+      "excluded_count": 1,
+      "excluded_seeds": [
+        {
+          "seed": 120,
+          "status": "MATCHED_COVERAGE_UNACHIEVED",
+          "coverage_difference": 0.4286,
+          "policy_ufc": 0.5714285714285714,
+          "reason": "Coverage difference (0.4286) exceeded prespecified tolerance of 0.02"
+        }
+      ],
+      "paired_delta_ufr_records": [
+        {
+          "seed": 101,
+          "policy_ufc": 0.5238095238095238,
+          "matched_baseline_tau": 0.63,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.27586206896551724,
+          "policy_ufr": 0.23809523809523808,
+          "paired_delta_ufr": 0.0378
+        },
+        {
+          "seed": 102,
+          "policy_ufc": 0.38095238095238093,
+          "matched_baseline_tau": 0.73,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.46153846153846156,
+          "policy_ufr": 0.47368421052631576,
+          "paired_delta_ufr": -0.0121
+        },
+        {
+          "seed": 103,
+          "policy_ufc": 0.5909090909090909,
+          "matched_baseline_tau": 0.5,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.46153846153846156,
+          "policy_ufr": 0.30434782608695654,
+          "paired_delta_ufr": 0.1572
+        },
+        {
+          "seed": 104,
+          "policy_ufc": 0.6666666666666666,
+          "matched_baseline_tau": 0.63,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4375,
+          "policy_ufr": 0.3157894736842105,
+          "paired_delta_ufr": 0.1217
+        },
+        {
+          "seed": 105,
+          "policy_ufc": 0.4666666666666667,
+          "matched_baseline_tau": 0.61,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.42857142857142855,
+          "policy_ufr": 0.3076923076923077,
+          "paired_delta_ufr": 0.1209
+        },
+        {
+          "seed": 106,
+          "policy_ufc": 0.8421052631578947,
+          "matched_baseline_tau": 0.53,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4146341463414634,
+          "policy_ufr": 0.25,
+          "paired_delta_ufr": 0.1646
+        },
+        {
+          "seed": 107,
+          "policy_ufc": 0.5,
+          "matched_baseline_tau": 0.55,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5483870967741935,
+          "policy_ufr": 0.5789473684210527,
+          "paired_delta_ufr": -0.0306
+        },
+        {
+          "seed": 108,
+          "policy_ufc": 0.4,
+          "matched_baseline_tau": 0.6,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5517241379310345,
+          "policy_ufr": 0.4117647058823529,
+          "paired_delta_ufr": 0.14
+        },
+        {
+          "seed": 109,
+          "policy_ufc": 0.6190476190476191,
+          "matched_baseline_tau": 0.53,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4117647058823529,
+          "policy_ufr": 0.30434782608695654,
+          "paired_delta_ufr": 0.1074
+        },
+        {
+          "seed": 110,
+          "policy_ufc": 0.5454545454545454,
+          "matched_baseline_tau": 0.55,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.35714285714285715,
+          "policy_ufr": 0.3,
+          "paired_delta_ufr": 0.0571
+        },
+        {
+          "seed": 111,
+          "policy_ufc": 0.55,
+          "matched_baseline_tau": 0.57,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.37037037037037035,
+          "policy_ufr": 0.2777777777777778,
+          "paired_delta_ufr": 0.0926
+        },
+        {
+          "seed": 112,
+          "policy_ufc": 0.5555555555555556,
+          "matched_baseline_tau": 0.56,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.43333333333333335,
+          "policy_ufr": 0.35,
+          "paired_delta_ufr": 0.0833
+        },
+        {
+          "seed": 113,
+          "policy_ufc": 0.42105263157894735,
+          "matched_baseline_tau": 0.74,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4482758620689655,
+          "policy_ufr": 0.5,
+          "paired_delta_ufr": -0.0517
+        },
+        {
+          "seed": 114,
+          "policy_ufc": 0.5384615384615384,
+          "matched_baseline_tau": 0.61,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.23333333333333334,
+          "policy_ufr": 0.22727272727272727,
+          "paired_delta_ufr": 0.0061
+        },
+        {
+          "seed": 115,
+          "policy_ufc": 0.5333333333333333,
+          "matched_baseline_tau": 0.79,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4090909090909091,
+          "policy_ufr": 0.45454545454545453,
+          "paired_delta_ufr": -0.0455
+        },
+        {
+          "seed": 116,
+          "policy_ufc": 0.4,
+          "matched_baseline_tau": 0.66,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.52,
+          "policy_ufr": 0.5294117647058824,
+          "paired_delta_ufr": -0.0094
+        },
+        {
+          "seed": 117,
+          "policy_ufc": 0.5217391304347826,
+          "matched_baseline_tau": 0.55,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.41379310344827586,
+          "policy_ufr": 0.17647058823529413,
+          "paired_delta_ufr": 0.2373
+        },
+        {
+          "seed": 118,
+          "policy_ufc": 0.6875,
+          "matched_baseline_tau": 0.54,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4722222222222222,
+          "policy_ufr": 0.4166666666666667,
+          "paired_delta_ufr": 0.0556
+        },
+        {
+          "seed": 119,
+          "policy_ufc": 0.4117647058823529,
+          "matched_baseline_tau": 0.56,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5806451612903226,
+          "policy_ufr": 0.3333333333333333,
+          "paired_delta_ufr": 0.2473
+        },
+        {
+          "seed": 121,
+          "policy_ufc": 0.5,
+          "matched_baseline_tau": 0.65,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.42857142857142855,
+          "policy_ufr": 0.38461538461538464,
+          "paired_delta_ufr": 0.044
+        },
+        {
+          "seed": 122,
+          "policy_ufc": 0.6111111111111112,
+          "matched_baseline_tau": 0.6,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.45454545454545453,
+          "policy_ufr": 0.35,
+          "paired_delta_ufr": 0.1045
+        },
+        {
+          "seed": 123,
+          "policy_ufc": 0.4090909090909091,
+          "matched_baseline_tau": 0.51,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.46875,
+          "policy_ufr": 0.3125,
+          "paired_delta_ufr": 0.1562
+        },
+        {
+          "seed": 124,
+          "policy_ufc": 0.5,
+          "matched_baseline_tau": 0.62,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4838709677419355,
+          "policy_ufr": 0.47619047619047616,
+          "paired_delta_ufr": 0.0077
+        },
+        {
+          "seed": 125,
+          "policy_ufc": 0.4375,
+          "matched_baseline_tau": 0.55,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5161290322580645,
+          "policy_ufr": 0.3076923076923077,
+          "paired_delta_ufr": 0.2084
+        },
+        {
+          "seed": 126,
+          "policy_ufc": 0.5,
+          "matched_baseline_tau": 0.61,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5172413793103449,
+          "policy_ufr": 0.5238095238095238,
+          "paired_delta_ufr": -0.0066
+        },
+        {
+          "seed": 127,
+          "policy_ufc": 0.47619047619047616,
+          "matched_baseline_tau": 0.51,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.3225806451612903,
+          "policy_ufr": 0.2222222222222222,
+          "paired_delta_ufr": 0.1004
+        },
+        {
+          "seed": 128,
+          "policy_ufc": 0.4666666666666667,
+          "matched_baseline_tau": 0.5,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.42857142857142855,
+          "policy_ufr": 0.35,
+          "paired_delta_ufr": 0.0786
+        },
+        {
+          "seed": 129,
+          "policy_ufc": 0.631578947368421,
+          "matched_baseline_tau": 0.54,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.38235294117647056,
+          "policy_ufr": 0.21052631578947367,
+          "paired_delta_ufr": 0.1718
+        },
+        {
+          "seed": 130,
+          "policy_ufc": 0.5454545454545454,
+          "matched_baseline_tau": 0.53,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4375,
+          "policy_ufr": 0.4583333333333333,
+          "paired_delta_ufr": -0.0208
+        }
+      ],
+      "mean_delta_ufr": 0.0801,
+      "std_delta_ufr": 0.0845,
+      "median_delta_ufr": 0.0833,
+      "iqr_25_75": [
+        0.0061,
+        0.14
+      ],
+      "student_t_ci_95": [
+        0.048,
+        0.1123
+      ],
+      "bootstrap_ci_95": [
+        0.0495,
+        0.1101
+      ],
+      "t_statistic": 5.1075,
+      "t_p_value": 2.0671569401297585e-05,
+      "wilcoxon_statistic": 45.0,
+      "wilcoxon_p_value": 6.0480087995529175e-05,
+      "cohen_dz": 0.9484
+    },
+    "RULE_BASED_METADATA": {
+      "total_seeds": 30,
+      "matched_sample_size": 28,
+      "included_seeds": [
+        101,
+        103,
+        104,
+        105,
+        106,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130
+      ],
+      "excluded_count": 2,
+      "excluded_seeds": [
+        {
+          "seed": 102,
+          "status": "MATCHED_COVERAGE_UNACHIEVED",
+          "coverage_difference": 0.4762,
+          "policy_ufc": 0.47619047619047616,
+          "reason": "Coverage difference (0.4762) exceeded prespecified tolerance of 0.02"
+        },
+        {
+          "seed": 107,
+          "status": "MATCHED_COVERAGE_UNACHIEVED",
+          "coverage_difference": 0.375,
+          "policy_ufc": 0.625,
+          "reason": "Coverage difference (0.375) exceeded prespecified tolerance of 0.02"
+        }
+      ],
+      "paired_delta_ufr_records": [
+        {
+          "seed": 101,
+          "policy_ufc": 0.38095238095238093,
+          "matched_baseline_tau": 0.72,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.2608695652173913,
+          "policy_ufr": 0.3,
+          "paired_delta_ufr": -0.0391
+        },
+        {
+          "seed": 103,
+          "policy_ufc": 0.45454545454545453,
+          "matched_baseline_tau": 0.64,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.47058823529411764,
+          "policy_ufr": 0.3333333333333333,
+          "paired_delta_ufr": 0.1373
+        },
+        {
+          "seed": 104,
+          "policy_ufc": 0.3888888888888889,
+          "matched_baseline_tau": 0.86,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.42857142857142855,
+          "policy_ufr": 0.47619047619047616,
+          "paired_delta_ufr": -0.0476
+        },
+        {
+          "seed": 105,
+          "policy_ufc": 0.4666666666666667,
+          "matched_baseline_tau": 0.61,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.42857142857142855,
+          "policy_ufr": 0.42857142857142855,
+          "paired_delta_ufr": 0.0
+        },
+        {
+          "seed": 106,
+          "policy_ufc": 0.5789473684210527,
+          "matched_baseline_tau": 0.64,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4,
+          "policy_ufr": 0.375,
+          "paired_delta_ufr": 0.025
+        },
+        {
+          "seed": 108,
+          "policy_ufc": 0.6,
+          "matched_baseline_tau": 0.49,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5,
+          "policy_ufr": 0.36363636363636365,
+          "paired_delta_ufr": 0.1364
+        },
+        {
+          "seed": 109,
+          "policy_ufc": 0.3333333333333333,
+          "matched_baseline_tau": 0.75,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.43478260869565216,
+          "policy_ufr": 0.26666666666666666,
+          "paired_delta_ufr": 0.1681
+        },
+        {
+          "seed": 110,
+          "policy_ufc": 0.5,
+          "matched_baseline_tau": 0.6,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.2916666666666667,
+          "policy_ufr": 0.25,
+          "paired_delta_ufr": 0.0417
+        },
+        {
+          "seed": 111,
+          "policy_ufc": 0.45,
+          "matched_baseline_tau": 0.62,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4,
+          "policy_ufr": 0.38095238095238093,
+          "paired_delta_ufr": 0.019
+        },
+        {
+          "seed": 112,
+          "policy_ufc": 0.5555555555555556,
+          "matched_baseline_tau": 0.56,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.43333333333333335,
+          "policy_ufr": 0.4090909090909091,
+          "paired_delta_ufr": 0.0242
+        },
+        {
+          "seed": 113,
+          "policy_ufc": 0.5263157894736842,
+          "matched_baseline_tau": 0.55,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4722222222222222,
+          "policy_ufr": 0.4583333333333333,
+          "paired_delta_ufr": 0.0139
+        },
+        {
+          "seed": 114,
+          "policy_ufc": 0.5769230769230769,
+          "matched_baseline_tau": 0.54,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.2647058823529412,
+          "policy_ufr": 0.20833333333333334,
+          "paired_delta_ufr": 0.0564
+        },
+        {
+          "seed": 115,
+          "policy_ufc": 0.6,
+          "matched_baseline_tau": 0.49,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.55,
+          "policy_ufr": 0.4,
+          "paired_delta_ufr": 0.15
+        },
+        {
+          "seed": 116,
+          "policy_ufc": 0.55,
+          "matched_baseline_tau": 0.49,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5,
+          "policy_ufr": 0.44,
+          "paired_delta_ufr": 0.06
+        },
+        {
+          "seed": 117,
+          "policy_ufc": 0.5652173913043478,
+          "matched_baseline_tau": 0.53,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4,
+          "policy_ufr": 0.34615384615384615,
+          "paired_delta_ufr": 0.0538
+        },
+        {
+          "seed": 118,
+          "policy_ufc": 0.4375,
+          "matched_baseline_tau": 0.66,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4827586206896552,
+          "policy_ufr": 0.2777777777777778,
+          "paired_delta_ufr": 0.205
+        },
+        {
+          "seed": 119,
+          "policy_ufc": 0.5882352941176471,
+          "matched_baseline_tau": 0.44,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5555555555555556,
+          "policy_ufr": 0.391304347826087,
+          "paired_delta_ufr": 0.1643
+        },
+        {
+          "seed": 120,
+          "policy_ufc": 0.3333333333333333,
+          "matched_baseline_tau": 0.76,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.36363636363636365,
+          "policy_ufr": 0.25,
+          "paired_delta_ufr": 0.1136
+        },
+        {
+          "seed": 121,
+          "policy_ufc": 0.5833333333333334,
+          "matched_baseline_tau": 0.47,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5172413793103449,
+          "policy_ufr": 0.38095238095238093,
+          "paired_delta_ufr": 0.1363
+        },
+        {
+          "seed": 122,
+          "policy_ufc": 0.5,
+          "matched_baseline_tau": 0.7,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.38461538461538464,
+          "policy_ufr": 0.5,
+          "paired_delta_ufr": -0.1154
+        },
+        {
+          "seed": 123,
+          "policy_ufc": 0.6363636363636364,
+          "matched_baseline_tau": 0.33,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.46511627906976744,
+          "policy_ufr": 0.3076923076923077,
+          "paired_delta_ufr": 0.1574
+        },
+        {
+          "seed": 124,
+          "policy_ufc": 0.5,
+          "matched_baseline_tau": 0.62,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4838709677419355,
+          "policy_ufr": 0.45454545454545453,
+          "paired_delta_ufr": 0.0293
+        },
+        {
+          "seed": 125,
+          "policy_ufc": 0.4375,
+          "matched_baseline_tau": 0.55,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5161290322580645,
+          "policy_ufr": 0.42857142857142855,
+          "paired_delta_ufr": 0.0876
+        },
+        {
+          "seed": 126,
+          "policy_ufc": 0.7777777777777778,
+          "matched_baseline_tau": 0.35,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.5121951219512195,
+          "policy_ufr": 0.25,
+          "paired_delta_ufr": 0.2622
+        },
+        {
+          "seed": 127,
+          "policy_ufc": 0.38095238095238093,
+          "matched_baseline_tau": 0.67,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.28,
+          "policy_ufr": 0.25,
+          "paired_delta_ufr": 0.03
+        },
+        {
+          "seed": 128,
+          "policy_ufc": 0.7333333333333333,
+          "matched_baseline_tau": 0.31,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4375,
+          "policy_ufr": 0.3333333333333333,
+          "paired_delta_ufr": 0.1042
+        },
+        {
+          "seed": 129,
+          "policy_ufc": 0.5789473684210527,
+          "matched_baseline_tau": 0.55,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.375,
+          "policy_ufr": 0.30434782608695654,
+          "paired_delta_ufr": 0.0707
+        },
+        {
+          "seed": 130,
+          "policy_ufc": 0.5454545454545454,
+          "matched_baseline_tau": 0.53,
+          "coverage_difference": 0.0,
+          "baseline_ufr": 0.4375,
+          "policy_ufr": 0.38461538461538464,
+          "paired_delta_ufr": 0.0529
+        }
+      ],
+      "mean_delta_ufr": 0.0749,
+      "std_delta_ufr": 0.0824,
+      "median_delta_ufr": 0.0582,
+      "iqr_25_75": [
+        0.0248,
+        0.1366
+      ],
+      "student_t_ci_95": [
+        0.0429,
+        0.1069
+      ],
+      "bootstrap_ci_95": [
+        0.0459,
+        0.105
+      ],
+      "t_statistic": 4.8071,
+      "t_p_value": 5.115388720587869e-05,
+      "wilcoxon_statistic": 34.0,
+      "wilcoxon_p_value": 0.0001961882109451873,
+      "cohen_dz": 0.9085
+    },
+    "FULL_EVIDENCE_AWARE_SENSITIVITY": {
+      "imputed_sample_size": 30,
+      "worst_case_imputed_mean_delta": 0.1757,
+      "worst_case_t_statistic": 8.4537,
+      "worst_case_t_p_value": 2.5764068663342227e-09,
+      "worst_case_wilcoxon_p_value": 9.315397804049011e-06,
+      "conclusion_altered": false
+    }
+  }
+}

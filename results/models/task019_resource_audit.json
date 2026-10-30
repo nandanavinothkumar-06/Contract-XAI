@@ -1,0 +1,38 @@
+{
+  "task_id": "019",
+  "audit_type": "resource_resolution",
+  "hardware": {
+    "cpu": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "logical_cores": 16,
+    "physical_cores": 12,
+    "architecture": "AMD64",
+    "total_ram_gb": 15.649,
+    "available_ram_gb": 4.958,
+    "mps_available": false
+  },
+  "software": {
+    "python": "3.13.5",
+    "pytorch": "2.14.0+cpu",
+    "transformers": "5.17.0",
+    "datasets": "NOT_INSTALLED",
+    "accelerate": "1.15.0"
+  },
+  "gpu": "NO_GPU_AVAILABLE",
+  "cuda": {
+    "is_available": false,
+    "version": "N/A"
+  },
+  "alternative_compute": {},
+  "contractnli": {
+    "sanity_check": "NOT_APPLICABLE_NO_GPU",
+    "pilot": "NOT_APPLICABLE_NO_GPU",
+    "full_run_feasibility": "NOT_RUN_RESOURCE_LIMITATION"
+  },
+  "ledgar": {
+    "feasibility": "NOT_RUN_RESOURCE_LIMITATION"
+  },
+  "decision": "PARTIALLY_COMPLETE (CPU_ONLY)",
+  "limitations": [
+    "No GPU available; PyTorch relies on 'cpu'. CPU execution is mathematically projected to take ~12.8+ hours for ContractNLI."
+  ]
+}

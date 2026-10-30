@@ -1,0 +1,10 @@
+{
+  "acquisition_id": "manual_IN_ACT_1872_09_indiacode_1872_2187_v20261017080948",
+  "source_id": "IN_ACT_1872_09",
+  "timestamp": "2026-10-17T08:09:48.066771+00:00",
+  "method": "MANUAL_ADVOCATE_REGISTRATION",
+  "input_file_path": "IN_MEMORY_BYTES",
+  "sha256": "dcbebf6c3a80d65e3086664077de9b08cdf1b0b6e7639215f07ff80d3a6e5b3a",
+  "bytes_received": 4367,
+  "storage_path": "C:\\Users\\Nandana\\.gemini\\antigravity-ide\\scratch\\contractrisk-xai\\data\\legal_sources\\reference_artifacts\\IN_ACT_1872_09\\indiacode_1872_2187_v20261017080948\\original.pdf"
+}

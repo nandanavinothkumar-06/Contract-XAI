@@ -1,0 +1,15 @@
+{
+  "experiment_id": "6bf4741ee1ec",
+  "dataset": "CLAUDETTE",
+  "task": "CLASSIFICATION",
+  "model": "TFIDF_LOGISTIC_REGRESSION",
+  "feature_type": "TF-IDF",
+  "parameters": {
+    "dataset": "CLAUDETTE",
+    "task": "CLASSIFICATION",
+    "model": "TFIDF_LOGISTIC_REGRESSION"
+  },
+  "seed": 42,
+  "status": "NOT_RUN_LICENSE_UNRESOLVED",
+  "timestamp": "2026-10-20T17:00:18.186676Z"
+}

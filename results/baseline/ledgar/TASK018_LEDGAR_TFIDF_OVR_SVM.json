@@ -1,0 +1,30 @@
+{
+  "dataset": "LEDGAR",
+  "dataset_version": "2016-2019 Clean",
+  "input_path": "data/raw/ledgar/extracted/LEDGAR_2016-2019_clean.jsonl",
+  "task": "MULTI_LABEL_PROVISION_CLASSIFICATION",
+  "total_provisions": 846274,
+  "distinct_labels": 12608,
+  "distinct_contracts": 60540,
+  "split_strategy": "group_aware_by_contract_id (80/10/10)",
+  "training_size": 674068,
+  "validation_size": 84250,
+  "test_size": 87956,
+  "leakage_status": "VERIFIED_ZERO_LEAKAGE (train-val=0, train-test=0, val-test=0)",
+  "timestamp": "2026-09-14T18:36:25.743579Z",
+  "is_test_fixture": false,
+  "experiment_id": "TASK018_LEDGAR_TFIDF_OVR_SVM",
+  "model": "TFIDF_OVR_LINEAR_SVM",
+  "execution_type": "FEASIBILITY_ASSESSMENT",
+  "classification": "FEASIBILITY_ASSESSMENT",
+  "status": "NOT_EXECUTED_RESOURCE_INFEASIBLE",
+  "reason": "The experiment was not executed because a prior computational feasibility assessment indicated that execution was not practical under the available workstation resources. Training 12,608 sequential One-vs-Rest Linear SVM models across 674,068 provisions requires an estimated 18 to 36 hours on 5.38 GB available RAM. The full run was therefore not launched, rather than silently reducing the label taxonomy.",
+  "feasibility_assessment": {
+    "num_classes": 12608,
+    "train_samples": 674068,
+    "available_ram_gb": 5.38,
+    "total_ram_gb": 15.65,
+    "cpu_cores": 16,
+    "projected_estimated_hours": 18.0
+  }
+}

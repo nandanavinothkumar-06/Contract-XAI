@@ -1,0 +1,180 @@
+{
+  "comparison_id": "comp_IN_ACT_1996_26_20261017090923",
+  "source_id": "IN_ACT_1996_26",
+  "timestamp": "2026-10-17T09:09:23.172924+00:00",
+  "snapshot": {
+    "file_path": "data/legal_sources/snapshots/IN_ACT_1996_26.txt",
+    "sha256": "3f572ff48747e12c81b8a415015a23d09197ba2c86998561349b7388bf05c362",
+    "total_sections_count": 6,
+    "section_numbers": [
+      "1",
+      "16",
+      "34",
+      "7",
+      "8",
+      "9"
+    ]
+  },
+  "reference": {
+    "file_path": "C:\\Users\\Nandana\\.gemini\\antigravity-ide\\scratch\\contractrisk-xai\\data\\legal_sources\\extracted_text\\IN_ACT_1996_26\\indiacode_1996_1978\\extracted.txt",
+    "sha256": "730b5e671ad084b28016fa7280e400c758f2c74c4d4b97ca679cba03a25c4c86",
+    "total_sections_found": 8,
+    "metadata": {
+      "issuing_authority": "Legislative Department",
+      "publication_title": "The Arbitration and Conciliation Act, 1996",
+      "publication_id": "indiacode_1996_1978"
+    }
+  },
+  "byte_level_match": false,
+  "summary": {
+    "sections_in_snapshot": 6,
+    "exact_text_matches": 0,
+    "normalized_matches": 3,
+    "textual_differences": 3,
+    "missing_in_reference": 0,
+    "concordance_percentage": 50.0,
+    "sections_in_reference_omitted_from_snapshot_count": 2,
+    "sections_in_reference_omitted_from_snapshot": [
+      "2",
+      "11"
+    ]
+  },
+  "verification_outcome": {
+    "defensible_status": "PARTIALLY_VERIFIED",
+    "verified_scope": [
+      "7",
+      "8",
+      "34"
+    ],
+    "unverified_scope": [
+      "1",
+      "9",
+      "16"
+    ],
+    "currentness_status": "CURRENTNESS_UNVERIFIED_PENDING_AMENDMENT_AUDIT",
+    "applicability_status": "REQUIRES_ADVOCATE_DETERMINATION",
+    "notes": "Partial verification: 3 of 6 sections matched. 3 differing, 0 missing in reference."
+  },
+  "epistemic_disclosures": {
+    "scope_limitation": "Content verification applies ONLY to the specific sections successfully matched. It does not verify the entire Act or omitted sections.",
+    "currentness_boundary": "Matching an official enactment publication verifies textual authenticity as enacted. It does not establish that subsequent amending Acts have been checked or that uncommenced rules have been notified.",
+    "applicability_boundary": "Textual equivalence does not establish legal applicability to any specific contract clause, dispute, or jurisdiction. Independent advocate evaluation is required."
+  },
+  "sections": [
+    {
+      "section_number": "1",
+      "heading": "Short title, extent and commencement",
+      "match_type": "TEXT_DIFFERENCE",
+      "diff": [
+        "--- snapshot_Section_1\n",
+        "+++ reference_Section_1\n",
+        "@@ -1,6 +1,5 @@\n",
+        "-Section 1. Short title, extent and commencement.\u2014(1) This Act may be called the Arbitration and Conciliation Act, 1996.\n",
+        "-(2) It extends to the whole of India.\n",
+        "-(3) It shall come into force on such date as the Central Government may, by notification in the Official Gazette, appoint.\n",
+        "-\n",
+        "-PART I ARBITRATION\n",
+        "-CHAPTER I GENERAL PROVISIONS",
+        "+Section 1. Short title, extent and commencement.\u2014\n",
+        "+ (1) This Act may be called the Arbitration and Conciliation Act, 1996. (2)\n",
+        "+It extends to the whole of India. (3) It shall come into force on such date\n",
+        "+as the Central Government may, by notification in the Official Gazette,\n",
+        "+appoint."
+      ],
+      "char_count_snapshot": 329,
+      "char_count_reference": 282,
+      "notes": "Textual divergence detected between snapshot and official reference"
+    },
+    {
+      "section_number": "7",
+      "heading": "Arbitration agreement",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 1108,
+      "char_count_reference": 1110,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "8",
+      "heading": "Power to refer parties to arbitration where there is an arbitration agreement",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 769,
+      "char_count_reference": 771,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "9",
+      "heading": "Interim measures, etc",
+      "match_type": "TEXT_DIFFERENCE",
+      "diff": [
+        "--- snapshot_Section_9\n",
+        "+++ reference_Section_9\n",
+        "@@ -1,9 +1,14 @@\n",
+        "-Section 9. Interim measures, etc. by Court.\u2014(1) A party may, before or during arbitral proceedings or at any time after the making of the arbitral award but before it is enforced in accordance with section 36, apply to a court\u2014\n",
+        "-(ii) for an interim measure of protection in respect of any of the following matters, namely:\u2014\n",
+        "-(a) the preservation, interim custody or sale of any goods which are the subject-matter of the arbitration agreement;\n",
+        "-(b) securing the amount in dispute in the arbitration;\n",
+        "-(c) the detention, preservation or inspection of any property or thing which is the subject-matter of the dispute in arbitration;\n",
+        "-(d) interim injunction or the appointment of a receiver;\n",
+        "-(e) such other interim measure of protection as may appear to the court to be just and convenient.\n",
+        "+Section 9. Interim measures, etc. by Court.\u2014\n",
+        "+ (1) A party may, before or during arbitral proceedings or at any time after\n",
+        " \n",
+        "-CHAPTER IV JURISDICTION OF ARBITRAL TRIBUNALS",
+        "+--- PAGE 2 ---\n",
+        "+the making of the arbitral award but before it is enforced in accordance\n",
+        "+with section 36, apply to a court\u2014 (ii) for an interim measure of\n",
+        "+protection in respect of any of the following matters, namely:\u2014 (a) the\n",
+        "+preservation, interim custody or sale of any goods which are the\n",
+        "+subject-matter of the arbitration agreement; (b) securing the amount in\n",
+        "+dispute in the arbitration; (c) the detention, preservation or inspection\n",
+        "+of any property or thing which is the subject-matter of the dispute in\n",
+        "+arbitration; (d) interim injunction or the appointment of a receiver; (e)\n",
+        "+such other interim measure of protection as may appear to the court to be\n",
+        "+just and convenient."
+      ],
+      "char_count_snapshot": 828,
+      "char_count_reference": 799,
+      "notes": "Textual divergence detected between snapshot and official reference"
+    },
+    {
+      "section_number": "16",
+      "heading": "Competence of arbitral tribunal to rule on its jurisdiction",
+      "match_type": "TEXT_DIFFERENCE",
+      "diff": [
+        "--- snapshot_Section_16\n",
+        "+++ reference_Section_16\n",
+        "@@ -1,6 +1,10 @@\n",
+        "-Section 16. Competence of arbitral tribunal to rule on its jurisdiction.\u2014(1) The arbitral tribunal may rule on its own jurisdiction, including ruling on any objections with respect to the existence or validity of the arbitration agreement, and for that purpose,\u2014\n",
+        "-(a) an arbitration clause which forms part of a contract shall be treated as an agreement independent of the other terms of the contract; and\n",
+        "-(b) a decision by the arbitral tribunal that the contract is null and void shall not entail ipso jure the invalidity of the arbitration clause.\n",
+        "-(2) A plea that the arbitral tribunal does not have jurisdiction shall be raised not later than the submission of the statement of defence.\n",
+        "-\n",
+        "-CHAPTER VII RECOURSE AGAINST ARBITRAL AWARD",
+        "+Section 16. Competence of arbitral tribunal to rule on its jurisdiction.\u2014\n",
+        "+ (1) The arbitral tribunal may rule on its own jurisdiction, including\n",
+        "+ruling on any objections with respect to the existence or validity of the\n",
+        "+arbitration agreement, and for that purpose,\u2014 (a) an arbitration clause\n",
+        "+which forms part of a contract shall be treated as an agreement independent\n",
+        "+of the other terms of the contract; and (b) a decision by the arbitral\n",
+        "+tribunal that the contract is null and void shall not entail ipso jure the\n",
+        "+invalidity of the arbitration clause. (2) A plea that the arbitral tribunal\n",
+        "+does not have jurisdiction shall be raised not later than the submission of\n",
+        "+the statement of defence."
+      ],
+      "char_count_snapshot": 733,
+      "char_count_reference": 690,
+      "notes": "Textual divergence detected between snapshot and official reference"
+    },
+    {
+      "section_number": "34",
+      "heading": "Application for setting aside arbitral award",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 713,
+      "char_count_reference": 715,
+      "notes": "Text matches after normalizing typography and whitespace"
+    }
+  ]
+}

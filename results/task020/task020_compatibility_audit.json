@@ -1,0 +1,92 @@
+{
+  "task_id": "020",
+  "status": "NO_VALID_CROSS_DOMAIN_EXPERIMENT_AVAILABLE_WITH_CURRENT_DATA",
+  "datasets": [
+    "ContractNLI",
+    "LEDGAR",
+    "CUAD"
+  ],
+  "task_matrix": [
+    {
+      "dataset": "ContractNLI",
+      "native_task": "Document-level NLI",
+      "input": "Hypothesis + Contract Text",
+      "output": "Classification Label",
+      "labels": "3 (Contradiction, Entailment, NotMentioned)",
+      "domain": "NDAs"
+    },
+    {
+      "dataset": "LEDGAR",
+      "native_task": "Multi-label provision classification",
+      "input": "Provision text",
+      "output": "List of provision topics",
+      "labels": "12,608 provision classes",
+      "domain": "SEC contractual provisions"
+    },
+    {
+      "dataset": "CUAD",
+      "native_task": "Extractive QA / Span extraction",
+      "input": "Question + Contract text",
+      "output": "Answer spans",
+      "labels": "41 Categories",
+      "domain": "Commercial contracts"
+    }
+  ],
+  "domain_matrix": [
+    {"dataset": "ContractNLI", "domain": "NDAs"},
+    {"dataset": "LEDGAR", "domain": "SEC contractual provisions"},
+    {"dataset": "CUAD", "domain": "Commercial contracts"},
+    {"dataset": "Construction", "domain": "NOT_ACQUIRED"},
+    {"dataset": "CLAUDETTE", "domain": "NOT_ACQUIRED"}
+  ],
+  "pairwise_compatibility": [
+    {
+      "source": "ContractNLI",
+      "target": "LEDGAR",
+      "status": "INVALID",
+      "reason": "The datasets have fundamentally different supervised task and label semantics."
+    },
+    {
+      "source": "ContractNLI",
+      "target": "CUAD",
+      "status": "NOT_APPLICABLE",
+      "reason": "Task mismatch. CUAD requires a span-extraction/extractive-QA pipeline."
+    },
+    {
+      "source": "LEDGAR",
+      "target": "CUAD",
+      "status": "NOT_APPLICABLE",
+      "reason": "Task mismatch. CUAD requires a span-extraction/extractive-QA pipeline."
+    }
+  ],
+  "valid_experiments": [],
+  "invalid_experiments": [
+    "ContractNLI -> LEDGAR",
+    "LEDGAR -> ContractNLI"
+  ],
+  "resource_constraints": [
+    {
+      "dataset": "ContractNLI",
+      "status": "NOT_RUN_RESOURCE_LIMITATION"
+    },
+    {
+      "dataset": "LEDGAR",
+      "status": "NOT_RUN_RESOURCE_LIMITATION"
+    }
+  ],
+  "data_availability_constraints": [
+    {
+      "dataset": "Construction",
+      "status": "NOT_RUN_DATA_UNAVAILABLE",
+      "reason": "Construction-domain cross-domain evaluation cannot be performed because no verified construction dataset is currently acquired within the project."
+    },
+    {
+      "dataset": "CLAUDETTE",
+      "status": "NOT_RUN_ACCESS_UNRESOLVED"
+    }
+  ],
+  "recommendation": [
+    "NO_VALID_CROSS_DOMAIN_EXPERIMENT_AVAILABLE_WITH_CURRENT_DATA",
+    "Do not force incompatible datasets into a common task."
+  ]
+}

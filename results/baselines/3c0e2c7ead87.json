@@ -1,0 +1,24 @@
+{
+  "experiment_id": "3c0e2c7ead87",
+  "dataset": "TEST",
+  "task": "MULTI_LABEL_PROVISION_CLASSIFICATION",
+  "model": "TFIDF_OVR_LOGISTIC_REGRESSION",
+  "feature_type": "TF-IDF",
+  "parameters": {
+    "dataset": "TEST",
+    "task": "MULTI_LABEL_PROVISION_CLASSIFICATION",
+    "model": "TFIDF_OVR_LOGISTIC_REGRESSION",
+    "random_state": 42
+  },
+  "seed": 42,
+  "status": "COMPLETED",
+  "n_train": 3,
+  "n_validation": 0,
+  "n_test": 1,
+  "metrics": {
+    "micro_f1": 0.0,
+    "macro_f1": 0.0,
+    "hamming_loss": 1.0
+  },
+  "timestamp": "2026-09-14T08:23:26.832951Z"
+}

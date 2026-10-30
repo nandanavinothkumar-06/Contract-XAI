@@ -1,0 +1,42 @@
+{
+  "candidate_5_spurious_hallucination": {
+    "description": "Limitation of liability predicted on notices clause, INSUFFICIENT evidence, but cited provision present",
+    "rule_based_actions": [
+      "ACCEPT"
+    ],
+    "full_evidence_actions": [
+      "WITHHOLD"
+    ],
+    "note": "Rule baseline accepts Candidate 5 because retrieved_passages is non-empty, whereas Full Evidence-Aware policy withholds or routes it because evidence_quality_status is INSUFFICIENT. This confirms the rule baseline functions strictly as a procedural passage presence check."
+  },
+  "candidate_2_non_statutory": {
+    "description": "Price adjustment clause, non-statutory category, NO_MATCHING_EVIDENCE",
+    "rule_based_actions": [
+      "WITHHOLD"
+    ],
+    "full_evidence_actions": [
+      "ACCEPT"
+    ],
+    "note": "Rule baseline withholds Candidate 2 because no statutory passage exists, whereas Full Evidence-Aware policy accepts it under Tier 5 because price adjustment is an approved non-statutory commercial drafting category with high confidence."
+  },
+  "candidate_10_unknown_version": {
+    "description": "Severability clause with UNKNOWN document version",
+    "rule_based_actions": [
+      "REVIEW_REQUIRED"
+    ],
+    "full_evidence_actions": [
+      "REVIEW_REQUIRED"
+    ],
+    "note": "Both rule baseline and Full Evidence-Aware policy correctly route unknown versions to REVIEW_REQUIRED."
+  },
+  "candidate_3_stale_version": {
+    "description": "Termination clause from STALE document version",
+    "rule_based_actions": [
+      "WITHHOLD"
+    ],
+    "full_evidence_actions": [
+      "WITHHOLD"
+    ],
+    "note": "Both rule baseline and Full Evidence-Aware policy correctly WITHHOLD stale document versions."
+  }
+}

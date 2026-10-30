@@ -1,0 +1,71 @@
+{
+  "policy_id": "rule_based_metadata_baseline",
+  "display_name": "Rule-Based Metadata Baseline",
+  "description": "A transparent procedural checklist baseline that evaluates document integrity, label space safety, and statutory passage presence without using model confidence scores or multi-tier legal nuance routing.",
+  "metadata_fields_used": [
+    "clause_text",
+    "label_mapping_status",
+    "prediction_category",
+    "version_consistency_status",
+    "evidence_quality_status",
+    "retrieved_passages"
+  ],
+  "model_score_used": false,
+  "reference_labels_used": false,
+  "actions_supported": [
+    "ACCEPT",
+    "WITHHOLD",
+    "REVIEW_REQUIRED"
+  ],
+  "rule_set": [
+    {
+      "priority": 1,
+      "rule": "Assessability Gate",
+      "condition": "clause_text is missing or empty",
+      "action": "REVIEW_REQUIRED",
+      "rationale": "Unassessable input cannot be evaluated procedurally."
+    },
+    {
+      "priority": 2,
+      "rule": "Label Space Safety Gate",
+      "condition": "label_mapping_status is UNSUPPORTED_LABEL_MAPPING or prediction_category starts with UNMAPPED_",
+      "action": "WITHHOLD",
+      "rationale": "Unsupported model predictions cannot be accepted as valid risk findings."
+    },
+    {
+      "priority": 3,
+      "rule": "Document Version Gate",
+      "condition": "version_consistency_status == STALE",
+      "action": "WITHHOLD",
+      "rationale": "Findings from outdated document drafts are fatal defects."
+    },
+    {
+      "priority": 4,
+      "rule": "Version Uncertainty Gate",
+      "condition": "version_consistency_status == UNKNOWN",
+      "action": "REVIEW_REQUIRED",
+      "rationale": "Unknown document version lineage requires lawyer verification."
+    },
+    {
+      "priority": 5,
+      "rule": "Inapplicable Statute Gate",
+      "condition": "any retrieved passage has legal_status in ('REPEALED', 'STRUCK_DOWN', 'NOT_COMMENCED')",
+      "action": "WITHHOLD",
+      "rationale": "Provisions citing repealed or uncommenced law are invalid."
+    },
+    {
+      "priority": 6,
+      "rule": "Statutory Evidence Presence Gate",
+      "condition": "evidence_quality_status in ('NO_MATCHING_EVIDENCE', 'INSUFFICIENT', None) and no retrieved_passages",
+      "action": "WITHHOLD",
+      "rationale": "Procedural checklist requires external statutory citation to accept finding."
+    },
+    {
+      "priority": 7,
+      "rule": "Default Integrity Acceptance",
+      "condition": "All gates passed (consistent version and active passage present)",
+      "action": "ACCEPT",
+      "rationale": "Document and citation integrity verified."
+    }
+  ]
+}

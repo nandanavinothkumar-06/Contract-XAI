@@ -1,0 +1,107 @@
+{
+  "evaluation_type": "PRELIMINARY_ENGINEERING_VALIDATION",
+  "disclaimer": "This evaluation set serves solely for preliminary engineering verification of retrieval mechanics, BM25 scoring, and confidence gating. It does NOT represent lawyer-certified ground truth or an exhaustive legal benchmark.",
+  "dataset_version": "1.0.0",
+  "test_cases": [
+    {
+      "test_id": "TC_001_RESTRAINT_OF_TRADE",
+      "clause_text": "The Consultant agrees that for a period of two years following termination of this Agreement, they shall not engage in, advise, or conduct any competing software development business anywhere in India.",
+      "expected_statute_id": "IN_ACT_1872_09",
+      "expected_section": "27",
+      "should_abstain": false,
+      "expected_status": "EVIDENCE_FOUND",
+      "expected_abstention_reason": null,
+      "evidence_rationale": "Commercial restrictive covenants restraining lawful trade or profession directly trigger Section 27 of the Indian Contract Act, 1872."
+    },
+    {
+      "test_id": "TC_002_ELECTRONIC_CONTRACT_FORMATION",
+      "clause_text": "The parties acknowledge and agree that this Agreement and any amendment or acceptance expressed by electronic record or email communication shall be legally binding and enforceable.",
+      "expected_statute_id": "IN_ACT_2000_21",
+      "expected_section": "10A",
+      "should_abstain": false,
+      "expected_status": "EVIDENCE_FOUND",
+      "expected_abstention_reason": null,
+      "evidence_rationale": "Enforceability of contracts formed through electronic communications is governed by Section 10A of the Information Technology Act, 2000."
+    },
+    {
+      "test_id": "TC_003_SPECIFIC_PERFORMANCE",
+      "clause_text": "The parties agree that specific performance of this contract shall be enforced by the court in the event of default.",
+      "expected_statute_id": "IN_ACT_1963_47",
+      "expected_section": "10",
+      "should_abstain": false,
+      "expected_status": "EVIDENCE_FOUND",
+      "expected_abstention_reason": null,
+      "evidence_rationale": "Mandatory specific performance of contracts subject to statutory exceptions is governed by Section 10 of the Specific Relief Act, 1963 (as amended in 2018)."
+    },
+    {
+      "test_id": "TC_004_ARBITRATION_AGREEMENT",
+      "clause_text": "Any dispute, controversy, or claim arising out of or relating to this contract shall be submitted to arbitration in writing in accordance with the Arbitration Rules.",
+      "expected_statute_id": "IN_ACT_1996_26",
+      "expected_section": "7",
+      "should_abstain": false,
+      "expected_status": "EVIDENCE_FOUND",
+      "expected_abstention_reason": null,
+      "evidence_rationale": "Requirements for a valid written arbitration agreement are defined under Section 7 of the Arbitration and Conciliation Act, 1996."
+    },
+    {
+      "test_id": "TC_005_ELECTRONIC_RECORDS_EVIDENCE",
+      "clause_text": "All computerized output, system logs, and digital records generated during performance shall be admissible as documentary evidence in judicial proceedings.",
+      "expected_statute_id": "IN_ACT_2023_47",
+      "expected_section": "61",
+      "should_abstain": false,
+      "expected_status": "EVIDENCE_FOUND",
+      "expected_abstention_reason": null,
+      "evidence_rationale": "Admissibility and legal validity of electronic and digital records are governed by Section 61 and Section 63 of the Bharatiya Sakshya Adhiniyam, 2023."
+    },
+    {
+      "test_id": "TC_006_LIQUIDATED_DAMAGES_PENALTY",
+      "clause_text": "If Vendor fails to deliver by the milestone date, Vendor shall pay fifty thousand rupees per day as agreed compensation for breach of contract, without prejudice to actual loss.",
+      "expected_statute_id": "IN_ACT_1872_09",
+      "expected_section": "74",
+      "should_abstain": false,
+      "expected_status": "EVIDENCE_FOUND",
+      "expected_abstention_reason": null,
+      "evidence_rationale": "Compensation for breach of contract where penalty or stipulated amount is named is governed by Section 74 of the Indian Contract Act, 1872."
+    },
+    {
+      "test_id": "TC_007_UNCOMMENCED_DPDP_SUBSTANTIVE_NOTICE",
+      "clause_text": "The data fiduciary must provide itemised notice to the data principal before requesting consent for processing digital personal data.",
+      "expected_statute_id": "IN_ACT_2023_22",
+      "expected_section": "5",
+      "should_abstain": true,
+      "expected_status": "ABSTAIN",
+      "expected_abstention_reason": "UNKNOWN_COMMENCEMENT",
+      "evidence_rationale": "While enacted, Section 5 of the DPDP Act, 2023 has not been officially commenced by Central Government notification, requiring mandatory system abstention."
+    },
+    {
+      "test_id": "TC_008_STRUCK_DOWN_OFFENSIVE_SPEECH",
+      "clause_text": "User shall not transmit any offensive message or communication causing annoyance, inconvenience or ill will through the computer resource.",
+      "expected_statute_id": "IN_ACT_2000_21",
+      "expected_section": "66A",
+      "should_abstain": true,
+      "expected_status": "ABSTAIN",
+      "expected_abstention_reason": "HISTORICAL_ONLY_VERSION",
+      "evidence_rationale": "Section 66A of the IT Act was struck down as unconstitutional by the Supreme Court in Shreya Singhal (2015) and is repealed/void, triggering abstention."
+    },
+    {
+      "test_id": "TC_009_NON_LEGAL_IRRELEVANT_QUERY",
+      "clause_text": "Thermal dissipation in superconducting quantum circuits operates through relativistic neutrino interaction across planetary orbits.",
+      "expected_statute_id": null,
+      "expected_section": null,
+      "should_abstain": true,
+      "expected_status": "ABSTAIN",
+      "expected_abstention_reason": "WEAK_RETRIEVAL_EVIDENCE",
+      "evidence_rationale": "Completely non-legal text must fail to match any commercial statutory provision and trigger immediate abstention."
+    },
+    {
+      "test_id": "TC_010_FOREIGN_JURISDICTION_CLAUSE",
+      "clause_text": "This Agreement and all internal corporate affairs shall be governed by the Delaware General Corporation Law and Delaware Chancery Court jurisdiction.",
+      "expected_statute_id": null,
+      "expected_section": null,
+      "should_abstain": true,
+      "expected_status": "ABSTAIN",
+      "expected_abstention_reason": "UNSUPPORTED_LEGAL_QUESTION",
+      "evidence_rationale": "Delaware state corporate law is outside the Indian statutory corpus and must cleanly abstain."
+    }
+  ]
+}

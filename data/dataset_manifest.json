@@ -1,0 +1,186 @@
+{
+  "generated_at": "2026-09-14T17:38:15+05:30",
+  "pipeline": "ContractRisk-XAI Dataset Acquisition & Verification",
+  "datasets": [
+    {
+      "dataset_name": "ContractNLI",
+      "version": "1.0",
+      "authoritative_source": "Koreeda & Manning, 'ContractNLI: A Dataset for Document-level Natural Language Inference for Contracts', Findings of EMNLP 2021; https://stanfordnlp.github.io/contract-nli/",
+      "distribution_source": "https://stanfordnlp.github.io/contract-nli/resources/contract-nli.zip",
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0); Baseline implementation under Apache 2.0",
+      "license_source": "https://stanfordnlp.github.io/contract-nli/LICENSE and project terms notice",
+      "access_status": "Open download",
+      "acquisition_status": "ACQUIRED_AND_VALIDATED",
+      "acquired_at": "2026-09-14T17:20:48+05:30",
+      "files": [
+        {
+          "path": "data/raw/contractnli/contract-nli.zip",
+          "size_bytes": 65362913,
+          "sha256": "e03fc77bbf8b53e2976a250e81d8a294bc3d5e5fb014521e477dee9340d6287b",
+          "is_raw_archive": true
+        },
+        {
+          "path": "data/raw/contractnli/extracted/contract-nli/train.json",
+          "size_bytes": 7608211,
+          "sha256": "dbceb356cd6203b35b27be94a5fa85e499a81c34c42c89ad53060b39f0257ba5",
+          "is_raw_archive": false
+        },
+        {
+          "path": "data/raw/contractnli/extracted/contract-nli/dev.json",
+          "size_bytes": 1183107,
+          "sha256": "310af7d661d2ab50ee3700169cef524c75f39fb296bbf5a515c229eb0f42e68e",
+          "is_raw_archive": false
+        },
+        {
+          "path": "data/raw/contractnli/extracted/contract-nli/test.json",
+          "size_bytes": 2260203,
+          "sha256": "460267b56052a2dc5aead98eb35eadef9e6734d5723d37b4a9790e410f812387",
+          "is_raw_archive": false
+        }
+      ],
+      "validation_status": "VALID",
+      "is_test_fixture": false,
+      "structural_statistics": {
+        "num_documents": 607,
+        "splits": {
+          "train_documents": 423,
+          "dev_documents": 61,
+          "test_documents": 123
+        },
+        "num_hypotheses": 17,
+        "total_instances": 10319,
+        "label_classes": ["Entailment", "Contradiction", "NotMentioned"],
+        "total_evidence_spans": 11973,
+        "malformed_records": 0
+      },
+      "terms_and_caveats": "Hitachi America, Ltd. Terms and Conditions of Use apply pursuant to CC BY 4.0. Contains full NDA contract documents and span annotations.",
+      "notes": "Acquired directly from Stanford project distribution. Full 607 document corpus verified against Task 004 ContractNLIAdapter without errors."
+    },
+    {
+      "dataset_name": "CUAD",
+      "version": "1.0",
+      "authoritative_source": "Hendrycks et al., 'CUAD: An Expert-Annotated NLP Dataset for Legal Contract Review', NeurIPS 2021; The Atticus Project (https://www.atticusprojectai.org/cuad)",
+      "distribution_source": "https://zenodo.org/records/4595826/files/CUAD_v1.zip (Zenodo Archive record 4595826)",
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "license_source": "CUAD_v1_README.txt and Zenodo record metadata (license id: cc-by-4.0)",
+      "access_status": "Open download",
+      "acquisition_status": "ACQUIRED_AND_VALIDATED",
+      "acquired_at": "2026-09-14T17:23:10+05:30",
+      "files": [
+        {
+          "path": "data/raw/cuad/CUAD_v1.zip",
+          "size_bytes": 105883672,
+          "sha256": "88b694d99007d39777fa44cd72daf8297773d285dc3eab0091ba32078888d18e",
+          "is_raw_archive": true
+        },
+        {
+          "path": "data/raw/cuad/extracted/CUAD_v1/CUAD_v1.json",
+          "size_bytes": 40128638,
+          "sha256": "ed0b77d85bdf4014d7495800e8e4a70565b48ee6f8a2e5dca9cf8655dbf10eae",
+          "is_raw_archive": false
+        },
+        {
+          "path": "data/raw/cuad/extracted/CUAD_v1/master_clauses.csv",
+          "size_bytes": 3955428,
+          "sha256": "4da237bec677bf5b02212d523857cd57a801adde60e8021de063c8cc06823720",
+          "is_raw_archive": false
+        },
+        {
+          "path": "data/raw/cuad/extracted/CUAD_v1/CUAD_v1_README.txt",
+          "size_bytes": 26712,
+          "sha256": "d0d1af57cff6d185ed9841566b2f069efffb7ee6ee7b1b49192e94d0a9fe3842",
+          "is_raw_archive": false
+        }
+      ],
+      "validation_status": "VALID",
+      "is_test_fixture": false,
+      "structural_statistics": {
+        "num_contracts": 510,
+        "num_questions": 41,
+        "total_qa_records": 20910,
+        "total_answer_spans": 13823,
+        "task_formulation": "QA_SPAN_EXTRACTION (SQuAD 2.0 format)",
+        "malformed_records": 0
+      },
+      "terms_and_caveats": "Atticus Project disclaimer: 'We make no representations or warranties regarding the license status of the underlying contracts, which are publicly available and downloadable from EDGAR.' Dataset annotations released under CC BY 4.0; underlying contract texts remain subject to public EDGAR conditions.",
+      "notes": "Acquired directly from Zenodo official archive record 4595826. Validated with Task 004 CUADAdapter without errors."
+    },
+    {
+      "dataset_name": "LEDGAR",
+      "version": "2016-2019 Clean",
+      "authoritative_source": "Tuggener et al., 'LEDGAR: A Large-Scale Multi-label Corpus for Text Classification of Legal Provisions in Contracts', LREC 2020; https://github.com/dtuggener/LEDGAR_provision_classification/",
+      "distribution_source": "https://drive.switch.ch/public.php/webdav/LEDGAR_2016-2019_clean.jsonl.zip (Official SWITCHdrive repository identified in primary repository README)",
+      "license": "MIT License (Copyright 2019 Zurich University of Applied Sciences / dtuggener)",
+      "license_source": "README.txt in Switch Drive archive and LICENSE file in official GitHub repository",
+      "access_status": "Open download",
+      "acquisition_status": "ACQUIRED_AND_VALIDATED",
+      "acquired_at": "2026-09-14T17:27:04+05:30",
+      "files": [
+        {
+          "path": "data/raw/ledgar/LEDGAR_2016-2019_clean.jsonl.zip",
+          "size_bytes": 172720909,
+          "sha256": "abdb4b512546c7ef5db17ba387cf121ab593a2817a89f1e6b7dbee42854dc4bb",
+          "is_raw_archive": true
+        },
+        {
+          "path": "data/raw/ledgar/README.txt",
+          "size_bytes": 1370,
+          "sha256": "ddfd1a40bdb897d452a4dce6ed53e87b41ec4f252493c09cb4e2087e8bd7c4a8",
+          "is_raw_archive": false
+        },
+        {
+          "path": "data/raw/ledgar/extracted/LEDGAR_2016-2019_clean.jsonl",
+          "size_bytes": 744410364,
+          "sha256": "ec91ca71e41c406674c7a45b97583911b9fc9f67c67ac59b6f0e083bcbb91795",
+          "is_raw_archive": false
+        }
+      ],
+      "validation_status": "VALID",
+      "is_test_fixture": false,
+      "structural_statistics": {
+        "num_provisions": 846274,
+        "task_formulation": "MULTI_LABEL_PROVISION_CLASSIFICATION",
+        "label_structure": "List of strings per provision",
+        "provenance_fields": ["source", "provision", "label"],
+        "sample_validation_tested": 10000,
+        "sample_validation_failures": 0
+      },
+      "terms_and_caveats": "Underlying provisions crawled from US SEC EDGAR filings. The compiled corpus and code are released under the MIT License by Zurich University of Applied Sciences.",
+      "notes": "Acquired directly from the authoritative Switch Drive repository documented in the authors' official GitHub repository. Validated with Task 004 LEDGARAdapter."
+    },
+    {
+      "dataset_name": "CLAUDETTE",
+      "version": "UNKNOWN",
+      "authoritative_source": "Lippi et al., 'CLAUDETTE: an automated detector of potentially unfair clauses in online terms of service', Artificial Intelligence and Law 2019",
+      "distribution_source": "UNKNOWN / Not acquired in this prerequisite task",
+      "license": "Unresolved / not independently verified from authoritative source",
+      "license_source": null,
+      "access_status": "Unresolved",
+      "acquisition_status": "LICENSE_UNRESOLVED",
+      "acquired_at": null,
+      "files": [],
+      "validation_status": "NOT_ACQUIRED",
+      "is_test_fixture": false,
+      "structural_statistics": null,
+      "terms_and_caveats": "Excluded per task directive: Do not acquire CLAUDETTE unless authoritative access/license status can be independently verified without ambiguity.",
+      "notes": "Dataset acquisition was not attempted per strict instruction to prevent licensing ambiguity."
+    },
+    {
+      "dataset_name": "CONSTRUCTION_BASE",
+      "version": "UNKNOWN",
+      "authoritative_source": "Construction contract research literature (various FIDIC / bespoke)",
+      "distribution_source": "UNKNOWN / Not acquired in this prerequisite task",
+      "license": "Not verified",
+      "license_source": null,
+      "access_status": "Unresolved / not independently verified",
+      "acquisition_status": "NOT_ACQUIRED",
+      "acquired_at": null,
+      "files": [],
+      "validation_status": "NOT_ACQUIRED",
+      "is_test_fixture": false,
+      "structural_statistics": null,
+      "terms_and_caveats": "Excluded per task directive: Do not acquire construction datasets unless authoritative access/license status can be independently verified without ambiguity.",
+      "notes": "Dataset acquisition was not attempted per strict instruction."
+    }
+  ]
+}

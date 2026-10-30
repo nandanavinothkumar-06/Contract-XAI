@@ -1,0 +1,225 @@
+{
+  "comparison_id": "comp_IN_ACT_2023_22_20261017080948",
+  "source_id": "IN_ACT_2023_22",
+  "timestamp": "2026-10-17T08:09:48.061412+00:00",
+  "snapshot": {
+    "file_path": "data/legal_sources/snapshots/IN_ACT_2023_22.txt",
+    "sha256": "fd1bcbbb413dd667a781cf625471cd277cb020d88ed711b04c7277b117982439",
+    "total_sections_count": 8,
+    "section_numbers": [
+      "1",
+      "2",
+      "36",
+      "4",
+      "44",
+      "5",
+      "6",
+      "8"
+    ]
+  },
+  "reference": {
+    "file_path": "C:\\Users\\Nandana\\.gemini\\antigravity-ide\\scratch\\contractrisk-xai\\data\\legal_sources\\extracted_text\\IN_ACT_2023_22\\egazette_2023_248045\\extracted.txt",
+    "sha256": "fade0fd7bcb91862b4bcbc440e7e4f45e55d9fe024ea127d5dd3c7a3e314529b",
+    "total_sections_found": 10,
+    "metadata": {
+      "issuing_authority": "Ministry of Law and Justice",
+      "publication_title": "The Digital Personal Data Protection Act, 2023",
+      "publication_id": "egazette_2023_248045"
+    }
+  },
+  "byte_level_match": false,
+  "summary": {
+    "sections_in_snapshot": 8,
+    "exact_text_matches": 0,
+    "normalized_matches": 2,
+    "textual_differences": 6,
+    "missing_in_reference": 0,
+    "concordance_percentage": 25.0,
+    "sections_in_reference_omitted_from_snapshot_count": 2,
+    "sections_in_reference_omitted_from_snapshot": [
+      "11",
+      "12"
+    ]
+  },
+  "verification_outcome": {
+    "defensible_status": "PARTIALLY_VERIFIED",
+    "verified_scope": [
+      "4",
+      "36"
+    ],
+    "unverified_scope": [
+      "1",
+      "2",
+      "5",
+      "6",
+      "8",
+      "44"
+    ],
+    "currentness_status": "CURRENTNESS_UNVERIFIED_PENDING_AMENDMENT_AUDIT",
+    "applicability_status": "REQUIRES_ADVOCATE_DETERMINATION",
+    "notes": "Partial verification: 2 of 8 sections matched. 6 differing, 0 missing in reference."
+  },
+  "epistemic_disclosures": {
+    "scope_limitation": "Content verification applies ONLY to the specific sections successfully matched. It does not verify the entire Act or omitted sections.",
+    "currentness_boundary": "Matching an official enactment publication verifies textual authenticity as enacted. It does not establish that subsequent amending Acts have been checked or that uncommenced rules have been notified.",
+    "applicability_boundary": "Textual equivalence does not establish legal applicability to any specific contract clause, dispute, or jurisdiction. Independent advocate evaluation is required."
+  },
+  "sections": [
+    {
+      "section_number": "1",
+      "heading": "Short title and commencement",
+      "match_type": "TEXT_DIFFERENCE",
+      "diff": [
+        "--- snapshot_Section_1\n",
+        "+++ reference_Section_1\n",
+        "@@ -1,2 +1,5 @@\n",
+        "-Section 1. Short title and commencement.\u2014(1) This Act may be called the Digital Personal Data Protection Act, 2023.\n",
+        "-(2) It shall come into force on such date as the Central Government may, by notification in the Official Gazette, appoint and different dates may be appointed for different provisions of this Act and any reference in any such provision to the commencement of this Act shall be construed as a reference to the coming into force of that provision.",
+        "+Section 1. Short title and commencement.\u2014\n",
+        "+ (1) This Act may be called the Digital Personal Data Protection Act, 2023.\n",
+        "+(2) It shall come into force on such date as the Central Government may, by\n",
+        "+notification in the Official Gazette, appoint and different dates may be\n",
+        "+appointed for different provisions of this Act."
+      ],
+      "char_count_snapshot": 461,
+      "char_count_reference": 314,
+      "notes": "Textual divergence detected between snapshot and official reference"
+    },
+    {
+      "section_number": "2",
+      "heading": "Definitions",
+      "match_type": "TEXT_DIFFERENCE",
+      "diff": [
+        "--- snapshot_Section_2\n",
+        "+++ reference_Section_2\n",
+        "@@ -1,8 +1,10 @@\n",
+        "-Section 2. Definitions.\u2014In this Act, unless the context otherwise requires,\u2014\n",
+        "-(i) \"Data Fiduciary\" means any person who alone or in conjunction with other persons determines the purpose and means of processing of personal data;\n",
+        "-(j) \"Data Principal\" means the individual to whom the personal data relates and where such individual is\u2014 (i) a child, includes the parents or lawful guardian of such a child; (ii) a person with disability, includes her lawful guardian, acting on her behalf;\n",
+        "-(k) \"Data Processor\" means any person who processes personal data on behalf of a Data Fiduciary;\n",
+        "-(t) \"personal data\" means any data about an individual who is identifiable by or in relation to such data;\n",
+        "-(x) \"processing\" in relation to personal data, means a wholly or partly automated operation or set of operations performed on digital personal data, and includes operations such as collection, recording, organisation, structuring, storage, adaptation, retrieval, use, alignment or combination, indexing, sharing, disclosure by transmission, dissemination or otherwise making available, restriction, erasure or destruction.\n",
+        "-\n",
+        "-CHAPTER II OBLIGATIONS OF DATA FIDUCIARY",
+        "+Section 2. Definitions.\u2014\n",
+        "+ In this Act, unless the context otherwise requires,\u2014 (i) \"Data Fiduciary\"\n",
+        "+means any person who alone or in conjunction with other persons determines\n",
+        "+the purpose and means of processing of personal data; (j) \"Data Principal\"\n",
+        "+means the individual to whom the personal data relates; (k) \"Data\n",
+        "+Processor\" means any person who processes personal data on behalf of a Data\n",
+        "+Fiduciary; (t) \"personal data\" means any data about an individual who is\n",
+        "+identifiable by or in relation to such data; (x) \"processing\" in relation\n",
+        "+to personal data, means a wholly or partly automated operation or set of\n",
+        "+operations performed on digital personal data."
+      ],
+      "char_count_snapshot": 1154,
+      "char_count_reference": 658,
+      "notes": "Textual divergence detected between snapshot and official reference"
+    },
+    {
+      "section_number": "4",
+      "heading": "Grounds for processing personal data",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 394,
+      "char_count_reference": 396,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "5",
+      "heading": "Notice",
+      "match_type": "TEXT_DIFFERENCE",
+      "diff": [
+        "--- snapshot_Section_5\n",
+        "+++ reference_Section_5\n",
+        "@@ -1 +1,5 @@\n",
+        "-Section 5. Notice.\u2014(1) On or before requesting for consent, the Data Fiduciary shall give to the Data Principal an itemised notice in such manner and containing such aspects as may be prescribed, description of personal data sought to be collected and the purpose for which it will be processed, manner in which she may exercise her rights under sub-section (4) of section 6 and section 13 and the manner in which the Data Principal may make a complaint to the Board.",
+        "+Section 5. Notice.\u2014\n",
+        "+ (1) On or before requesting for consent, the Data Fiduciary shall give to\n",
+        "+the Data Principal an itemised notice in such manner and containing such\n",
+        "+aspects as may be prescribed, description of personal data sought to be\n",
+        "+collected and the purpose for which it will be processed."
+      ],
+      "char_count_snapshot": 467,
+      "char_count_reference": 297,
+      "notes": "Textual divergence detected between snapshot and official reference"
+    },
+    {
+      "section_number": "6",
+      "heading": "Consent",
+      "match_type": "TEXT_DIFFERENCE",
+      "diff": [
+        "--- snapshot_Section_6\n",
+        "+++ reference_Section_6\n",
+        "@@ -1,2 +1,5 @@\n",
+        "-Section 6. Consent.\u2014(1) The consent given by the Data Principal shall be free, specific, informed, unconditional and unambiguous with a clear affirmative action, and shall signify an agreement to the processing of her personal data for the specified purpose and be limited to such personal data as is necessary for such specified purpose.\n",
+        "-(4) The Data Principal shall have the right to withdraw her consent at any time, with the ease of doing so being comparable to the ease with which such consent was given.",
+        "+Section 6. Consent.\u2014\n",
+        "+ (1) The consent given by the Data Principal shall be free, specific,\n",
+        "+informed, unconditional and unambiguous with a clear affirmative action,\n",
+        "+and shall signify an agreement to the processing of her personal data for\n",
+        "+the specified purpose."
+      ],
+      "char_count_snapshot": 509,
+      "char_count_reference": 260,
+      "notes": "Textual divergence detected between snapshot and official reference"
+    },
+    {
+      "section_number": "8",
+      "heading": "General obligations of Data Fiduciary",
+      "match_type": "TEXT_DIFFERENCE",
+      "diff": [
+        "--- snapshot_Section_8\n",
+        "+++ reference_Section_8\n",
+        "@@ -1,5 +1,11 @@\n",
+        "-Section 8. General obligations of Data Fiduciary.\u2014(1) A Data Fiduciary shall, irrespective of any agreement to the contrary or failure of a Data Principal to carry out the duties provided under this Act, be responsible for complying with the provisions of this Act and the rules made thereunder in respect of any processing undertaken by it or on its behalf by a Data Processor.\n",
+        "-(2) A Data Fiduciary may engage, appoint, use or otherwise involve a Data Processor to process personal data on its behalf for any activity related to offering of goods or services to Data Principals or for purposes authorized under this Act, only under a valid contract.\n",
+        "-(5) A Data Fiduciary shall protect personal data in its possession or under its control, including in respect of any processing undertaken by it or on its behalf by a Data Processor, by taking reasonable security safeguards to prevent personal data breach.\n",
+        "+Section 8. General obligations of Data Fiduciary.\u2014\n",
+        "+ (1) A Data Fiduciary shall, irrespective of any agreement to the contrary\n",
+        "+or failure of a Data Principal to carry out the duties provided under this\n",
+        "+Act, be responsible for complying with the provisions of this Act. (2) A\n",
+        "+Data Fiduciary may engage, appoint, use or otherwise involve a Data\n",
+        "+Processor to process personal data on its behalf only under a valid\n",
+        "+contract. (5) A Data Fiduciary shall protect personal data in its\n",
+        " \n",
+        "-CHAPTER IX MISCELLANEOUS",
+        "+--- PAGE 2 ---\n",
+        "+possession by taking reasonable security safeguards to prevent personal\n",
+        "+data breach."
+      ],
+      "char_count_snapshot": 933,
+      "char_count_reference": 576,
+      "notes": "Textual divergence detected between snapshot and official reference"
+    },
+    {
+      "section_number": "36",
+      "heading": "Power of Central Government to call for information",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 226,
+      "char_count_reference": 228,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "44",
+      "heading": "Amendments to certain Acts",
+      "match_type": "TEXT_DIFFERENCE",
+      "diff": [
+        "--- snapshot_Section_44\n",
+        "+++ reference_Section_44\n",
+        "@@ -1,3 +1,4 @@\n",
+        "-Section 44. Amendments to certain Acts.\u2014(1) In section 14 of the Telecom Regulatory Authority of India Act, 1997, in clause (c)...\n",
+        "-(2) The Information Technology Act, 2000 shall be amended in the manner specified in the Schedule.\n",
+        "-Schedule Amendment: \"Section 43A of the Information Technology Act, 2000 shall be omitted.\"",
+        "+Section 44. Amendments to certain Acts.\u2014\n",
+        "+ (1) In section 14 of the Telecom Regulatory Authority of India Act, 1997.\n",
+        "+(2) The Information Technology Act, 2000 shall be amended in the manner\n",
+        "+specified in the Schedule."
+      ],
+      "char_count_snapshot": 321,
+      "char_count_reference": 214,
+      "notes": "Textual divergence detected between snapshot and official reference"
+    }
+  ]
+}

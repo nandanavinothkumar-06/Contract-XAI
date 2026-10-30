@@ -1,0 +1,315 @@
+{
+  "comparison_id": "comp_IN_ACT_1872_09_20261017080713",
+  "source_id": "IN_ACT_1872_09",
+  "timestamp": "2026-10-17T08:07:13.177137+00:00",
+  "snapshot": {
+    "file_path": "data/legal_sources/snapshots/IN_ACT_1872_09.txt",
+    "sha256": "881177af2fa470ec85994f395b2a218af67a7afc9e3567abc3631fc62be51c06",
+    "total_sections_count": 11,
+    "section_numbers": [
+      "1",
+      "10",
+      "11",
+      "2",
+      "23",
+      "27",
+      "28",
+      "56",
+      "73",
+      "74",
+      "75"
+    ]
+  },
+  "reference": {
+    "file_path": "C:\\Users\\Nandana\\.gemini\\antigravity-ide\\scratch\\contractrisk-xai\\data\\legal_sources\\extracted_text\\IN_ACT_1872_09\\indiacode_1872_2187\\extracted.txt",
+    "sha256": "9d2e28ca005719070e609c17a1cddbbac95ca5857283a89c1da26e9a4cc3e4c6",
+    "total_sections_found": 10,
+    "metadata": {
+      "issuing_authority": "Legislative Department",
+      "publication_title": "The Indian Contract Act, 1872",
+      "publication_id": "indiacode_1872_2187"
+    }
+  },
+  "byte_level_match": false,
+  "summary": {
+    "sections_in_snapshot": 11,
+    "exact_text_matches": 0,
+    "normalized_matches": 0,
+    "textual_differences": 10,
+    "missing_in_reference": 1,
+    "concordance_percentage": 0.0,
+    "sections_in_reference_omitted_from_snapshot_count": 0,
+    "sections_in_reference_omitted_from_snapshot": []
+  },
+  "verification_outcome": {
+    "defensible_status": "VERIFICATION_FAILED",
+    "verified_scope": [],
+    "unverified_scope": [
+      "1",
+      "2",
+      "10",
+      "11",
+      "23",
+      "27",
+      "28",
+      "56",
+      "73",
+      "74",
+      "75"
+    ],
+    "currentness_status": "CURRENTNESS_UNVERIFIED_PENDING_AMENDMENT_AUDIT",
+    "applicability_status": "REQUIRES_ADVOCATE_DETERMINATION",
+    "notes": "Zero sections matched between snapshot extract and reference artifact."
+  },
+  "epistemic_disclosures": {
+    "scope_limitation": "Content verification applies ONLY to the specific sections successfully matched. It does not verify the entire Act or omitted sections.",
+    "currentness_boundary": "Matching an official enactment publication verifies textual authenticity as enacted. It does not establish that subsequent amending Acts have been checked or that uncommenced rules have been notified.",
+    "applicability_boundary": "Textual equivalence does not establish legal applicability to any specific contract clause, dispute, or jurisdiction. Independent advocate evaluation is required."
+  },
+  "sections": [
+    {
+      "section_number": "1",
+      "heading": "Short title",
+      "match_type": "TEXT_DIFFERENCE",
+      "diff": [
+        "--- snapshot_Section_1\n",
+        "+++ reference_Section_1\n",
+        "@@ -1,3 +1,4 @@\n",
+        "-Section 1. Short title.\u2014This Act may be called the Indian Contract Act, 1872.\n",
+        "-Extent, Commencement.\u2014It extends to the whole of India; and it shall come into force on the first day of September, 1872.\n",
+        "-Saving.\u2014Nothing herein contained shall affect the provisions of any Statute, Act or Regulation not hereby expressly repealed, nor any usage or custom of trade, nor any incident of any contract, not inconsistent with the provisions of this Act.",
+        "+Section 1. Short title.\u2014\n",
+        "+ This Act may be called the Indian Contract Act, 1872. Extent,\n",
+        "+Commencement.\u2014It extends to the whole of India; and it shall come into\n",
+        "+force on the first day of September, 1872."
+      ],
+      "char_count_snapshot": 443,
+      "char_count_reference": 201,
+      "notes": "Textual divergence detected between snapshot and official reference"
+    },
+    {
+      "section_number": "2",
+      "heading": "Interpretation",
+      "match_type": "TEXT_DIFFERENCE",
+      "diff": [
+        "--- snapshot_Section_2\n",
+        "+++ reference_Section_2\n",
+        "@@ -1,11 +1,10 @@\n",
+        "-Section 2. Interpretation-clause.\u2014In this Act the following words and expressions are used in the following senses, unless a contrary intention appears from the context:\u2014\n",
+        "-(a) When one person signifies to another his willingness to do or to abstain from doing anything, with a view to obtaining the assent of that other to such act or abstinence, he is said to make a proposal;\n",
+        "-(b) When the person to whom the proposal is made signifies his assent thereto, the proposal is said to be accepted. A proposal, when accepted, becomes a promise;\n",
+        "-(c) The person making the proposal is called the \"promisor\", and the person accepting the proposal is called the \"promisee\";\n",
+        "-(d) When, at the desire of the promisor, the promisee or any other person has done or abstained from doing, or does or abstains from doing, or promises to do or to abstain from doing, something, such act or abstinence or promise is called a consideration for the promise;\n",
+        "-(e) Every promise and every set of promises, forming the consideration for each other, is an agreement;\n",
+        "-(h) An agreement enforceable by law is a contract;\n",
+        "-(i) An agreement which is not enforceable by law is said to be void;\n",
+        "-(j) A contract which ceases to be enforceable by law becomes void when it ceases to be enforceable.\n",
+        "-\n",
+        "-CHAPTER II OF CONTRACTS, VOIDABLE CONTRACTS AND VOID AGREEMENTS",
+        "+Section 2. Interpretation-clause.\u2014\n",
+        "+ In this Act the following words and expressions are used in the following\n",
+        "+senses, unless a contrary intention appears from the context:\u2014 (a) When one\n",
+        "+person signifies to another his willingness to do or to abstain from doing\n",
+        "+anything, with a view to obtaining the assent of that other to such act or\n",
+        "+abstinence, he is said to make a proposal; (b) When the person to whom the\n",
+        "+proposal is made signifies his assent thereto, the proposal is said to be\n",
+        "+accepted. A proposal, when accepted, becomes a promise; (h) An agreement\n",
+        "+enforceable by law is a contract; (i) An agreement which is not enforceable\n",
+        "+by law is said to be void."
+      ],
+      "char_count_snapshot": 1324,
+      "char_count_reference": 660,
+      "notes": "Textual divergence detected between snapshot and official reference"
+    },
+    {
+      "section_number": "10",
+      "heading": "What agreements are contracts",
+      "match_type": "TEXT_DIFFERENCE",
+      "diff": [
+        "--- snapshot_Section_10\n",
+        "+++ reference_Section_10\n",
+        "@@ -1,2 +1,4 @@\n",
+        "-Section 10. What agreements are contracts.\u2014All agreements are contracts if they are made by the free consent of parties competent to contract, for a lawful consideration and with a lawful object, and are not hereby expressly declared to be void.\n",
+        "-Nothing herein contained shall affect any law in force in India, and not hereby expressly repealed, by which any contract is required to be made in writing or in the presence of witnesses, or any law relating to the registration of documents.",
+        "+Section 10. What agreements are contracts.\u2014\n",
+        "+ All agreements are contracts if they are made by the free consent of\n",
+        "+parties competent to contract, for a lawful consideration and with a lawful\n",
+        "+object, and are not hereby expressly declared to be void."
+      ],
+      "char_count_snapshot": 488,
+      "char_count_reference": 247,
+      "notes": "Textual divergence detected between snapshot and official reference"
+    },
+    {
+      "section_number": "11",
+      "heading": "Who are competent to contract",
+      "match_type": "TEXT_DIFFERENCE",
+      "diff": [
+        "--- snapshot_Section_11\n",
+        "+++ reference_Section_11\n",
+        "@@ -1 +1,4 @@\n",
+        "-Section 11. Who are competent to contract.\u2014Every person is competent to contract who is of the age of majority according to the law to which he is subject, and who is of sound mind and is not disqualified from contracting by any law to which he is subject.",
+        "+Section 11. Who are competent to contract.\u2014\n",
+        "+ Every person is competent to contract who is of the age of majority\n",
+        "+according to the law to which he is subject, and who is of sound mind and\n",
+        "+is not disqualified from contracting by any law to which he is subject."
+      ],
+      "char_count_snapshot": 256,
+      "char_count_reference": 258,
+      "notes": "Textual divergence detected between snapshot and official reference"
+    },
+    {
+      "section_number": "23",
+      "heading": "What considerations and objects are lawful, and what not",
+      "match_type": "TEXT_DIFFERENCE",
+      "diff": [
+        "--- snapshot_Section_23\n",
+        "+++ reference_Section_23\n",
+        "@@ -1,7 +1,8 @@\n",
+        "-Section 23. What considerations and objects are lawful, and what not.\u2014The consideration or object of an agreement is lawful, unless\u2014\n",
+        "-it is forbidden by law; or\n",
+        "-is of such a nature that, if permitted, it would defeat the provisions of any law; or\n",
+        "-is fraudulent; or\n",
+        "-involves or implies, injury to the person or property of another; or\n",
+        "-the Court regards it as immoral, or opposed to public policy.\n",
+        "-In each of these cases, the consideration or object of an agreement is said to be unlawful. Every agreement of which the object or consideration is unlawful is void.",
+        "+Section 23. What considerations and objects are lawful, and what not.\u2014\n",
+        "+ The consideration or object of an agreement is lawful, unless\u2014 it is\n",
+        "+forbidden by law; or is of such a nature that, if permitted, it would\n",
+        "+defeat the provisions of any law; or is fraudulent; or involves or implies,\n",
+        "+injury to the person or property of another; or the Court regards it as\n",
+        "+immoral, or opposed to public policy. In each of these cases, the\n",
+        "+consideration or object of an agreement is said to be unlawful. Every\n",
+        "+agreement of which the object or consideration is unlawful is void."
+      ],
+      "char_count_snapshot": 560,
+      "char_count_reference": 562,
+      "notes": "Textual divergence detected between snapshot and official reference"
+    },
+    {
+      "section_number": "27",
+      "heading": "Agreement in restraint of trade, void",
+      "match_type": "TEXT_DIFFERENCE",
+      "diff": [
+        "--- snapshot_Section_27\n",
+        "+++ reference_Section_27\n",
+        "@@ -1,2 +1,7 @@\n",
+        "-Section 27. Agreement in restraint of trade, void.\u2014Every agreement by which any one is restrained from exercising a lawful profession, trade or business of any kind, is to that extent void.\n",
+        "-Exception 1.\u2014Saving of agreement not to carry on business of which good-will is sold.\u2014One who sells the good-will of a business may agree with the buyer to refrain from carrying on a similar business, within specified local limits, so long as the buyer, or any person deriving title to the good-will from him, carries on a like business therein, provided that such limits appear to the Court reasonable, regard being had to the nature of the business.",
+        "+Section 27. Agreement in restraint of trade, void.\u2014\n",
+        "+ Every agreement by which any one is restrained from exercising a lawful\n",
+        "+profession, trade or business of any kind, is to that extent void.\n",
+        "+Exception 1.\u2014Saving of agreement not to carry on business of which\n",
+        "+good-will is sold.\u2014One who sells the good-will of a business may agree with\n",
+        "+the buyer to refrain from carrying on a similar business, within specified\n",
+        "+local limits, so long as the buyer carries on a like business therein."
+      ],
+      "char_count_snapshot": 641,
+      "char_count_reference": 480,
+      "notes": "Textual divergence detected between snapshot and official reference"
+    },
+    {
+      "section_number": "28",
+      "heading": "Agreements in restraint of legal proceedings, void",
+      "match_type": "TEXT_DIFFERENCE",
+      "diff": [
+        "--- snapshot_Section_28\n",
+        "+++ reference_Section_28\n",
+        "@@ -1,6 +1,8 @@\n",
+        "-Section 28. Agreements in restraint of legal proceedings, void.\u2014Every agreement,\u2014\n",
+        "-(a) by which any party thereto is restricted absolutely from enforcing his rights under or in respect of any contract, by the usual legal proceedings in the ordinary tribunals, or which limits the time within which he may thus enforce his rights; or\n",
+        "-(b) which extinguishes the rights of any party thereto, or discharges any party thereto, from any liability, under or in respect of any contract on the expiry of a specified period so as to restrict any party from enforcing his rights,\n",
+        "-is void to that extent.\n",
+        "-Exception 1.\u2014Saving of contract to refer to arbitration dispute that may arise.\u2014This section shall not render illegal a contract, by which two or more persons agree that any dispute which may arise between them in respect of any subject or class of subjects shall be referred to arbitration, and that only the amount awarded in such arbitration shall be recoverable in respect of the dispute so referred.\n",
+        "-Exception 2.\u2014Saving of contract to refer questions that have already arisen.\u2014Nor shall this section render illegal any contract in writing, by which two or more persons agree to refer to arbitration any question between them which has already arisen, or affect any provision of any law in force for the time being as to references to arbitration.",
+        "+Section 28. Agreements in restraint of legal proceedings, void.\u2014\n",
+        "+ Every agreement by which any party thereto is restricted absolutely from\n",
+        "+\n",
+        "+--- PAGE 2 ---\n",
+        "+enforcing his rights under or in respect of any contract, by the usual\n",
+        "+legal proceedings in the ordinary tribunals, is void to that extent.\n",
+        "+Exception 1.\u2014Saving of contract to refer to arbitration dispute that may\n",
+        "+arise."
+      ],
+      "char_count_snapshot": 1343,
+      "char_count_reference": 374,
+      "notes": "Textual divergence detected between snapshot and official reference"
+    },
+    {
+      "section_number": "56",
+      "heading": "Agreement to do impossible act",
+      "match_type": "TEXT_DIFFERENCE",
+      "diff": [
+        "--- snapshot_Section_56\n",
+        "+++ reference_Section_56\n",
+        "@@ -1,3 +1,6 @@\n",
+        "-Section 56. Agreement to do impossible act.\u2014An agreement to do an act impossible in itself is void.\n",
+        "-Contract to do act afterwards becoming impossible or unlawful.\u2014A contract to do an act which, after the contract is made, becomes impossible, or, by reason of some event which the promisor could not prevent, unlawful, becomes void when the act becomes impossible or unlawful.\n",
+        "-Compensation for loss through non-performance of act known to be impossible or unlawful.\u2014Where one person has promised to do something which he knew, or, with reasonable diligence, might have known, and which the promisee did not know, to be impossible or unlawful, such promisor must make compensation to such promisee for any loss which such promisee sustains through the non-performance of the promise.",
+        "+Section 56. Agreement to do impossible act.\u2014\n",
+        "+ An agreement to do an act impossible in itself is void. Contract to do act\n",
+        "+afterwards becoming impossible or unlawful.\u2014A contract to do an act which,\n",
+        "+after the contract is made, becomes impossible, or, by reason of some event\n",
+        "+which the promisor could not prevent, unlawful, becomes void when the act\n",
+        "+becomes impossible or unlawful."
+      ],
+      "char_count_snapshot": 781,
+      "char_count_reference": 377,
+      "notes": "Textual divergence detected between snapshot and official reference"
+    },
+    {
+      "section_number": "73",
+      "heading": "Compensation for loss or damage caused by breach of contract",
+      "match_type": "TEXT_DIFFERENCE",
+      "diff": [
+        "--- snapshot_Section_73\n",
+        "+++ reference_Section_73\n",
+        "@@ -1,4 +1,5 @@\n",
+        "-Section 73. Compensation for loss or damage caused by breach of contract.\u2014When a contract has been broken, the party who suffers by such breach is entitled to receive, from the party who has broken the contract, compensation for any loss or damage caused to him thereby, which naturally arose in the usual course of things from such breach, or which the parties knew, when they made the contract, to be likely to result from the breach of it.\n",
+        "-Such compensation is not to be given for any remote and indirect loss or damage sustained by reason of the breach.\n",
+        "-Compensation for failure to discharge obligation resembling those created by contract.\u2014When an obligation resembling those created by contract has been incurred and has not been discharged, any person injured by the failure to discharge it is entitled to receive the same compensation from the party in default as if such person had contracted to discharge it and had broken his contract.\n",
+        "-Explanation.\u2014In estimating the loss or damage arising from a breach of contract, the means which existed of remedying the inconvenience caused by the non-performance of the contract must be taken into account.",
+        "+Section 73. Compensation for loss or damage caused by breach of contract.\u2014\n",
+        "+ When a contract has been broken, the party who suffers by such breach is\n",
+        "+entitled to receive, from the party who has broken the contract,\n",
+        "+compensation for any loss or damage caused to him thereby, which naturally\n",
+        "+arose in the usual course of things from such breach."
+      ],
+      "char_count_snapshot": 1156,
+      "char_count_reference": 342,
+      "notes": "Textual divergence detected between snapshot and official reference"
+    },
+    {
+      "section_number": "74",
+      "heading": "Compensation for breach of contract where penalty stipulated for",
+      "match_type": "TEXT_DIFFERENCE",
+      "diff": [
+        "--- snapshot_Section_74\n",
+        "+++ reference_Section_74\n",
+        "@@ -1,4 +1,6 @@\n",
+        "-Section 74. Compensation for breach of contract where penalty stipulated for.\u2014When a contract has been broken, if a sum is named in the contract as the amount to be paid in case of such breach, or if the contract contains any other stipulation by way of penalty, the party complaining of the breach is entitled, whether or not actual damage or loss is proved to have been caused thereby, to receive from the party who has broken the contract reasonable compensation not exceeding the amount so named or, as the case may be, the penalty stipulated for.\n",
+        "-Explanation.\u2014A stipulation for increased interest from the date of default may be a stipulation by way of penalty.\n",
+        "-Exception.\u2014When any person enters into any bail-bond, recognizance or other instrument of the same nature, or, under the provisions of any law, or under the orders of the Central Government or of any State Government, gives any bond for the performance of any public duty or act in which the public are interested, he shall be liable, upon breach of the condition of any such instrument, to pay the whole sum mentioned therein.\n",
+        "-Explanation.\u2014A person who enters into a contract with Government does not necessarily thereby undertake any public duty, or promise to do an act in which the public are interested.",
+        "+Section 74. Compensation for breach of contract where penalty stipulated for.\u2014\n",
+        "+ When a contract has been broken, if a sum is named in the contract as the\n",
+        "+amount to be paid in case of such breach, or if the contract contains any\n",
+        "+other stipulation by way of penalty, the party complaining of the breach is\n",
+        "+entitled to receive reasonable compensation not exceeding the amount so\n",
+        "+named."
+      ],
+      "char_count_snapshot": 1275,
+      "char_count_reference": 382,
+      "notes": "Textual divergence detected between snapshot and official reference"
+    },
+    {
+      "section_number": "75",
+      "heading": "Party rightfully rescinding contract, entitled to compensation",
+      "match_type": "SECTION_MISSING_IN_REFERENCE",
+      "diff": [],
+      "char_count_snapshot": 229,
+      "char_count_reference": 0,
+      "notes": "Section present in snapshot extract could not be located in reference text"
+    }
+  ]
+}

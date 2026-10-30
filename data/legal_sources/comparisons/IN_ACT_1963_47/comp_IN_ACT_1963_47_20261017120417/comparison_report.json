@@ -1,0 +1,125 @@
+{
+  "comparison_id": "comp_IN_ACT_1963_47_20261017120417",
+  "source_id": "IN_ACT_1963_47",
+  "timestamp": "2026-10-17T12:04:17.055046+00:00",
+  "snapshot": {
+    "file_path": "data/legal_sources/snapshots/IN_ACT_1963_47.txt",
+    "sha256": "ed785e974b8d762c76db44ac9df0981f0ed093b953b2732897b866c7e30134e7",
+    "total_sections_count": 6,
+    "section_numbers": [
+      "1",
+      "10",
+      "14",
+      "14A",
+      "16",
+      "20A"
+    ]
+  },
+  "reference": {
+    "file_path": "data/legal_sources/extracted_text/IN_ACT_1963_47/indiacode_1963_1583/extracted.txt",
+    "sha256": "22af33726a2be674febcf78ee4634d0d240e94236ddd6f5f9beccc640e30e5c8",
+    "total_sections_found": 8,
+    "metadata": {}
+  },
+  "byte_level_match": false,
+  "summary": {
+    "sections_in_snapshot": 6,
+    "exact_text_matches": 0,
+    "normalized_matches": 5,
+    "textual_differences": 1,
+    "missing_in_reference": 0,
+    "concordance_percentage": 83.33,
+    "sections_in_reference_omitted_from_snapshot_count": 2,
+    "sections_in_reference_omitted_from_snapshot": [
+      "2",
+      "20B"
+    ]
+  },
+  "verification_outcome": {
+    "defensible_status": "PARTIALLY_VERIFIED",
+    "verified_scope": [
+      "1",
+      "14",
+      "14A",
+      "16",
+      "20A"
+    ],
+    "unverified_scope": [
+      "10"
+    ],
+    "currentness_status": "CURRENTNESS_UNVERIFIED_PENDING_AMENDMENT_AUDIT",
+    "applicability_status": "REQUIRES_ADVOCATE_DETERMINATION",
+    "notes": "Partial verification: 5 of 6 sections matched. 1 differing, 0 missing in reference."
+  },
+  "epistemic_disclosures": {
+    "scope_limitation": "Content verification applies ONLY to the specific sections successfully matched. It does not verify the entire Act or omitted sections.",
+    "currentness_boundary": "Matching an official enactment publication verifies textual authenticity as enacted. It does not establish that subsequent amending Acts have been checked or that uncommenced rules have been notified.",
+    "applicability_boundary": "Textual equivalence does not establish legal applicability to any specific contract clause, dispute, or jurisdiction. Independent advocate evaluation is required."
+  },
+  "sections": [
+    {
+      "section_number": "1",
+      "heading": "Short title, extent and commencement",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 337,
+      "char_count_reference": 338,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "10",
+      "heading": "Specific performance in respect of contracts",
+      "match_type": "TEXT_DIFFERENCE",
+      "diff": [
+        "--- snapshot_Section_10\n",
+        "+++ reference_Section_10\n",
+        "@@ -1,2 +1,4 @@\n",
+        "-Section 10. Specific performance in respect of contracts.\u2014The specific performance of a contract shall be enforced by the court subject to the provisions contained in sub-section (2) of section 11, section 14 and section 16.\n",
+        "-[Note: Substituted by the Specific Relief (Amendment) Act, 2018 (Act 18 of 2018), w.e.f. 1-10-2018. The grant of specific performance is now mandatory rather than discretionary, subject to statutory exceptions.]",
+        "+Section 10. Specific performance in respect of contracts.\u2014\n",
+        "+ The specific performance of a contract shall be enforced by the court\n",
+        "+subject to the provisions contained in sub-section (2) of section 11,\n",
+        "+section 14 and section 16."
+      ],
+      "char_count_snapshot": 436,
+      "char_count_reference": 226,
+      "notes": "Textual divergence detected between snapshot and official reference"
+    },
+    {
+      "section_number": "14",
+      "heading": "Contracts not specifically enforceable",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 583,
+      "char_count_reference": 585,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "14A",
+      "heading": "Power of court to engage experts",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 492,
+      "char_count_reference": 494,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "16",
+      "heading": "Personal bars to relief",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 727,
+      "char_count_reference": 745,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "20A",
+      "heading": "Special provisions for contract relating to infrastructure project",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 355,
+      "char_count_reference": 357,
+      "notes": "Text matches after normalizing typography and whitespace"
+    }
+  ]
+}

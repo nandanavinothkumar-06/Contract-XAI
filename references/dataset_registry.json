@@ -1,0 +1,58 @@
+[
+  {
+    "dataset_name": "Contract Understanding Atticus Dataset",
+    "abbreviation": "CUAD",
+    "document_count": 510,
+    "license": "Dataset released under CC BY 4.0; underlying contract rights remain subject to the source/disclaimer conditions.",
+    "access_status": "Open download",
+    "contractrisk_xai_relevance": "PRIMARY"
+  },
+  {
+    "dataset_name": "Labeled EDGAR",
+    "abbreviation": "LEDGAR",
+    "document_count": 60000,
+    "license": "MIT (via LexGLUE/official distribution)",
+    "access_status": "Open download",
+    "contractrisk_xai_relevance": "PRIMARY"
+  },
+  {
+    "dataset_name": "Contract Natural Language Inference",
+    "abbreviation": "ContractNLI",
+    "document_count": 607,
+    "license": "Dataset: CC BY 4.0 (Baseline Implementation: Apache 2.0)",
+    "access_status": "Open download",
+    "contractrisk_xai_relevance": "PRIMARY"
+  },
+  {
+    "dataset_name": "CLAUDETTE",
+    "abbreviation": "CLAUDETTE",
+    "document_count": 100,
+    "license": "Not explicitly verified from authoritative source",
+    "access_status": "Open download",
+    "contractrisk_xai_relevance": "SECONDARY"
+  },
+  {
+    "dataset_name": "Moon Construction Dataset",
+    "abbreviation": "Moon2022",
+    "document_count": 56,
+    "license": "Not verified",
+    "access_status": "Unresolved / not independently verified",
+    "contractrisk_xai_relevance": "RESTRICTED"
+  },
+  {
+    "dataset_name": "Shuai Construction Dataset",
+    "abbreviation": "Shuai2023",
+    "document_count": null,
+    "license": "Not verified",
+    "access_status": "Unresolved / not independently verified",
+    "contractrisk_xai_relevance": "RESTRICTED"
+  },
+  {
+    "dataset_name": "Zhou Construction Dataset",
+    "abbreviation": "Zhou2023_2025",
+    "document_count": 1322,
+    "license": "Not verified",
+    "access_status": "Unresolved / not independently verified",
+    "contractrisk_xai_relevance": "RESTRICTED"
+  }
+]

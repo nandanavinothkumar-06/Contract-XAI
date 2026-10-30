@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 52" width="260" height="52" fill="none" role="img" aria-label="CONTRACTRISK-XAI">
+  <title>CONTRACTRISK-XAI</title>
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#142B4A" />
+      <stop offset="100%" stop-color="#0B1A2F" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#B8860B" />
+    </linearGradient>
+  </defs>
+
+  <!-- Legal Shield & Scales Mark -->
+  <g transform="translate(6, 4)">
+    <!-- Shield Outer -->
+    <path d="M22 2 C34 2, 42 7, 42 16 C42 30, 22 41, 22 41 C22 41, 2 30, 2 16 C2 7, 10 2, 22 2 Z" 
+          fill="url(#shieldGrad)" stroke="#C6A15B" stroke-width="1.8" />
+    
+    <!-- Document Analysis Lines inside Shield Base -->
+    <path d="M12 28 L32 28 M14 31 L30 31 M17 34 L27 34" stroke="#C6A15B" stroke-width="1.2" stroke-linecap="round" opacity="0.65" />
+
+    <!-- Scales of Justice Emblem -->
+    <!-- Central Pillar / Fulcrum -->
+    <line x1="22" y1="8" x2="22" y2="24" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" />
+    <!-- Pillar Cap / Finial -->
+    <circle cx="22" cy="7" r="1.8" fill="url(#goldGrad)" />
+    <!-- Balance Beam -->
+    <line x1="12" y1="12" x2="32" y2="12" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" />
+    <circle cx="22" cy="12" r="1.2" fill="#C6A15B" />
+    
+    <!-- Left Scale Pan -->
+    <line x1="12" y1="12" x2="9" y2="19" stroke="#CBD5E1" stroke-width="0.9" />
+    <line x1="12" y1="12" x2="15" y2="19" stroke="#CBD5E1" stroke-width="0.9" />
+    <path d="M8 19 C8 19, 12 21.5, 16 19 Z" fill="url(#goldGrad)" />
+
+    <!-- Right Scale Pan -->
+    <line x1="32" y1="12" x2="29" y2="19" stroke="#CBD5E1" stroke-width="0.9" />
+    <line x1="32" y1="12" x2="35" y2="19" stroke="#CBD5E1" stroke-width="0.9" />
+    <path d="M28 19 C28 19, 32 21.5, 36 19 Z" fill="url(#goldGrad)" />
+  </g>
+
+  <!-- Wordmark & Tagline -->
+  <text x="60" y="27" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="18" fill="#FFFFFF" letter-spacing="0.5">CONTRACTRISK<tspan fill="#C6A15B">-XAI</tspan></text>
+  <text x="60.5" y="40" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="7.5" fill="#94A3B8" letter-spacing="1.2">INTELLIGENT CONTRACT ANALYSIS &#8226; HUMAN REVIEW</text>
+</svg>

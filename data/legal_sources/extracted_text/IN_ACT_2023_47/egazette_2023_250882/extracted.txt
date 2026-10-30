@@ -1,0 +1,65 @@
+--- PAGE 1 ---
+THE GAZETTE OF INDIA : EXTRAORDINARY
+THE BHARATIYA SAKSHYA ADHINIYAM, 2023
+ACT NO. 47 OF 2023 [25th December, 2023]
+Section 1. Short title, application and commencement.—
+ (1) This Act may be called the Bharatiya Sakshya Adhiniyam, 2023. (2) It
+applies to all judicial proceedings in or before any Court, including
+Courts-martial, but not to affidavits presented to any Court or officer,
+nor to proceedings before an arbitrator. (3) It shall come into force on
+such date as the Central Government may, by notification in the Official
+Gazette, appoint. PART III CHAPTER V OF DOCUMENTARY EVIDENCE
+Section 2. Definitions.—
+ (1) In this Adhiniyam, unless the context otherwise requires,— (a) "court"
+includes all Judges and Magistrates, and all persons, except arbitrators,
+legally authorised to take evidence; (b) "document" means any matter
+expressed or described or otherwise recorded upon any substance by means of
+letters, figures or marks or any other means or by more than one of those
+means, intended to be used, or which may be used, for the purpose of
+recording that matter and includes electronic and digital records; (c)
+"evidence" means and includes all statements which the Court permits or
+requires to be made before it by witnesses; and all documents including
+electronic or digital records produced for the inspection of the Court.
+Section 61. Admissibility of electronic or digital record.—
+ Nothing in this Adhiniyam shall apply to deny the admissibility, of an
+electronic or digital record in evidence on the ground that it is an
+electronic or digital record and such record shall have the same legal
+effect, validity and enforceability as any other document.
+Section 62. Special provisions as to evidence relating to electronic record.—
+ The contents of electronic records may be proved in accordance with the
+provisions of section 63.
+Section 63. Admissibility of electronic records.—
+ (1) Notwithstanding anything contained in this Adhiniyam, any information
+contained in an electronic record which is printed on paper, stored,
+recorded or copied in optical or magnetic media or each form of computer
+memory produced by a computer shall be deemed to be also a document, if the
+conditions mentioned in this section are satisfied in relation to the
+information and computer in question and shall be admissible in any
+proceedings, without further proof or production of the original, as
+evidence of any contents of the original or of any fact stated therein of
+which direct evidence would be admissible. (2) The conditions referred to
+in sub-section (1) in respect of an electronic record shall be the
+following, namely:— (a) the computer output containing the information was
+
+--- PAGE 2 ---
+produced by the computer during the period over which the computer was used
+regularly to store or process information for the purposes of any
+activities regularly carried on over that period by the person having
+lawful control over the use of the computer; (b) during the said period,
+information of the kind contained in the electronic record or of the kind
+from which the information so contained is derived was regularly fed into
+the computer in the ordinary course of the said activities; (c) throughout
+the material part of the said period, the computer was operating properly
+or, if not, that in respect of any period during which it was not operating
+properly or was out of operation during that part of the period, was not
+such as to affect the electronic record or the accuracy of its contents;
+and (d) the information contained in the electronic record reproduces or is
+derived from such information fed into the computer in the ordinary course
+of the said activities. (4) In any proceedings where it is desired to give
+a statement in evidence by virtue of this section, a certificate doing any
+of the following things, that is to say,— (a) identifying the electronic
+record containing the statement and describing the manner in which it was
+produced; (b) giving such particulars of any device involved in the
+production of that electronic record as may be appropriate for the purpose
+of showing that the electronic record was produced by a computer... shall
+be evidence of any matter stated in the certificate.

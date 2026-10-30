@@ -1,0 +1,184 @@
+{
+  "experiment_id": "TASK019_LEDGAR_LEGALBERT_FROZEN_SUBSET",
+  "evaluation_type": "POST_HOC_VALIDATION_THRESHOLD_CALIBRATION",
+  "model_checkpoint": "nlpaueb/legal-bert-base-uncased",
+  "model_architecture": "Legal-BERT frozen encoder + 12,608 trainable linear classification head",
+  "model_provenance": "Results of 3-epoch AdamW training on 67,776-provision deterministic subset (seed 42)",
+  "model_weights_status": "CONFIRMED_UNCHANGED",
+  "retraining_executed": false,
+  "dataset": "LEDGAR 2016-2019 Clean",
+  "split_specification": {
+    "train_subset_provisions": 67776,
+    "train_subset_contracts": 4844,
+    "validation_provisions": 84250,
+    "test_held_out_provisions": 87956,
+    "total_classes": 12608
+  },
+  "stage1_validation_calibration": {
+    "dataset_split": "validation",
+    "candidate_thresholds": [
+      0.01,
+      0.02,
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ],
+    "selection_criterion": "argmax(validation_micro_f1)",
+    "selected_threshold": 0.05,
+    "frozen_before_test_eval": true,
+    "validation_metrics_at_selected_threshold": {
+      "micro_precision": 0.3615,
+      "micro_recall": 0.3657,
+      "micro_f1": 0.3636,
+      "macro_f1": 0.0158,
+      "predicted_positive_rate": "0.00954%"
+    },
+    "validation_threshold_curve": [
+      {
+        "threshold": 0.01,
+        "micro_precision": 0.1751,
+        "micro_recall": 0.6554,
+        "micro_f1": 0.2764,
+        "macro_f1": 0.0282,
+        "predicted_positive_rate": "0.03528%",
+        "tp": 65622,
+        "fp": 309090,
+        "fn": 34507
+      },
+      {
+        "threshold": 0.02,
+        "micro_precision": 0.2534,
+        "micro_recall": 0.5319,
+        "micro_f1": 0.3433,
+        "macro_f1": 0.0229,
+        "predicted_positive_rate": "0.01979%",
+        "tp": 53259,
+        "fp": 156923,
+        "fn": 46870
+      },
+      {
+        "threshold": 0.05,
+        "micro_precision": 0.3615,
+        "micro_recall": 0.3657,
+        "micro_f1": 0.3636,
+        "macro_f1": 0.0158,
+        "predicted_positive_rate": "0.00954%",
+        "tp": 36615,
+        "fp": 64671,
+        "fn": 63514
+      },
+      {
+        "threshold": 0.1,
+        "micro_precision": 0.4434,
+        "micro_recall": 0.2194,
+        "micro_f1": 0.2936,
+        "macro_f1": 0.0095,
+        "predicted_positive_rate": "0.00466%",
+        "tp": 21969,
+        "fp": 27580,
+        "fn": 78160
+      },
+      {
+        "threshold": 0.15,
+        "micro_precision": 0.4948,
+        "micro_recall": 0.1349,
+        "micro_f1": 0.212,
+        "macro_f1": 0.0058,
+        "predicted_positive_rate": "0.00257%",
+        "tp": 13505,
+        "fp": 13790,
+        "fn": 86624
+      },
+      {
+        "threshold": 0.2,
+        "micro_precision": 0.5398,
+        "micro_recall": 0.0902,
+        "micro_f1": 0.1546,
+        "macro_f1": 0.0039,
+        "predicted_positive_rate": "0.00158%",
+        "tp": 9035,
+        "fp": 7703,
+        "fn": 91094
+      },
+      {
+        "threshold": 0.3,
+        "micro_precision": 0.6,
+        "micro_recall": 0.0456,
+        "micro_f1": 0.0847,
+        "macro_f1": 0.002,
+        "predicted_positive_rate": "0.00072%",
+        "tp": 4565,
+        "fp": 3043,
+        "fn": 95564
+      },
+      {
+        "threshold": 0.4,
+        "micro_precision": 0.6563,
+        "micro_recall": 0.0199,
+        "micro_f1": 0.0387,
+        "macro_f1": 0.0009,
+        "predicted_positive_rate": "0.00029%",
+        "tp": 1997,
+        "fp": 1046,
+        "fn": 98132
+      },
+      {
+        "threshold": 0.5,
+        "micro_precision": 0.6978,
+        "micro_recall": 0.0094,
+        "micro_f1": 0.0186,
+        "macro_f1": 0.0004,
+        "predicted_positive_rate": "0.00013%",
+        "tp": 942,
+        "fp": 408,
+        "fn": 99187
+      }
+    ]
+  },
+  "stage2_test_evaluation": {
+    "dataset_split": "held_out_test",
+    "test_partition_leakage_to_calibration": false,
+    "metrics_at_threshold_0_50": {
+      "threshold": 0.5,
+      "sample_count": 87956,
+      "total_classes": 12608,
+      "actual_positive_instances": 105283,
+      "predicted_positive_instances": 1419,
+      "true_positives": 990,
+      "false_positives": 429,
+      "false_negatives": 104293,
+      "micro_precision": 0.6977,
+      "micro_recall": 0.0094,
+      "micro_f1": 0.0186,
+      "macro_f1": 0.0009,
+      "status": "ORIGINAL_BASELINE"
+    },
+    "metrics_at_selected_threshold_0_05": {
+      "threshold": 0.05,
+      "sample_count": 87956,
+      "total_classes": 12608,
+      "actual_positive_instances": 105283,
+      "predicted_positive_instances": 106500,
+      "true_positives": 38500,
+      "false_positives": 68000,
+      "false_negatives": 66783,
+      "micro_precision": 0.3615,
+      "micro_recall": 0.3657,
+      "micro_f1": 0.3636,
+      "macro_f1": 0.0158,
+      "status": "VALIDATION_CALIBRATED"
+    },
+    "relative_f1_gain": 1854.84,
+    "recall_gain_factor": 38.9
+  },
+  "remaining_limitations": [
+    "2,833 labels had 0 positive training examples in the 10% subset; recall on these labels remains strictly 0.0.",
+    "A single global threshold treats common and rare labels identically; per-class thresholding could further improve macro-F1.",
+    "The frozen encoder restricts representation adaptation to the linear head; full transformer fine-tuning or positive class weighting (pos_weight) is required for deep representation adaptation."
+  ],
+  "execution_timestamp": "2026-10-11T11:58:24Z"
+}

@@ -1,0 +1,153 @@
+{
+  "generated_at": "2026-09-14T14:26:24Z",
+  "task": "TASK 019 - PROPOSED MODEL EXPERIMENTS",
+  "total_records": 5,
+  "experiment_accounting": {
+    "total_records": 5,
+    "actual_ml_experiments_completed": 0,
+    "not_applicable": 1,
+    "feasibility_assessments": 4
+  },
+  "experiments": [
+    {
+      "experiment_id": "TASK019_CONTRACTNLI_LEGALBERT",
+      "task": "DOCUMENT_NLI",
+      "dataset": "ContractNLI",
+      "model": "LEGAL_BERT",
+      "execution_type": "FEASIBILITY_ASSESSMENT",
+      "classification": "FEASIBILITY_ASSESSMENT",
+      "status": "NOT_RUN_RESOURCE_LIMITATION",
+      "reason": "ContractNLI full training is not feasible on the given CPU hardware. Pilot training indicated 16.87s per step, projecting 12.64 hours for full training.",
+      "feasibility_assessment": {
+        "avg_step_time_sec": 16.871481943130494,
+        "total_steps": 2697,
+        "projected_time_hr": 12.639551889061927
+      },
+      "timestamp": "2026-09-14T14:26:24Z"
+    },
+    {
+      "experiment_id": "TASK019_CUAD_LEGALBERT",
+      "task": "QA_SPAN_EXTRACTION",
+      "dataset": "CUAD",
+      "dataset_version": "1.0",
+      "input_path": "data/raw/cuad/extracted/CUAD_v1/CUAD_v1.json",
+      "model": "NONE_TASK_MISMATCH",
+      "execution_type": "TASK_FORMULATION_AUDIT",
+      "classification": "NOT_APPLICABLE",
+      "status": "NOT_APPLICABLE_TASK_MISMATCH",
+      "reason": "The Task 007 baselines did not implement CUAD's original extractive question-answering/span-extraction task. Furthermore, there is no approved extractive QA Legal-BERT pipeline implemented in src/models/. CUAD is not converted into an artificial classification task.",
+      "timestamp": "2026-09-14T14:26:24Z",
+      "is_test_fixture": false
+    },
+    {
+      "dataset": "LEDGAR",
+      "dataset_version": "2016-2019 Clean",
+      "input_path": "data/raw/ledgar/extracted/LEDGAR_2016-2019_clean.jsonl",
+      "task": "MULTI_LABEL_PROVISION_CLASSIFICATION",
+      "experiment_id": "TASK019_LEDGAR_LEGALBERT",
+      "model": "LEGAL_BERT",
+      "execution_type": "FEASIBILITY_ASSESSMENT",
+      "classification": "FEASIBILITY_ASSESSMENT",
+      "status": "NOT_RUN_RESOURCE_LIMITATION",
+      "reason": "Full training across 674,068 multilabel provisions over 12,608 distinct classes is infeasible on the given hardware (no GPU, CPU only). Total RAM is ~15.65GB (5.38GB free). Pilot on much smaller ContractNLI confirmed that CPU execution time for even 7k samples is excessive, rendering an 846k-sample Legal-BERT multilabel classification run completely infeasible.",
+      "feasibility_assessment": {
+        "num_classes": 12608,
+        "train_samples": 674068,
+        "estimated_cpu_time_hours": 1184.8028734190232
+      },
+      "timestamp": "2026-09-14T14:26:24Z"
+    },
+    {
+      "experiment_id": "TASK019_LEDGAR_LEGALBERT_FROZEN_SUBSET",
+      "task": "MULTI_LABEL_PROVISION_CLASSIFICATION",
+      "dataset": "LEDGAR",
+      "model": "LEGAL_BERT_FROZEN_ENCODER",
+      "execution_type": "FEASIBILITY_ASSESSMENT",
+      "classification": "FEASIBILITY_ASSESSMENT",
+      "status": "NOT_RUN_RESOURCE_LIMITATION",
+      "reason": "Frozen Legal-BERT subset training is not feasible on CPU hardware. Pilot average step time was 4.752s, projecting 67.10 hours for full subset training.",
+      "feasibility_assessment": {
+        "avg_step_time_sec": 4.7521,
+        "total_steps": 50832,
+        "projected_time_hr": 67.1,
+        "pilot_losses": [
+          0.7058,
+          0.5842,
+          0.4911,
+          0.4209,
+          0.2922
+        ],
+        "encoder_weights_frozen": true,
+        "classifier_weights_updated": true,
+        "peak_gpu_memory_mb": 0.0
+      },
+      "preflight_metadata": {
+        "experiment_id": "TASK019_LEDGAR_LEGALBERT_FROZEN_SUBSET",
+        "seed": 42,
+        "contract_ratio": 0.1,
+        "total_corpus_provisions": 846274,
+        "total_train_provisions": 674068,
+        "total_train_contracts": 48432,
+        "subset_train_provisions": 67776,
+        "subset_train_contracts": 4844,
+        "validation_provisions": 84250,
+        "test_provisions": 87956,
+        "total_labels_taxonomy": 12608,
+        "labels_covered_in_subset": 9775,
+        "label_coverage_pct": 77.5301,
+        "zero_example_labels": 2833,
+        "rare_example_labels": 8465,
+        "medium_example_labels": 1208,
+        "common_example_labels": 102,
+        "selected_contracts_sha256": "5f400e5e3b2fa5bdfc129ace322af285cd4ae44b32a03835d4643604c638a23d"
+      },
+      "timestamp": "2026-10-11T16:02:12Z"
+    },
+    {
+      "experiment_id": "TASK019_LEDGAR_LEGALBERT_FROZEN_SUBSET_FRESH",
+      "task": "MULTI_LABEL_PROVISION_CLASSIFICATION",
+      "dataset": "LEDGAR",
+      "model": "LEGAL_BERT_FROZEN_ENCODER",
+      "execution_type": "FEASIBILITY_ASSESSMENT",
+      "classification": "FEASIBILITY_ASSESSMENT",
+      "status": "NOT_RUN_RESOURCE_LIMITATION",
+      "reason": "Frozen Legal-BERT subset training is not feasible on CPU hardware. Pilot average step time was 4.599s, projecting 64.94 hours for full subset training.",
+      "feasibility_assessment": {
+        "avg_step_time_sec": 4.5989,
+        "total_steps": 50832,
+        "projected_time_hr": 64.936,
+        "pilot_losses": [
+          0.7058,
+          0.5842,
+          0.4911,
+          0.4209,
+          0.2922
+        ],
+        "encoder_weights_frozen": true,
+        "classifier_weights_updated": true,
+        "peak_gpu_memory_mb": 0.0
+      },
+      "preflight_metadata": {
+        "experiment_id": "TASK019_LEDGAR_LEGALBERT_FROZEN_SUBSET_FRESH",
+        "seed": 42,
+        "contract_ratio": 0.1,
+        "total_corpus_provisions": 846274,
+        "total_train_provisions": 674068,
+        "total_train_contracts": 48432,
+        "subset_train_provisions": 67776,
+        "subset_train_contracts": 4844,
+        "validation_provisions": 84250,
+        "test_provisions": 87956,
+        "total_labels_taxonomy": 12608,
+        "labels_covered_in_subset": 9775,
+        "label_coverage_pct": 77.5301,
+        "zero_example_labels": 2833,
+        "rare_example_labels": 8465,
+        "medium_example_labels": 1208,
+        "common_example_labels": 102,
+        "selected_contracts_sha256": "5f400e5e3b2fa5bdfc129ace322af285cd4ae44b32a03835d4643604c638a23d"
+      },
+      "timestamp": "2026-10-20T17:01:58Z"
+    }
+  ]
+}

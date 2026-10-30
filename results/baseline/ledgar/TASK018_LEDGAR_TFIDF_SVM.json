@@ -1,0 +1,22 @@
+{
+  "dataset": "LEDGAR",
+  "dataset_version": "2016-2019 Clean",
+  "input_path": "data/raw/ledgar/extracted/LEDGAR_2016-2019_clean.jsonl",
+  "task": "MULTI_LABEL_PROVISION_CLASSIFICATION",
+  "total_provisions": 846274,
+  "distinct_labels": 12608,
+  "distinct_contracts": 60540,
+  "split_strategy": "group_aware_by_contract_id (80/10/10)",
+  "training_size": 674068,
+  "validation_size": 84250,
+  "test_size": 87956,
+  "leakage_status": "VERIFIED_ZERO_LEAKAGE (train-val=0, train-test=0, val-test=0)",
+  "timestamp": "2026-09-14T18:36:25.743579Z",
+  "is_test_fixture": false,
+  "experiment_id": "TASK018_LEDGAR_TFIDF_SVM",
+  "model": "TFIDF_LINEAR_SVM",
+  "execution_type": "METHODOLOGICAL_ANALYSIS",
+  "classification": "NOT_APPLICABLE",
+  "status": "NOT_APPLICABLE_MULTILABEL_INCOMPATIBILITY",
+  "reason": "Standard multiclass Linear SVM expects mutually exclusive single labels and cannot natively fit LEDGAR's multilabel indicator matrix."
+}

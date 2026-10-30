@@ -1,0 +1,83 @@
+[
+  {
+    "id": "P001",
+    "title": "LEGAL-BERT: The Muppets straight out of Law School",
+    "authors": ["Ilias Chalkidis", "Manos Fergadiotis", "Prodromos Malakasiotis", "Nikolaos Aletras", "Ion Androutsopoulos"],
+    "year": 2020,
+    "venue": "Findings of EMNLP 2020",
+    "doi": "10.18653/v1/2020.findings-emnlp.261",
+    "verified": true
+  },
+  {
+    "id": "P002",
+    "title": "LEDGAR: A Large-Scale Multi-label Corpus for Text Classification of Legal Provisions in Contracts",
+    "authors": ["Don Tuggener", "Pius von Däniken", "Thomas Peetz", "Mark Cieliebak"],
+    "year": 2020,
+    "venue": "LREC 2020",
+    "doi": "",
+    "verified": true
+  },
+  {
+    "id": "P003",
+    "title": "ContractNLI: A Dataset for Document-level Natural Language Inference for Contracts",
+    "authors": ["Yuta Koreeda", "Christopher Manning"],
+    "year": 2021,
+    "venue": "Findings of EMNLP 2021",
+    "doi": "",
+    "verified": true
+  },
+  {
+    "id": "P004",
+    "title": "Detecting and Explaining Unfairness in Consumer Contracts through Memory Networks",
+    "authors": ["Federico Ruggeri", "Francesca Lagioia", "Marco Lippi", "Paolo Torroni"],
+    "year": 2022,
+    "venue": "Artificial Intelligence and Law",
+    "doi": "10.1007/s10506-021-09288-2",
+    "verified": true
+  },
+  {
+    "id": "P005",
+    "title": "Automated Detection of Contractual Risk Clauses from Construction Specifications Using BERT",
+    "authors": ["Seonghyeon Moon", "Seokho Chi", "Seok-Been Im"],
+    "year": 2022,
+    "venue": "Automation in Construction",
+    "doi": "10.1016/j.autcon.2022.104465",
+    "verified": true
+  },
+  {
+    "id": "P006",
+    "title": "A Rationale-Augmented NLP Framework to Identify Unilateral Contractual Change Risk for Construction Projects",
+    "authors": ["Bing Shuai"],
+    "year": 2023,
+    "venue": "Computers in Industry",
+    "doi": "10.1016/j.compind.2023.103940",
+    "verified": true
+  },
+  {
+    "id": "P007",
+    "title": "Intelligent detection on construction project contract missing clauses based on deep learning and NLP",
+    "authors": ["Hong Zhou", "Binwei Gao", "Shilong Tang", "Bing Li", "Shuyu Wang"],
+    "year": 2023,
+    "venue": "Engineering, Construction and Architectural Management",
+    "doi": "10.1108/ECAM-02-2023-0172",
+    "verified": true
+  },
+  {
+    "id": "P008",
+    "title": "A Survey of Classification Tasks and Approaches for Legal Contracts",
+    "authors": ["Amrita Singh", "Aditya Joshi", "Jiaojiao Jiang", "Hye-young Paik"],
+    "year": 2025,
+    "venue": "Artificial Intelligence Review",
+    "doi": "10.1007/s10462-025-11359-8",
+    "verified": true
+  },
+  {
+    "id": "P009",
+    "title": "ContractEval: Benchmarking LLMs for Clause-Level Legal Risk Identification in Commercial Contracts",
+    "authors": ["Shuang Liu", "Zelong Li", "Ruoyun Ma", "Haiyan Zhao", "Mengnan Du"],
+    "year": 2025,
+    "venue": "Natural Legal Language Processing Workshop",
+    "doi": "",
+    "verified": true
+  }
+]

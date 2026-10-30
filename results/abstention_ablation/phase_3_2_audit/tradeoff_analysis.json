@@ -1,0 +1,42 @@
+{
+  "CONFIDENCE_BASELINE": {
+    "ufr_mean": 0.4709,
+    "ufc_mean": 0.5683,
+    "hrw_mean": 0.0172,
+    "sear_stale_mean": 0.1301,
+    "uar_mean": 0.1538,
+    "delta_ufr_mean": null
+  },
+  "VERSION_AWARE": {
+    "ufr_mean": 0.3249,
+    "ufc_mean": 0.5683,
+    "hrw_mean": 0.1977,
+    "sear_stale_mean": 0.0,
+    "uar_mean": 0.1538,
+    "delta_ufr_mean": 0.1248
+  },
+  "STATUTORY_GROUNDING": {
+    "ufr_mean": 0.3463,
+    "ufc_mean": 0.5683,
+    "hrw_mean": 0.1569,
+    "sear_stale_mean": 0.157,
+    "uar_mean": 0.1538,
+    "delta_ufr_mean": 0.1034
+  },
+  "FULL_EVIDENCE_AWARE": {
+    "ufr_mean": 0.2035,
+    "ufc_mean": 0.5116,
+    "hrw_mean": 0.3316,
+    "sear_stale_mean": 0.0,
+    "uar_mean": 0.1743,
+    "delta_ufr_mean": 0.2324
+  },
+  "RULE_BASED_METADATA": {
+    "ufr_mean": 0.3512,
+    "ufc_mean": 0.5664,
+    "hrw_mean": 0.0764,
+    "sear_stale_mean": 0.0,
+    "uar_mean": 0.1556,
+    "delta_ufr_mean": 0.0994
+  }
+}

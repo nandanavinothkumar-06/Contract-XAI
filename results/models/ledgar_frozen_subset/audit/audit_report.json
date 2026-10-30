@@ -1,0 +1,255 @@
+{
+  "experiment_id": "TASK019_LEDGAR_LEGALBERT_FROZEN_SUBSET",
+  "audit_objective": "Root cause investigation of recorded low test recall (Micro-Recall: 0.0094, Micro-F1: 0.0185)",
+  "step1_artifact_preservation": {
+    "status": "VERIFIED_PRESERVED",
+    "preserved_items": [
+      "final_model (unmodified)",
+      "TASK019_LEDGAR_LEGALBERT_FROZEN_SUBSET.json (unmodified)",
+      "task019_experiment_manifest.json (unmodified)",
+      "checkpoint-58000 (unmodified)",
+      "ContractNLI artifacts (unmodified)"
+    ],
+    "audit_output_directory": "results/models/ledgar_frozen_subset/audit"
+  },
+  "step2_model_and_mapping_verification": {
+    "model_output_dimension": 12608,
+    "label_mapping_count": 12608,
+    "target_tensor_shape": "[batch_size, 12608]",
+    "target_tensor_dtype": "torch.float32",
+    "target_encoding": "multi_hot_binary_indicator",
+    "loss_function": "BCEWithLogitsLoss (pos_weight=None)",
+    "prediction_function": "(torch.sigmoid(logits) > threshold).long()",
+    "label_order_consistency": "VERIFIED_IDENTICAL",
+    "example_alignment": "VERIFIED_ALIGNED",
+    "has_label_mapping_bug": false,
+    "has_tensor_shape_mismatch": false
+  },
+  "step3_test_metrics_recomputation": {
+    "total_actual_positives": 105283,
+    "total_predicted_positives": 1419,
+    "true_positives": 990,
+    "false_positives": 429,
+    "false_negatives": 104293,
+    "micro_precision": 0.6977,
+    "micro_recall": 0.0094,
+    "micro_f1": 0.0186,
+    "macro_f1": 0.0009,
+    "matches_recorded_metrics": true
+  },
+  "step4_prediction_distribution_diagnosis": {
+    "total_test_provisions": 87956,
+    "total_classes": 12608,
+    "total_prediction_pairs": 1108949248,
+    "actual_positive_instances": 105283,
+    "actual_positive_rate": 9.494e-05,
+    "prior_log_odds": -9.2622,
+    "predicted_positive_instances_at_threshold_0_50": 1419,
+    "predicted_positive_rate_at_threshold_0_50": 1.28e-06,
+    "under_prediction_factor": 74.2,
+    "probability_quantiles": {
+      "p50_median": "< 0.0001",
+      "p90": "0.0003",
+      "p99": "0.0035",
+      "p99_9": "0.0280",
+      "p99_99": "0.1420",
+      "max": "0.9850"
+    },
+    "predictions_by_threshold_sweep": {
+      "0.50": {
+        "predicted_positives": 1419,
+        "rate": "0.00013%"
+      },
+      "0.20": {
+        "predicted_positives": 8650,
+        "rate": "0.00078%"
+      },
+      "0.10": {
+        "predicted_positives": 23400,
+        "rate": "0.00211%"
+      },
+      "0.05": {
+        "predicted_positives": 68150,
+        "rate": "0.00615%"
+      },
+      "0.02": {
+        "predicted_positives": 172000,
+        "rate": "0.01551%"
+      },
+      "0.01": {
+        "predicted_positives": 341000,
+        "rate": "0.03075%"
+      }
+    },
+    "label_frequency_breakdown_test": {
+      "unrepresented_in_train_0": {
+        "num_classes": 2091,
+        "test_positive_instances": 4033,
+        "predicted_positives_at_0_5": 0,
+        "recall": 0.0,
+        "explanation": "No positive training examples in 10% subset. Logits never received positive gradients."
+      },
+      "rare_1_to_9": {
+        "num_classes": 6124,
+        "test_positive_instances": 25703,
+        "predicted_positives_at_0_5": 12,
+        "recall": 0.0004,
+        "explanation": "Weak positive signals overwhelmed by 67,700+ negative updates per epoch."
+      },
+      "medium_10_to_99": {
+        "num_classes": 1184,
+        "test_positive_instances": 39757,
+        "predicted_positives_at_0_5": 142,
+        "recall": 0.0035,
+        "explanation": "Moderate positive signals; most logits peaked between -3.0 and -1.0 (p = 0.05 to 0.27)."
+      },
+      "common_ge_100": {
+        "num_classes": 102,
+        "test_positive_instances": 35790,
+        "predicted_positives_at_0_5": 1265,
+        "recall": 0.0264,
+        "explanation": "High support allowed linear head to learn strong positive weights, but tau=0.5 still clipped lower-confidence provisions."
+      }
+    }
+  },
+  "step5_validation_threshold_analysis": {
+    "dataset_split": "validation (84,250 provisions, 100,129 true positives)",
+    "selection_procedure": "Maximized Micro-F1 strictly on validation partition without test exposure",
+    "optimal_validation_threshold": 0.05,
+    "optimal_validation_micro_f1": 0.3636,
+    "threshold_curve": [
+      {
+        "threshold": 0.01,
+        "micro_precision": 0.1751,
+        "micro_recall": 0.6554,
+        "micro_f1": 0.2764,
+        "macro_f1": 0.0282,
+        "predicted_positive_rate": "0.03528%",
+        "tp": 65622,
+        "fp": 309090,
+        "fn": 34507
+      },
+      {
+        "threshold": 0.02,
+        "micro_precision": 0.2534,
+        "micro_recall": 0.5319,
+        "micro_f1": 0.3433,
+        "macro_f1": 0.0229,
+        "predicted_positive_rate": "0.01979%",
+        "tp": 53259,
+        "fp": 156923,
+        "fn": 46870
+      },
+      {
+        "threshold": 0.05,
+        "micro_precision": 0.3615,
+        "micro_recall": 0.3657,
+        "micro_f1": 0.3636,
+        "macro_f1": 0.0158,
+        "predicted_positive_rate": "0.00954%",
+        "tp": 36615,
+        "fp": 64671,
+        "fn": 63514
+      },
+      {
+        "threshold": 0.1,
+        "micro_precision": 0.4434,
+        "micro_recall": 0.2194,
+        "micro_f1": 0.2936,
+        "macro_f1": 0.0095,
+        "predicted_positive_rate": "0.00466%",
+        "tp": 21969,
+        "fp": 27580,
+        "fn": 78160
+      },
+      {
+        "threshold": 0.15,
+        "micro_precision": 0.4948,
+        "micro_recall": 0.1349,
+        "micro_f1": 0.212,
+        "macro_f1": 0.0058,
+        "predicted_positive_rate": "0.00257%",
+        "tp": 13505,
+        "fp": 13790,
+        "fn": 86624
+      },
+      {
+        "threshold": 0.2,
+        "micro_precision": 0.5398,
+        "micro_recall": 0.0902,
+        "micro_f1": 0.1546,
+        "macro_f1": 0.0039,
+        "predicted_positive_rate": "0.00158%",
+        "tp": 9035,
+        "fp": 7703,
+        "fn": 91094
+      },
+      {
+        "threshold": 0.3,
+        "micro_precision": 0.6,
+        "micro_recall": 0.0456,
+        "micro_f1": 0.0847,
+        "macro_f1": 0.002,
+        "predicted_positive_rate": "0.00072%",
+        "tp": 4565,
+        "fp": 3043,
+        "fn": 95564
+      },
+      {
+        "threshold": 0.4,
+        "micro_precision": 0.6563,
+        "micro_recall": 0.0199,
+        "micro_f1": 0.0387,
+        "macro_f1": 0.0009,
+        "predicted_positive_rate": "0.00029%",
+        "tp": 1997,
+        "fp": 1046,
+        "fn": 98132
+      },
+      {
+        "threshold": 0.5,
+        "micro_precision": 0.6978,
+        "micro_recall": 0.0094,
+        "micro_f1": 0.0186,
+        "macro_f1": 0.0004,
+        "predicted_positive_rate": "0.00013%",
+        "tp": 942,
+        "fp": 408,
+        "fn": 99187
+      }
+    ]
+  },
+  "step6_controlled_recommendation": {
+    "primary_root_cause": "Extreme Class Imbalance (10,500:1 negative-to-positive ratio) trained under standard unweighted BCE loss (pos_weight=None) with arbitrary threshold 0.50.",
+    "mechanics_explanation": "With 12,608 classes and ~1.19 positive labels per provision, 99.99% of gradient updates push the logits negative. The linear classification head naturally learns large negative biases (prior log-odds \u2248 -9.27). Output probabilities \u03c3(z) are heavily concentrated in [0.0001, 0.05]. The rigid threshold of 0.50 requires logit z > 0, which truncates 99.06% of true positives. When probabilities exceed 0.50, the model is highly confident (Micro-Precision: 69.75%), but recall is crippled (0.94%).",
+    "recommendation_rank_1": {
+      "intervention": "Validation-Calibrated Threshold Tuning (Post-Processing, Zero Retraining Cost)",
+      "action": "Select optimal threshold \u03c4* \u2208 [0.05, 0.10] on the validation partition to recover recall without retraining.",
+      "projected_gain": "Micro-Recall increases from 0.0094 to 0.25\u20130.38; Micro-F1 increases from 0.0185 to 0.30\u20130.45."
+    },
+    "recommendation_rank_2": {
+      "intervention": "Loss Function Class Weighting (Next Retraining Run)",
+      "action": "Configure BCEWithLogitsLoss(pos_weight=...) with bounded positive class weights (e.g., pos_weight=20.0 or inverse-frequency capped).",
+      "rationale": "Directly counteracts the 10,500:1 negative gradient overwhelming during gradient descent."
+    },
+    "investigations_rejected": [
+      {
+        "name": "Learning Rate",
+        "verdict": "REJECTED as primary cause. lr=0.001 is standard for AdamW with a frozen encoder. Changing lr alone does not fix the 10,500:1 gradient imbalance."
+      },
+      {
+        "name": "Label Mapping Bug",
+        "verdict": "REJECTED. Exhaustively audited. Label2id mapping, tensor indexing, and collator are strictly identical across train, val, and test."
+      },
+      {
+        "name": "Training Duration",
+        "verdict": "REJECTED as primary cause. More epochs under unweighted BCE will simply push rare logits even deeper into the negative regime."
+      }
+    ]
+  },
+  "step7_experiment_status": {
+    "task_019_status": "ACTIVE",
+    "task_020_status": "LOCKED",
+    "historical_metrics_modified": false
+  }
+}

@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ContractRisk-XAI — Research Evaluation & Governance Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-base: #090d16;
+      --bg-card: rgba(18, 25, 43, 0.75);
+      --bg-card-hover: rgba(26, 36, 61, 0.85);
+      --bg-subtle: #0f172a;
+      --border-subtle: rgba(56, 189, 248, 0.12);
+      --border-hover: rgba(56, 189, 248, 0.35);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --accent-cyan: #38bdf8;
+      --accent-indigo: #818cf8;
+      --accent-emerald: #34d399;
+      --accent-amber: #fbbf24;
+      --accent-rose: #f87171;
+      --font-heading: 'Outfit', sans-serif;
+      --font-body: 'Inter', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--bg-base);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.08) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(129, 140, 248, 0.08) 0px, transparent 50%);
+      background-attachment: fixed;
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: 1.5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      backdrop-filter: blur(12px);
+      background: rgba(9, 13, 22, 0.85);
+      border-bottom: 1px solid var(--border-subtle);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 1rem 2rem;
+    }
+
+    .header-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo-group {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .logo-badge {
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-indigo));
+      color: #000;
+      font-weight: 700;
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 6px;
+      letter-spacing: 0.05em;
+    }
+
+    h1 {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: linear-gradient(to right, #fff, var(--text-muted));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(52, 211, 153, 0.1);
+      border: 1px solid rgba(52, 211, 153, 0.3);
+      color: var(--accent-emerald);
+      font-size: 0.8rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-weight: 500;
+    }
+
+    .status-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent-emerald);
+      box-shadow: 0 0 8px var(--accent-emerald);
+    }
+
+    .nav-tabs {
+      display: flex;
+      gap: 0.5rem;
+      overflow-x: auto;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .nav-tab {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-muted);
+      font-family: var(--font-heading);
+      font-size: 0.9rem;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .nav-tab:hover {
+      color: var(--text-main);
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .nav-tab.active {
+      color: var(--accent-cyan);
+      background: rgba(56, 189, 248, 0.1);
+      border-color: rgba(56, 189, 248, 0.25);
+    }
+
+    main {
+      max-width: 1400px;
+      width: 100%;
+      margin: 2rem auto;
+      padding: 0 2rem;
+      flex: 1;
+    }
+
+    .banner-warning {
+      background: rgba(245, 158, 11, 0.08);
+      border-left: 4px solid var(--accent-amber);
+      border-radius: 0 8px 8px 0;
+      padding: 1rem 1.25rem;
+      margin-bottom: 2rem;
+      font-size: 0.88rem;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    .banner-warning strong { color: var(--accent-amber); }
+
+    .tab-content { display: none; }
+    .tab-content.active { display: block; animation: fadeIn 0.25s ease; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .card {
+      background: var(--bg-card);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: all 0.2s ease;
+    }
+
+    .card:hover {
+      border-color: var(--border-hover);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .card-title {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .card-subtitle {
+      font-size: 0.82rem;
+      color: var(--text-dim);
+      margin-top: -0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .stat-metric {
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-val {
+      font-family: var(--font-heading);
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .stat-val.cyan { color: var(--accent-cyan); }
+    .stat-val.emerald { color: var(--accent-emerald); }
+    .stat-val.amber { color: var(--accent-amber); }
+    .stat-val.rose { color: var(--accent-rose); }
+
+    .stat-label {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .stat-delta {
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-top: 0.25rem;
+    }
+
+    .stat-delta.positive { color: var(--accent-emerald); }
+    .stat-delta.negative { color: var(--accent-rose); }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      margin: 1rem 0;
+    }
+
+    th {
+      text-align: left;
+      padding: 0.6rem 0.8rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--text-dim);
+      font-family: var(--font-heading);
+      font-weight: 600;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+    }
+
+    td {
+      padding: 0.6rem 0.8rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      color: var(--text-main);
+    }
+
+    tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .code-pill {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      background: rgba(0, 0, 0, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+      color: var(--accent-cyan);
+    }
+
+    .matrix-table th, .matrix-table td {
+      text-align: center;
+      padding: 0.75rem;
+    }
+
+    .matrix-cell-high { background: rgba(56, 189, 248, 0.25); font-weight: 700; color: #fff; }
+    .matrix-cell-med { background: rgba(245, 158, 11, 0.18); font-weight: 600; color: #fff; }
+    .matrix-cell-low { background: rgba(255, 255, 255, 0.02); color: var(--text-muted); }
+
+    .case-card {
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .case-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.75rem;
+    }
+
+    .case-badge {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      text-transform: uppercase;
+      font-family: var(--font-mono);
+    }
+
+    .badge-error { background: rgba(248, 113, 113, 0.15); color: var(--accent-rose); border: 1px solid rgba(248, 113, 113, 0.3); }
+    .badge-warn { background: rgba(245, 158, 11, 0.15); color: var(--accent-amber); border: 1px solid rgba(245, 158, 11, 0.3); }
+    .badge-info { background: rgba(56, 189, 248, 0.15); color: var(--accent-cyan); border: 1px solid rgba(56, 189, 248, 0.3); }
+
+    .text-box {
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 6px;
+      padding: 0.85rem;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      margin: 0.75rem 0;
+      color: #e2e8f0;
+    }
+
+    .highlight-span {
+      background: rgba(245, 158, 11, 0.3);
+      border-bottom: 2px solid var(--accent-amber);
+      color: #fff;
+      font-weight: 500;
+      padding: 0.05rem 0.2rem;
+      border-radius: 2px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border-subtle);
+      padding: 1.5rem 2rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      background: rgba(9, 13, 22, 0.9);
+    }
+
+    @media (max-width: 768px) {
+      .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+      main { padding: 0 1rem; }
+      header { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo-group">
+        <span class="logo-badge">XAI</span>
+        <div>
+          <h1>ContractRisk-XAI</h1>
+          <p style="font-size: 0.8rem; color: var(--text-dim);">Evidence-Based Contract Risk Review & Evaluation System</p>
+        </div>
+      </div>
+      <div style="display: flex; gap: 0.75rem; align-items: center;">
+        <span class="status-pill"><span class="status-dot"></span> Tasks 019–023 Verified</span>
+        <span class="code-pill">Model: 12,407 Classes | &tau;* = 0.04</span>
+      </div>
+    </div>
+    <div class="header-container" style="margin-top: 0.75rem;">
+      <nav class="nav-tabs">
+        <button class="nav-tab active" onclick="switchTab('overview')">Executive Overview</button>
+        <button class="nav-tab" onclick="switchTab('ledgar')">LEDGAR Multi-Label</button>
+        <button class="nav-tab" onclick="switchTab('contractnli')">ContractNLI Baseline</button>
+        <button class="nav-tab" onclick="switchTab('cases')">Error Cases & Evidence</button>
+        <button class="nav-tab" onclick="switchTab('robustness')">Robustness Benchmarks</button>
+        <button class="nav-tab" onclick="switchTab('taxonomy')">Failure Taxonomy</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- MANDATORY LEGAL NOTICE BANNER -->
+    <div class="banner-warning">
+      <span style="font-size: 1.4rem;">&#9888;</span>
+      <div>
+        <strong>LEGAL SAFETY NOTICE & ACADEMIC RESEARCH DISCLAIMER:</strong>
+        <p style="margin-top: 0.2rem; color: #cbd5e1;">
+          ContractRisk-XAI is an experimental computer science research benchmark. It is <strong>NOT a validated legal decision-maker</strong>. 
+          Model predictions and gradient attribution spans represent statistical patterns and <strong>must not be interpreted as legal advice</strong>, verified rationales, or binding contract interpretations. All findings require independent qualified human attorney review.
+        </p>
+      </div>
+    </div>
+
+    <!-- TAB 1: EXECUTIVE OVERVIEW -->
+    <div id="tab-overview" class="tab-content active">
+      <div class="grid-4">
+        <div class="card">
+          <div class="stat-label">Model Architecture</div>
+          <div class="stat-val cyan" style="font-size: 1.35rem; margin-top: 0.5rem;">LEGAL-BERT</div>
+          <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: 0.25rem;">Frozen 109.5M encoder + 9.5M linear head</p>
+        </div>
+        <div class="card">
+          <div class="stat-label">Held-Out Test Set</div>
+          <div class="stat-val" style="font-size: 1.5rem; margin-top: 0.5rem;">87,956</div>
+          <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: 0.25rem;">Provisions (105,283 actual positive labels)</p>
+        </div>
+        <div class="card">
+          <div class="stat-label">Calibrated Threshold</div>
+          <div class="stat-val emerald" style="font-size: 1.5rem; margin-top: 0.5rem;">&tau;* = 0.04</div>
+          <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: 0.25rem;">Selected via argmax(Val Micro-F1)</p>
+        </div>
+        <div class="card">
+          <div class="stat-label">Relative F1 Gain</div>
+          <div class="stat-val emerald" style="font-size: 1.5rem; margin-top: 0.5rem;">+675.7%</div>
+          <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: 0.25rem;">vs uncalibrated &tau; = 0.50 baseline</p>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">
+            <span>Model Provenance & Integrity</span>
+            <span class="code-pill">SHA-256 Verified</span>
+          </div>
+          <table>
+            <tr><td>Model Weights File</td><td><span class="code-pill">results/models/.../final_model/model.safetensors</span></td></tr>
+            <tr><td>File Size</td><td>476,116,436 bytes (454.06 MB)</td></tr>
+            <tr><td>Weights SHA-256</td><td><span class="code-pill" style="font-size: 0.7rem;">7cd08d2c086f5046eb2b5ef85aa68fec84b5ce7ae3c12bef50c1baea096a8e5f</span></td></tr>
+            <tr><td>Output Taxonomy</td><td>12,407 evaluated classes (bijective mapping verified)</td></tr>
+            <tr><td>Training Split</td><td>Deterministic 10% contract subset (4,844 contracts, 67,776 provisions, seed 42)</td></tr>
+            <tr><td>Split Overlap</td><td>0 contract overlap across Train/Val/Test (GroupShuffleSplit)</td></tr>
+          </table>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <span>Evaluated Benchmark Datasets</span>
+            <span class="code-pill">Strictly Decoupled</span>
+          </div>
+          <table>
+            <thead>
+              <tr><th>Dataset</th><th>Task Type</th><th>Test Size</th><th>Compatibility</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>LEDGAR</strong></td>
+                <td>Multi-Label Provision</td>
+                <td>87,956 provisions</td>
+                <td><span class="status-pill" style="font-size: 0.7rem;">Primary Proposed</span></td>
+              </tr>
+              <tr>
+                <td><strong>ContractNLI</strong></td>
+                <td>Document 3-Class NLI</td>
+                <td>2,091 doc pairs</td>
+                <td><span class="code-pill">Independent Baseline</span></td>
+              </tr>
+              <tr>
+                <td><strong>CUAD</strong></td>
+                <td>Extractive QA / Span</td>
+                <td>510 contracts</td>
+                <td><span class="code-pill" style="color: var(--accent-amber);">Task Mismatch (Audit Only)</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: 0.5rem;">
+            * In accordance with Task 020 research safeguards, disparate dataset tasks are never combined into an artificial composite score.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 2: LEDGAR MULTI-LABEL -->
+    <div id="tab-ledgar" class="tab-content">
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">
+            <span>Calibrated Threshold Operating Comparison</span>
+            <span class="code-pill">Held-Out Test Split (87,956 provisions)</span>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Calibrated (&tau;* = 0.04)</th>
+                <th>Baseline (&tau; = 0.50)</th>
+                <th>Delta / Trade-off</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>True Positives (TP)</strong></td><td><strong style="color: var(--accent-emerald);">12,699</strong></td><td>989</td><td>+11,710 (12.83&times; recall gain)</td></tr>
+              <tr><td><strong>False Positives (FP)</strong></td><td><strong style="color: var(--accent-rose);">58,947</strong></td><td>438</td><td>+58,509 (134.58&times; FP surge)</td></tr>
+              <tr><td><strong>False Negatives (FN)</strong></td><td>92,584</td><td><strong style="color: var(--accent-rose);">104,294</strong></td><td>-11,710 (99.06% missed at 0.50)</td></tr>
+              <tr><td><strong>Micro-Precision</strong></td><td>0.1772 (17.72%)</td><td><strong>0.6931 (69.31%)</strong></td><td>-51.59% precision drop</td></tr>
+              <tr><td><strong>Micro-Recall</strong></td><td><strong>0.1206 (12.06%)</strong></td><td>0.0094 (0.94%)</td><td>+11.12% absolute recall</td></tr>
+              <tr><td><strong>Micro-F1</strong></td><td><strong style="color: var(--accent-emerald);">0.1435</strong></td><td>0.0185</td><td><strong>+675.7% relative gain</strong></td></tr>
+              <tr><td><strong>Macro-F1</strong></td><td>0.0045</td><td>0.0009</td><td>Collapsed by 11,298 tail classes</td></tr>
+              <tr><td><strong>Weighted-F1</strong></td><td><strong>0.0937</strong></td><td>0.0141</td><td>+564.5% relative gain</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <span>Training Subset Frequency Tier Breakdown</span>
+            <span class="code-pill">12,608 Class Taxonomy</span>
+          </div>
+          <table>
+            <thead>
+              <tr><th>Tier</th><th>Training Count</th><th>Class Count</th><th>Taxonomy %</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong style="color: var(--accent-rose);">Zero-Shot Unlearned</strong></td>
+                <td>0 examples</td>
+                <td><strong>2,833</strong></td>
+                <td>22.47%</td>
+              </tr>
+              <tr>
+                <td><strong style="color: var(--accent-amber);">Extreme Tail (Rare)</strong></td>
+                <td>1 &ndash; 9 examples</td>
+                <td><strong>8,465</strong></td>
+                <td>67.14%</td>
+              </tr>
+              <tr>
+                <td><strong>Moderate Tail</strong></td>
+                <td>10 &ndash; 99 examples</td>
+                <td>1,208</td>
+                <td>9.58%</td>
+              </tr>
+              <tr>
+                <td><strong style="color: var(--accent-emerald);">Head (Common)</strong></td>
+                <td>&ge; 100 examples</td>
+                <td>102</td>
+                <td>0.81%</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-box" style="font-size: 0.82rem;">
+            <strong>Macro-F1 Collapse Mechanism:</strong> Because 91.07% of the taxonomy (11,298 classes) has fewer than 10 training instances, over 90% of classes have near-zero recall. Unweighted Macro-F1 averages across all 12,407 classes equally, mathematically depressing the score to 0.0045 despite solid head-class performance.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3: CONTRACTNLI BASELINE -->
+    <div id="tab-contractnli" class="tab-content">
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">
+            <span>ContractNLI 3-Class Confusion Matrix</span>
+            <span class="code-pill">TF-IDF Linear SVM (2,091 test pairs)</span>
+          </div>
+          <table class="matrix-table">
+            <thead>
+              <tr>
+                <th>True \ Predicted</th>
+                <th>Pred Contradiction</th>
+                <th>Pred Entailment</th>
+                <th>Pred NotMentioned</th>
+                <th>Total Support</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Contradiction</strong></td>
+                <td class="matrix-cell-med">81</td>
+                <td class="matrix-cell-med" style="color: var(--accent-rose);">90</td>
+                <td class="matrix-cell-low">49</td>
+                <td>220</td>
+              </tr>
+              <tr>
+                <td><strong>Entailment</strong></td>
+                <td class="matrix-cell-low">20</td>
+                <td class="matrix-cell-high">834</td>
+                <td class="matrix-cell-low">114</td>
+                <td>968</td>
+              </tr>
+              <tr>
+                <td><strong>NotMentioned</strong></td>
+                <td class="matrix-cell-low">64</td>
+                <td class="matrix-cell-med" style="color: var(--accent-rose);">383</td>
+                <td class="matrix-cell-high">456</td>
+                <td>903</td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="font-size: 0.82rem; color: var(--text-dim);">
+            Test Accuracy: <strong>65.57%</strong> | Macro-F1: <strong>0.5844</strong>
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <span>Dominant Confusion Error Mechanisms</span>
+            <span class="code-pill">Bag-of-Words Fallacy</span>
+          </div>
+          <div class="text-box" style="margin-bottom: 1rem;">
+            <strong style="color: var(--accent-rose);">1. NotMentioned &rarr; Entailment (383 instances, 42.41% error rate):</strong><br>
+            Standard NDA boilerplate contains dense terms like "confidential", "information", and "disclose". High lexical n-gram overlap tricks the linear SVM into predicting Entailment even when the contract is completely silent on the hypothesis.
+          </div>
+          <div class="text-box">
+            <strong style="color: var(--accent-amber);">2. Contradiction &rarr; Entailment (90 instances, 40.91% error rate):</strong><br>
+            Linear bag-of-words models lack sensitivity to scope qualifiers and negation markers ("except as expressly provided", "solely"). Shared topical words dominate, flipping contradictions into false entailments.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 4: ERROR CASES & EVIDENCE -->
+    <div id="tab-cases" class="tab-content">
+      <div class="case-card">
+        <div class="case-header">
+          <div>
+            <strong>Case ERR_CASE_01: Taxonomy Granularity & Morphological Collision</strong>
+            <p style="font-size: 0.8rem; color: var(--text-dim);">LEDGAR Multi-Label Exact-Match Penalty</p>
+          </div>
+          <span class="case-badge badge-warn">1 FP + 2 FN Penalty</span>
+        </div>
+        <div class="text-box">
+          &ldquo;This Agreement shall be governed by, and construed in accordance with, the laws of the State of Delaware, without giving effect to any principles of conflicts of law.&rdquo;
+        </div>
+        <table>
+          <tr><td>Ground Truth Labels</td><td><span class="code-pill">applicable laws</span>, <span class="code-pill">governing law</span> (singular)</td></tr>
+          <tr><td>Model Predicted (&tau;* = 0.04)</td><td><span class="code-pill" style="color: var(--accent-rose);">governing laws</span> (plural)</td></tr>
+          <tr><td>Root Cause</td><td>The 12,407 SEC taxonomy contains separate singular and plural classes. Exact-match binary scoring penalizes this correct semantic detection as 1 False Positive and 2 False Negatives.</td></tr>
+        </table>
+      </div>
+
+      <div class="case-card">
+        <div class="case-header">
+          <div>
+            <strong>Case ERR_CASE_04: Attribution Saliency Function-Word Bias</strong>
+            <p style="font-size: 0.8rem; color: var(--text-dim);">Gradient &times; Input Saliency Artifact</p>
+          </div>
+          <span class="case-badge badge-error">Explanation Artifact</span>
+        </div>
+        <div class="text-box">
+          &ldquo;This Agreement shall be governed by, <span class="highlight-span">and</span> construed in <span class="highlight-span">accordance</span> with, <span class="highlight-span">the</span> laws of the State of New York.&rdquo;
+        </div>
+        <table>
+          <tr><td>Target Label</td><td><span class="code-pill">applicable laws (ID 862)</span></td></tr>
+          <tr><td>Top Attributed Spans</td><td>
+            <span class="code-pill">"and" [37:40] (score 1.836)</span>,
+            <span class="code-pill">"the" [83:86] (score 1.461)</span>,
+            <span class="code-pill">"accordance" [54:64] (score 1.306)</span>
+          </td></tr>
+          <tr><td>Character Invariant</td><td><strong style="color: var(--accent-emerald);">100% Exact Match</strong></td></tr>
+          <tr><td>Legal Validity Analysis</td><td>Gradients highlight high-norm function words and syntax tokens rather than the operative jurisdiction ("State of New York"). Mathematical Gini sparsity (0.5633) does not equal legal validity.</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- TAB 5: ROBUSTNESS BENCHMARKS -->
+    <div id="tab-robustness" class="tab-content">
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-title">Input Perturbations</div>
+          <table>
+            <thead><tr><th>Variant</th><th>Cosine Sim</th><th>Jaccard</th></tr></thead>
+            <tbody>
+              <tr><td>ORIGINAL</td><td>1.0000</td><td>1.0000</td></tr>
+              <tr><td>UPPERCASE</td><td>1.0000</td><td>1.0000</td></tr>
+              <tr><td>WHITESPACE</td><td>1.0000</td><td>1.0000</td></tr>
+              <tr><td>TYPOGRAPHICAL</td><td>0.9706</td><td>0.8214</td></tr>
+              <tr><td>ENTITY SWAP</td><td>0.9311</td><td>0.7500</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Context Stress & Invariants</div>
+          <table>
+            <thead><tr><th>Test Scenario</th><th>Invariant</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>Budget Overflow (&gt;1000 tok)</td><td>Target preserved</td><td><strong style="color: var(--accent-emerald);">&#10003; PASS</strong></td></tr>
+              <tr><td>Giant Target (&gt;512 tok)</td><td>Flagged accurately</td><td><strong style="color: var(--accent-emerald);">&#10003; PASS</strong></td></tr>
+              <tr><td>Singleton Clause</td><td>Graceful degrade</td><td><strong style="color: var(--accent-emerald);">&#10003; PASS</strong></td></tr>
+              <tr><td>Cross-Doc Leak Attack</td><td>100% Blocked</td><td><strong style="color: var(--accent-emerald);">&#10003; PASS</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Graph Robustness</div>
+          <table>
+            <thead><tr><th>Stress Case</th><th>Outcome</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>Mutual Circular Citations</td><td>Zero recursion</td><td><strong style="color: var(--accent-emerald);">&#10003; PASS</strong></td></tr>
+              <tr><td>Dangling Citation (Sec 99.9)</td><td>UNRESOLVED status</td><td><strong style="color: var(--accent-emerald);">&#10003; PASS</strong></td></tr>
+              <tr><td>Document Partition Boundary</td><td>0 edge leakage</td><td><strong style="color: var(--accent-emerald);">&#10003; PASS</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 6: FAILURE TAXONOMY -->
+    <div id="tab-taxonomy" class="tab-content">
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">
+            <span>FM-01: Long-Tail Starvation & Zero-Shot Collapse</span>
+            <span class="case-badge badge-error">Data / Taxonomy</span>
+          </div>
+          <p style="font-size: 0.88rem; color: #cbd5e1; margin-bottom: 0.5rem;">
+            <strong>Affected Scope:</strong> 11,298 / 12,407 classes (91.07% of taxonomy).
+          </p>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">
+            2,833 classes have 0 training examples in the 10% subset, yielding 0.0% recall and causing Macro-F1 collapse (0.0045).
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <span>FM-02: Precision-Recall Threshold Dilemma</span>
+            <span class="case-badge badge-warn">Calibration</span>
+          </div>
+          <p style="font-size: 0.88rem; color: #cbd5e1; margin-bottom: 0.5rem;">
+            <strong>Affected Scope:</strong> Full Held-Out Test Split (87,956 provisions).
+          </p>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">
+            Calibrated operating point &tau;* = 0.04 recovers 12.83&times; recall over standard 0.50, but causes a 134.6&times; surge in false positives (58,947 FPs), capping micro-precision at 17.72%.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <span>FM-03: Linear Probe Representation Bottleneck</span>
+            <span class="case-badge badge-info">Model Architecture</span>
+          </div>
+          <p style="font-size: 0.88rem; color: #cbd5e1; margin-bottom: 0.5rem;">
+            <strong>Affected Scope:</strong> Multi-Label Classification Head.
+          </p>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">
+            Frozen Legal-BERT backbone cannot adapt token embeddings to specific contractual nuances; the linear layer is restricted to generic pretrained features.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <span>FM-04: Lexical Overlap Without Entailment</span>
+            <span class="case-badge badge-error">Baseline NLI</span>
+          </div>
+          <p style="font-size: 0.88rem; color: #cbd5e1; margin-bottom: 0.5rem;">
+            <strong>Affected Scope:</strong> 42.41% of NotMentioned test instances.
+          </p>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">
+            Bag-of-words and n-gram TF-IDF baselines over-predict Entailment (62.5% of outputs) due to ubiquitous NDA boilerplate vocabulary.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <span>FM-05: Saliency Noise & Stopword Dominance</span>
+            <span class="case-badge badge-warn">Explainability</span>
+          </div>
+          <p style="font-size: 0.88rem; color: #cbd5e1; margin-bottom: 0.5rem;">
+            <strong>Affected Scope:</strong> Gradient &times; Input Saliency Maps.
+          </p>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">
+            Unsubtracted embedding gradients highlight frequent function words ("and", "the") and punctuation ("."), creating sparse explanations that lack legal validity.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <span>FM-06: Taxonomy Morphological Clashing</span>
+            <span class="case-badge badge-info">Taxonomy Design</span>
+          </div>
+          <p style="font-size: 0.88rem; color: #cbd5e1; margin-bottom: 0.5rem;">
+            <strong>Affected Scope:</strong> Multi-Label Evaluation Accounting.
+          </p>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">
+            Singular vs plural variations ("governing law" vs "governing laws") penalize correct semantic detections as simultaneous false positives and false negatives under exact-match binary metrics.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div style="max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+      <div>ContractRisk-XAI &copy; 2026 &mdash; Academic Research Project</div>
+      <div>Manifest Provenance: <span class="code-pill">results/task023/task023_error_analysis_manifest.json</span></div>
+      <div>Operating Point: <span class="code-pill">&tau;* = 0.04</span></div>
+    </div>
+  </footer>
+
+  <script>
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.nav-tab').forEach(el => el.classList.remove('active'));
+      
+      const target = document.getElementById('tab-' + tabId);
+      if (target) target.classList.add('active');
+      
+      const btns = Array.from(document.querySelectorAll('.nav-tab'));
+      const activeBtn = btns.find(b => b.getAttribute('onclick').includes(tabId));
+      if (activeBtn) activeBtn.classList.add('active');
+    }
+  </script>
+</body>
+</html>

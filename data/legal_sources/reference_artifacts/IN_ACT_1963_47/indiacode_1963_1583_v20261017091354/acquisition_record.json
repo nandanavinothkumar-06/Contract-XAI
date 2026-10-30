@@ -1,0 +1,10 @@
+{
+  "acquisition_id": "manual_IN_ACT_1963_47_indiacode_1963_1583_v20261017091354",
+  "source_id": "IN_ACT_1963_47",
+  "timestamp": "2026-10-17T09:13:54.605090+00:00",
+  "method": "MANUAL_ADVOCATE_REGISTRATION",
+  "input_file_path": "IN_MEMORY_BYTES",
+  "sha256": "e1c68c6a515d6269e544ad3d2c17a96bfc9279e47ed985326c10592ad4f80592",
+  "bytes_received": 4340,
+  "storage_path": "C:\\Users\\Nandana\\.gemini\\antigravity-ide\\scratch\\contractrisk-xai\\data\\legal_sources\\reference_artifacts\\IN_ACT_1963_47\\indiacode_1963_1583_v20261017091354\\original.pdf"
+}

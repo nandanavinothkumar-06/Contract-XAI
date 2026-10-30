@@ -1,0 +1,14 @@
+{
+  "experiment_id": "TASK019_CUAD_LEGALBERT",
+  "task": "QA_SPAN_EXTRACTION",
+  "dataset": "CUAD",
+  "dataset_version": "1.0",
+  "input_path": "data/raw/cuad/extracted/CUAD_v1/CUAD_v1.json",
+  "model": "NONE_TASK_MISMATCH",
+  "execution_type": "TASK_FORMULATION_AUDIT",
+  "classification": "NOT_APPLICABLE",
+  "status": "NOT_APPLICABLE_TASK_MISMATCH",
+  "reason": "The Task 007 baselines did not implement CUAD's original extractive question-answering/span-extraction task. Furthermore, there is no approved extractive QA Legal-BERT pipeline implemented in src/models/. CUAD is not converted into an artificial classification task.",
+  "timestamp": "2026-09-14T14:26:24Z",
+  "is_test_fixture": false
+}

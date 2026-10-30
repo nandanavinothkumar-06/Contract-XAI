@@ -1,0 +1,34 @@
+{
+  "source_id": "IN_ACT_2000_21",
+  "publication_id": "indiacode_2000_1999",
+  "artifact_path": "C:\\Users\\Nandana\\.gemini\\antigravity-ide\\scratch\\contractrisk-xai\\data\\legal_sources\\reference_artifacts\\IN_ACT_2000_21\\indiacode_2000_1999_v20261017092501\\original.pdf",
+  "extracted_text_path": "C:\\Users\\Nandana\\.gemini\\antigravity-ide\\scratch\\contractrisk-xai\\data\\legal_sources\\extracted_text\\IN_ACT_2000_21\\indiacode_2000_1999\\extracted.txt",
+  "extraction_timestamp": "2026-10-17T09:25:01.708801+00:00",
+  "extraction_method": "PYPDF_DIGITAL_TEXT_EXTRACTOR",
+  "extraction_tool_version": "pypdf-6.20.1",
+  "page_count": 3,
+  "empty_page_count": 0,
+  "total_char_count": 5845,
+  "extracted_text_sha256": "7cbf3259b9c54701ffdaf724bc2c84274ed9266db107fa2e883c0dc12b968915",
+  "original_sha256": "14e752718c87809662ebda940c974f46d6be8d53392b5f8b2304d6a9063f89b6",
+  "ocr_used": false,
+  "ocr_engine": null,
+  "warnings": [],
+  "page_details": [
+    {
+      "page_number": 1,
+      "char_count": 2628,
+      "is_empty": false
+    },
+    {
+      "page_number": 2,
+      "char_count": 3101,
+      "is_empty": false
+    },
+    {
+      "page_number": 3,
+      "char_count": 70,
+      "is_empty": false
+    }
+  ]
+}

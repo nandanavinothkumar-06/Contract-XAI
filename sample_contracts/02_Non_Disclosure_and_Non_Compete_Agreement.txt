@@ -1,0 +1,11 @@
+MUTUAL NON-DISCLOSURE AND NON-COMPETE AGREEMENT
+
+1. Definition of Confidential Information. "Confidential Information" means all non-public, sensitive, commercial, or technical information disclosed by either party, including trade secrets, software source code, customer lists, financial projections, and operational documentation, whether disclosed orally or in tangible form.
+
+2. Non-Disclosure Obligations. The Receiving Party agrees to protect the Confidential Information using at least the same degree of care it uses for its own proprietary information, but no less than reasonable care. The Receiving Party shall not disclose, reproduce, or distribute the Confidential Information to any third party without prior written authorization.
+
+3. Restraint of Trade and Post-Termination Non-Compete. For a period of three (3) years following the termination or expiration of this Agreement, the Receiving Party covenants and agrees that it shall not directly or indirectly engage in, consult for, advise, invest in, or perform services for any competing commercial business within the territory of India. 
+
+4. Injunctive Relief and Liquidated Damages. The Receiving Party acknowledges that any breach of this Agreement will cause irreparable injury for which monetary damages alone would be inadequate. In the event of any breach, the Disclosing Party shall be entitled to seek immediate injunctive relief in addition to a pre-stipulated liquidated damage penalty of INR 5,000,000 without requirement of proving actual damage.
+
+5. Dispute Resolution and Arbitration. Any dispute arising out of or relating to this Agreement shall be referred to and finally resolved by arbitration administered in Mumbai in accordance with the Arbitration and Conciliation Act, 1996. The arbitral tribunal shall consist of a sole arbitrator appointed mutually by the parties.

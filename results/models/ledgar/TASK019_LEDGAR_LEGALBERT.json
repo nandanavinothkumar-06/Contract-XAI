@@ -1,0 +1,18 @@
+{
+  "dataset": "LEDGAR",
+  "dataset_version": "2016-2019 Clean",
+  "input_path": "data/raw/ledgar/extracted/LEDGAR_2016-2019_clean.jsonl",
+  "task": "MULTI_LABEL_PROVISION_CLASSIFICATION",
+  "experiment_id": "TASK019_LEDGAR_LEGALBERT",
+  "model": "LEGAL_BERT",
+  "execution_type": "FEASIBILITY_ASSESSMENT",
+  "classification": "FEASIBILITY_ASSESSMENT",
+  "status": "NOT_RUN_RESOURCE_LIMITATION",
+  "reason": "Full training across 674,068 multilabel provisions over 12,608 distinct classes is infeasible on the given hardware (no GPU, CPU only). Total RAM is ~15.65GB (5.38GB free). Pilot on much smaller ContractNLI confirmed that CPU execution time for even 7k samples is excessive, rendering an 846k-sample Legal-BERT multilabel classification run completely infeasible.",
+  "feasibility_assessment": {
+    "num_classes": 12608,
+    "train_samples": 674068,
+    "estimated_cpu_time_hours": 1184.8028734190232
+  },
+  "timestamp": "2026-09-14T14:26:24Z"
+}

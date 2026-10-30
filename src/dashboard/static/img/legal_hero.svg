@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 400" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="heroSky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#142B4A" />
+      <stop offset="60%" stop-color="#1E3A63" />
+      <stop offset="100%" stop-color="#0F2038" />
+    </linearGradient>
+    <linearGradient id="heroGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C170" />
+      <stop offset="50%" stop-color="#C6A15B" />
+      <stop offset="100%" stop-color="#9A7832" />
+    </linearGradient>
+    <linearGradient id="columnGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2D4D77" />
+      <stop offset="100%" stop-color="#162D4D" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#C6A15B" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#142B4A" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="540" height="400" rx="16" fill="url(#heroSky)" />
+  <rect width="540" height="400" rx="16" fill="url(#glow)" />
+
+  <!-- Subtle Blueprint Grid lines -->
+  <g stroke="#ffffff" stroke-width="0.5" opacity="0.06">
+    <line x1="40" y1="0" x2="40" y2="400" />
+    <line x1="140" y1="0" x2="140" y2="400" />
+    <line x1="240" y1="0" x2="240" y2="400" />
+    <line x1="340" y1="0" x2="340" y2="400" />
+    <line x1="440" y1="0" x2="440" y2="400" />
+    <line x1="0" y1="80" x2="540" y2="80" />
+    <line x1="0" y1="180" x2="540" y2="180" />
+    <line x1="0" y1="280" x2="540" y2="280" />
+    <line x1="0" y1="360" x2="540" y2="360" />
+  </g>
+
+  <!-- Classical Legal Courthouse Architectural Silhouette -->
+  <!-- Foundation Plinth -->
+  <rect x="70" y="320" width="400" height="14" rx="2" fill="url(#columnGrad)" stroke="#315B85" stroke-width="1" />
+  <rect x="85" y="310" width="370" height="10" rx="2" fill="url(#columnGrad)" stroke="#315B85" stroke-width="1" />
+  <rect x="100" y="302" width="340" height="8" rx="1" fill="#315B85" opacity="0.8" />
+
+  <!-- Columns (4 Classical Pillars) -->
+  <g fill="url(#columnGrad)" stroke="#3A6799" stroke-width="0.8">
+    <!-- Column 1 -->
+    <rect x="115" y="150" width="26" height="152" rx="2" />
+    <rect x="111" y="142" width="34" height="8" rx="1" fill="#4374AB" />
+    <rect x="111" y="294" width="34" height="8" rx="1" fill="#4374AB" />
+    
+    <!-- Column 2 -->
+    <rect x="195" y="150" width="26" height="152" rx="2" />
+    <rect x="191" y="142" width="34" height="8" rx="1" fill="#4374AB" />
+    <rect x="191" y="294" width="34" height="8" rx="1" fill="#4374AB" />
+
+    <!-- Column 3 -->
+    <rect x="319" y="150" width="26" height="152" rx="2" />
+    <rect x="315" y="142" width="34" height="8" rx="1" fill="#4374AB" />
+    <rect x="315" y="294" width="34" height="8" rx="1" fill="#4374AB" />
+
+    <!-- Column 4 -->
+    <rect x="399" y="150" width="26" height="152" rx="2" />
+    <rect x="395" y="142" width="34" height="8" rx="1" fill="#4374AB" />
+    <rect x="395" y="294" width="34" height="8" rx="1" fill="#4374AB" />
+  </g>
+
+  <!-- Entablature Beam -->
+  <rect x="95" y="128" width="350" height="14" rx="2" fill="#24446A" stroke="#3A6799" stroke-width="1" />
+  <!-- Pediment (Triangular Gable) -->
+  <polygon points="270,60 90,128 450,128" fill="url(#heroSky)" stroke="#C6A15B" stroke-width="2" />
+  <polygon points="270,72 110,122 430,122" fill="#183358" stroke="#315B85" stroke-width="1" />
+
+  <!-- Pediment Medallion: Central Scales Emblem in Gold -->
+  <circle cx="270" cy="100" r="14" fill="#142B4A" stroke="#C6A15B" stroke-width="1.5" />
+  <line x1="270" y1="92" x2="270" y2="108" stroke="#C6A15B" stroke-width="1.2" />
+  <line x1="264" y1="95" x2="276" y2="95" stroke="#C6A15B" stroke-width="1.2" />
+  <path d="M263 103 C263 103 265 105 267 103" stroke="#C6A15B" stroke-width="1" fill="none" />
+  <path d="M273 103 C273 103 275 105 277 103" stroke="#C6A15B" stroke-width="1" fill="none" />
+
+  <!-- Foreground Centerpiece: Legal Analysis Tablet & Floating Scales of Justice -->
+  <!-- Translucent Contract Document Pane -->
+  <rect x="200" y="180" width="140" height="145" rx="8" fill="#112239" fill-opacity="0.9" stroke="#C6A15B" stroke-width="1.5" />
+  <!-- Contract Lines -->
+  <line x1="220" y1="200" x2="320" y2="200" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.9" />
+  <line x1="220" y1="214" x2="305" y2="214" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round" opacity="0.75" />
+  <line x1="220" y1="226" x2="315" y2="226" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round" opacity="0.75" />
+  <line x1="220" y1="238" x2="280" y2="238" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round" opacity="0.75" />
+
+  <!-- AI Saliency Bracket / Highlight Box -->
+  <rect x="216" y="248" width="108" height="24" rx="4" fill="rgba(198, 161, 91, 0.15)" stroke="#C6A15B" stroke-width="1" stroke-dasharray="3,2" />
+  <line x1="222" y1="260" x2="300" y2="260" stroke="#E5C170" stroke-width="1.8" stroke-linecap="round" />
+
+  <!-- Advocate Stamp of Verification -->
+  <circle cx="270" cy="295" r="14" fill="#142B4A" stroke="#217A55" stroke-width="1.5" />
+  <path d="M264 295 L268 299 L276 291" stroke="#217A55" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Floating Golden Scales of Justice Foreground -->
+  <g transform="translate(270, 165)">
+    <!-- Main Center Pole -->
+    <line x1="0" y1="-28" x2="0" y2="12" stroke="url(#heroGold)" stroke-width="3" stroke-linecap="round" />
+    <circle cx="0" cy="-30" r="4.5" fill="url(#heroGold)" />
+    <!-- Horizontal Crossbeam -->
+    <line x1="-36" y1="-18" x2="36" y2="-18" stroke="url(#heroGold)" stroke-width="2.5" stroke-linecap="round" />
+    <circle cx="0" cy="-18" r="2.5" fill="#142B4A" stroke="#C6A15B" stroke-width="1.2" />
+
+    <!-- Left Balance Pan -->
+    <line x1="-36" y1="-18" x2="-44" y2="-2" stroke="#E2E8F0" stroke-width="1" />
+    <line x1="-36" y1="-18" x2="-28" y2="-2" stroke="#E2E8F0" stroke-width="1" />
+    <path d="M-47 -2 C-47 -2, -36 5, -25 -2 Z" fill="url(#heroGold)" stroke="#B8860B" stroke-width="0.8" />
+
+    <!-- Right Balance Pan -->
+    <line x1="36" y1="-18" x2="28" y2="-2" stroke="#E2E8F0" stroke-width="1" />
+    <line x1="36" y1="-18" x2="44" y2="-2" stroke="#E2E8F0" stroke-width="1" />
+    <path d="M25 -2 C25 -2, 36 5, 47 -2 Z" fill="url(#heroGold)" stroke="#B8860B" stroke-width="0.8" />
+  </g>
+
+  <!-- Indian Statutory Reference Shield Badge (bottom right) -->
+  <g transform="translate(370, 240)">
+    <rect width="130" height="42" rx="6" fill="#0C1B2E" stroke="#C6A15B" stroke-width="1" />
+    <text x="12" y="18" font-family="'Inter', sans-serif" font-weight="700" font-size="9" fill="#E5C170">INDIAN STATUTES</text>
+    <text x="12" y="32" font-family="'Inter', sans-serif" font-weight="500" font-size="8" fill="#CBD5E1">6 Verified Central Acts</text>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+{
+  "experiment_id": "9b2e1460217c",
+  "dataset": "CUAD",
+  "task": "SPAN_EXTRACTION",
+  "model": "TFIDF_LOGISTIC_REGRESSION",
+  "feature_type": "TF-IDF",
+  "parameters": {
+    "dataset": "CUAD",
+    "task": "SPAN_EXTRACTION",
+    "model": "TFIDF_LOGISTIC_REGRESSION",
+    "is_test_fixture": true
+  },
+  "seed": 42,
+  "status": "NOT_APPLICABLE",
+  "note": "CUAD is primarily a contract-review QA/span-extraction task; the classification baselines implemented in TASK 007 are not directly comparable.",
+  "timestamp": "2026-10-20T17:00:18.073880Z"
+}

@@ -1,0 +1,10 @@
+{
+  "acquisition_id": "manual_IN_ACT_1996_26_indiacode_1996_1978_v20261017091354",
+  "source_id": "IN_ACT_1996_26",
+  "timestamp": "2026-10-17T09:13:54.643411+00:00",
+  "method": "MANUAL_ADVOCATE_REGISTRATION",
+  "input_file_path": "IN_MEMORY_BYTES",
+  "sha256": "37a3779fd472408d1169409297b72da526275d4328a318a162a42505a85cd44f",
+  "bytes_received": 5155,
+  "storage_path": "C:\\Users\\Nandana\\.gemini\\antigravity-ide\\scratch\\contractrisk-xai\\data\\legal_sources\\reference_artifacts\\IN_ACT_1996_26\\indiacode_1996_1978_v20261017091354\\original.pdf"
+}

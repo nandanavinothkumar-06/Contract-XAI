@@ -1,0 +1,29 @@
+{
+  "source_id": "IN_ACT_1996_26",
+  "publication_id": "indiacode_1996_1978",
+  "artifact_path": "C:\\Users\\Nandana\\.gemini\\antigravity-ide\\scratch\\contractrisk-xai\\data\\legal_sources\\reference_artifacts\\IN_ACT_1996_26\\indiacode_1996_1978_v20261017092501\\original.pdf",
+  "extracted_text_path": "C:\\Users\\Nandana\\.gemini\\antigravity-ide\\scratch\\contractrisk-xai\\data\\legal_sources\\extracted_text\\IN_ACT_1996_26\\indiacode_1996_1978\\extracted.txt",
+  "extraction_timestamp": "2026-10-17T09:25:01.783148+00:00",
+  "extraction_method": "PYPDF_DIGITAL_TEXT_EXTRACTOR",
+  "extraction_tool_version": "pypdf-6.20.1",
+  "page_count": 2,
+  "empty_page_count": 0,
+  "total_char_count": 5286,
+  "extracted_text_sha256": "cac8f72e444cec0896611e8cc887340d7726bb74c7198da2f8dfc95c29abe37c",
+  "original_sha256": "e900e962dc17c9003a1234c1ae17a86fcdefd92f90da0f1db867631c311f5a51",
+  "ocr_used": false,
+  "ocr_engine": null,
+  "warnings": [],
+  "page_details": [
+    {
+      "page_number": 1,
+      "char_count": 2838,
+      "is_empty": false
+    },
+    {
+      "page_number": 2,
+      "char_count": 2418,
+      "is_empty": false
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 140" width="160" height="140" fill="none">
+  <rect x="35" y="15" width="90" height="110" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.8" />
+  <!-- Dogear Fold -->
+  <path d="M105 15 L125 35 L105 35 Z" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1.5" />
+  
+  <!-- Subtle Lines -->
+  <line x1="50" y1="42" x2="105" y2="42" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="50" y1="54" x2="110" y2="54" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round" />
+  <line x1="50" y1="64" x2="100" y2="64" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round" />
+  <line x1="50" y1="74" x2="110" y2="74" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round" />
+  <line x1="50" y1="84" x2="85" y2="84" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Legal Seal / Stamp in Gold/Navy -->
+  <circle cx="80" cy="104" r="12" fill="#142B4A" stroke="#C6A15B" stroke-width="1.5" />
+  <path d="M75 104 L78 107 L85 101" stroke="#C6A15B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

@@ -1,0 +1,23 @@
+{
+  "package_version": "2.0",
+  "generated_timestamp": "2026-10-12T23:08:31.623970",
+  "local_source_sha256": "ff0a31651c3399832d521c3b9badae5b5044dddcac2854386889ca344693b5d5",
+  "packaged_source_sha256": "ff0a31651c3399832d521c3b9badae5b5044dddcac2854386889ca344693b5d5",
+  "contractnli_archive_sha256": "e03fc77bbf8b53e2976a250e81d8a294bc3d5e5fb014521e477dee9340d6287b",
+  "ledgar_archive_sha256": "abdb4b512546c7ef5db17ba387cf121ab593a2817a89f1e6b7dbee42854dc4bb",
+  "canonical_contractnli_path": "<PROJECT_ROOT>/data/raw/contractnli/extracted/contract-nli/",
+  "canonical_ledgar_path": "<PROJECT_ROOT>/data/raw/ledgar/extracted/LEDGAR_2016-2019_clean.jsonl",
+  "task019_entry_points": [
+    "run_contractnli",
+    "run_ledgar",
+    "run_ledgar_frozen_subset"
+  ],
+  "dependency_versions": {
+    "transformers": "4.46.1",
+    "datasets": "3.1.0",
+    "accelerate": "0.34.2",
+    "pytest": "latest",
+    "jsonlines": "latest"
+  },
+  "tests_passed": true
+}

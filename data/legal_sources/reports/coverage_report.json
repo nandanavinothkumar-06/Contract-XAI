@@ -1,0 +1,284 @@
+{
+  "report_version": "1.0.0",
+  "generated_at": "2026-10-20T17:02:43.917653+00:00",
+  "jurisdiction": "IN (Central Statutes Curated Extract)",
+  "summary": {
+    "total_acts_represented": 6,
+    "total_active_central_sections": 677,
+    "total_sections_in_curated_corpus": 40,
+    "overall_statutory_coverage_percentage": 5.91,
+    "omitted_central_sections_count": 637,
+    "corpus_completeness_tier": "CURATED_COMMERCIAL_EXTRACTS",
+    "state_law_coverage": "0.0% (Zero state statutory codes indexed)",
+    "subordinate_legislation_coverage": "0.0% (Zero rules or regulatory notifications indexed)",
+    "judicial_precedents_coverage": "<0.01% (Single Supreme Court annotation on Section 66A IT Act)"
+  },
+  "categories": {
+    "category_a_repository_present": {
+      "description": "Statutory snapshot files physically present on disk and readable.",
+      "status": "6 central statutory snapshot files present (40 total parsed passages)."
+    },
+    "category_b_extract_sections": {
+      "description": "Specific sections actually represented in the local extracts.",
+      "data": {
+        "IN_ACT_1872_09": [
+          "1",
+          "2",
+          "10",
+          "11",
+          "23",
+          "27",
+          "28",
+          "56",
+          "73",
+          "74",
+          "75"
+        ],
+        "IN_ACT_2000_21": [
+          "1",
+          "4",
+          "10A",
+          "43A",
+          "66A",
+          "72A"
+        ],
+        "IN_ACT_2023_22": [
+          "1",
+          "2",
+          "4",
+          "5",
+          "6",
+          "8",
+          "36",
+          "44"
+        ],
+        "IN_ACT_1963_47": [
+          "1",
+          "10",
+          "14",
+          "14A",
+          "16",
+          "20A"
+        ],
+        "IN_ACT_1996_26": [
+          "1",
+          "7",
+          "8",
+          "9",
+          "16",
+          "34"
+        ],
+        "IN_ACT_2023_47": [
+          "1",
+          "61",
+          "63"
+        ]
+      }
+    },
+    "category_c_authoritative_verification": {
+      "description": "Comparison against official gazette / India Code publication.",
+      "status": "REFERENCE_ARTIFACTS_ACQUIRED_AND_COMPARED (All 6 central statutes have official reference artifacts registered; granular section-by-section text comparisons executed with exact/normalized concordance and omitted provisions tracked; manifest remains PARTIALLY_VERIFIED as curated commercial extracts)."
+    },
+    "category_d_currentness_checked": {
+      "description": "Legal version, repeal, and commencement audit as of recorded date.",
+      "status": "AUDITED 2026-10-17: DPDP substantive provisions flagged NOT_COMMENCED; BSA 2023 commenced 2024-07-01; IT Act 66A flagged STRUCK_DOWN."
+    },
+    "category_e_missing_or_unresolved_coverage": {
+      "description": "Statutes, sections, state amendments, and subordinate rules NOT in repository.",
+      "omitted_central_sections_count": 637,
+      "state_amendments": "EXCLUDED",
+      "subordinate_rules": "EXCLUDED",
+      "case_law": "EXCLUDED (except Shreya Singhal annotation)"
+    },
+    "category_f_applicability_not_determined": {
+      "description": "Boundary between retrieval similarity and legal applicability.",
+      "rule": "Retrieval similarity (BM25/lexical) indicates only that a provision shares wording with a clause. It does NOT establish that the provision legally applies to the contract, transaction, jurisdiction, or party. Independent legal practitioner evaluation is mandatory."
+    }
+  },
+  "sources": [
+    {
+      "source_id": "IN_ACT_1872_09",
+      "canonical_title": "The Indian Contract Act, 1872",
+      "act_number": "Act No. 9 of 1872",
+      "total_enacted_sections": 266,
+      "active_central_sections": 238,
+      "sections_present_in_extract": [
+        "1",
+        "2",
+        "10",
+        "11",
+        "23",
+        "27",
+        "28",
+        "56",
+        "73",
+        "74",
+        "75"
+      ],
+      "sections_present_count": 11,
+      "coverage_percentage": 4.62,
+      "primary_focus": "Contract formation, void agreements, frustration, and breach damages",
+      "omitted_subject_matter": [
+        "Indemnity (Sections 124-125)",
+        "Guarantee and Suretyship (Sections 126-147)",
+        "Bailment and Pledge (Sections 148-181)",
+        "Agency and Power of Attorney (Sections 182-238)",
+        "Quasi-contracts and Unjust Enrichment (Sections 68-72)"
+      ],
+      "state_amendments_covered": "NONE (e.g. Maharashtra and Uttar Pradesh state amendments to Section 28 are excluded)",
+      "subordinate_legislation_covered": "NONE (No central or state contract rules)",
+      "judicial_precedents_covered": "NONE (Precedents such as Hadley v Baxendale rule in Sec 73 or Fateh Chand on liquidated damages must be evaluated independently by advocate)",
+      "territorial_limitations": "Applies across India. Excluded historical Jammu & Kashmir exceptions prior to Act 34 of 2019."
+    },
+    {
+      "source_id": "IN_ACT_2000_21",
+      "canonical_title": "The Information Technology Act, 2000",
+      "act_number": "Act No. 21 of 2000",
+      "total_enacted_sections": 94,
+      "active_central_sections": 94,
+      "sections_present_in_extract": [
+        "1",
+        "4",
+        "10A",
+        "43A",
+        "66A",
+        "72A"
+      ],
+      "sections_present_count": 6,
+      "coverage_percentage": 6.38,
+      "primary_focus": "Electronic contracts validity, data breach compensation, and cyber offences",
+      "omitted_subject_matter": [
+        "Digital Signatures and Certifying Authorities (Sections 17-34)",
+        "Intermediary Due Diligence and Safe Harbor (Section 79)",
+        "Cyber Appellate Tribunal / Telecom Disputes Settlement (Sections 48-64)",
+        "Computer Emergency Response Team (CERT-In) powers (Section 70B)",
+        "Government website and e-governance infrastructure (Sections 6-10)"
+      ],
+      "state_amendments_covered": "NONE",
+      "subordinate_legislation_covered": "NONE (Excludes Information Technology Rules 2011/2021, Intermediary Guidelines, and SPDI Rules 2011)",
+      "judicial_precedents_covered": "ANNOTATED ONLY: Section 66A struck down in Shreya Singhal v. Union of India (2015) 5 SCC 1. No other case law.",
+      "territorial_limitations": "Applies to whole of India and extra-territorially to offences committed outside India involving computers in India."
+    },
+    {
+      "source_id": "IN_ACT_2023_22",
+      "canonical_title": "The Digital Personal Data Protection Act, 2023",
+      "act_number": "Act No. 22 of 2023",
+      "total_enacted_sections": 44,
+      "active_central_sections": 44,
+      "sections_present_in_extract": [
+        "1",
+        "2",
+        "4",
+        "5",
+        "6",
+        "8",
+        "36",
+        "44"
+      ],
+      "sections_present_count": 8,
+      "coverage_percentage": 18.18,
+      "primary_focus": "Notice, consent, general data fiduciary obligations, Central Government rule powers, IT Act amendment",
+      "omitted_subject_matter": [
+        "Processing of personal data of children and persons with disabilities (Section 9)",
+        "Additional obligations of Significant Data Fiduciaries (Section 10)",
+        "Rights of Data Principals (Sections 11-14)",
+        "Duties of Data Principals (Section 15)",
+        "Exemptions and state security processing (Section 17)",
+        "Establishment and powers of Data Protection Board of India (Sections 18-32)",
+        "Financial Penalties and adjudication process (Section 33)"
+      ],
+      "state_amendments_covered": "NONE (Central legislation)",
+      "subordinate_legislation_covered": "NONE (DPDP Central Rules remain pending notification)",
+      "judicial_precedents_covered": "NONE (Post-Puttaswamy privacy jurisprudence applies but is not indexed in statutory text)",
+      "territorial_limitations": "Applies to digital personal data processing within India and outside India if related to offering goods/services to Data Principals in India."
+    },
+    {
+      "source_id": "IN_ACT_1963_47",
+      "canonical_title": "The Specific Relief Act, 1963",
+      "act_number": "Act No. 47 of 1963",
+      "total_enacted_sections": 44,
+      "active_central_sections": 44,
+      "sections_present_in_extract": [
+        "1",
+        "10",
+        "14",
+        "14A",
+        "16",
+        "20A"
+      ],
+      "sections_present_count": 6,
+      "coverage_percentage": 13.64,
+      "primary_focus": "Mandatory specific performance, contract bars, court expert appointment, and infrastructure injunction bars",
+      "omitted_subject_matter": [
+        "Recovery of possession of property (Sections 5-8)",
+        "Rectification of instruments (Section 26)",
+        "Rescission of contracts (Sections 27-30)",
+        "Cancellation of instruments (Sections 31-33)",
+        "Declaratory decrees (Sections 34-35)",
+        "Perpetual and mandatory injunctions (Sections 36-42)"
+      ],
+      "state_amendments_covered": "NONE",
+      "subordinate_legislation_covered": "NONE",
+      "judicial_precedents_covered": "NONE (Excludes judicial interpretation of 2018 amendment prospective vs retrospective application)",
+      "territorial_limitations": "Applies across India."
+    },
+    {
+      "source_id": "IN_ACT_1996_26",
+      "canonical_title": "The Arbitration and Conciliation Act, 1996",
+      "act_number": "Act No. 26 of 1996",
+      "total_enacted_sections": 87,
+      "active_central_sections": 87,
+      "sections_present_in_extract": [
+        "1",
+        "7",
+        "8",
+        "9",
+        "16",
+        "34"
+      ],
+      "sections_present_count": 6,
+      "coverage_percentage": 6.9,
+      "primary_focus": "Arbitration agreements, judicial referral, interim measures, tribunal competence, award set-aside grounds",
+      "omitted_subject_matter": [
+        "Appointment of Arbitrators by Supreme Court / High Courts (Section 11)",
+        "Conduct of Arbitral Proceedings (Sections 18-27)",
+        "Making of Arbitral Award and Termination of Proceedings (Sections 28-33)",
+        "Appeals (Section 37)",
+        "Part II: Enforcement of Foreign Awards (New York and Geneva Conventions) (Sections 44-60)",
+        "Part III: Conciliation (Sections 61-81)",
+        "Part IV: Supplementary Provisions and Schedules (Sections 82-87)"
+      ],
+      "state_amendments_covered": "NONE",
+      "subordinate_legislation_covered": "NONE (Excludes High Court Arbitration Rules and institutional rules)",
+      "judicial_precedents_covered": "NONE (Excludes seminal precedents on arbitrability, seat vs venue, and patent illegality)",
+      "territorial_limitations": "Applies across India; Part I applies where place of arbitration is in India."
+    },
+    {
+      "source_id": "IN_ACT_2023_47",
+      "canonical_title": "The Bharatiya Sakshya Adhiniyam, 2023",
+      "act_number": "Act No. 47 of 2023",
+      "total_enacted_sections": 170,
+      "active_central_sections": 170,
+      "sections_present_in_extract": [
+        "1",
+        "61",
+        "63"
+      ],
+      "sections_present_count": 3,
+      "coverage_percentage": 1.76,
+      "primary_focus": "Admissibility of electronic records and electronic record certificate conditions",
+      "omitted_subject_matter": [
+        "Relevancy of facts (Sections 3-50)",
+        "Oral and primary/secondary documentary evidence (Sections 51-60, 64-93)",
+        "Public documents and presumptions (Sections 74-90)",
+        "Exclusion of oral evidence by documentary evidence (Sections 91-103)",
+        "Burden of proof and estoppels (Sections 104-121)",
+        "Witnesses, examination, and cross-examination (Sections 122-166)"
+      ],
+      "state_amendments_covered": "NONE",
+      "subordinate_legislation_covered": "NONE",
+      "judicial_precedents_covered": "NONE (Transition from Arjun Panditrao / Anvar P.V. under Evidence Act Sec 65B to BSA Sec 63 requires lawyer evaluation)",
+      "territorial_limitations": "Applies to all judicial proceedings in or before any Court in India from 1 July 2024."
+    }
+  ]
+}

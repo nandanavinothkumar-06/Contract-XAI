@@ -1,0 +1,136 @@
+{
+  "comparison_id": "comp_IN_ACT_2023_22_20261017120417",
+  "source_id": "IN_ACT_2023_22",
+  "timestamp": "2026-10-17T12:04:17.077623+00:00",
+  "snapshot": {
+    "file_path": "data/legal_sources/snapshots/IN_ACT_2023_22.txt",
+    "sha256": "fd1bcbbb413dd667a781cf625471cd277cb020d88ed711b04c7277b117982439",
+    "total_sections_count": 8,
+    "section_numbers": [
+      "1",
+      "2",
+      "36",
+      "4",
+      "44",
+      "5",
+      "6",
+      "8"
+    ]
+  },
+  "reference": {
+    "file_path": "data/legal_sources/extracted_text/IN_ACT_2023_22/egazette_2023_248045/extracted.txt",
+    "sha256": "5476a92b7d5eb2e2da5492388f4b5e8ba62ea375b6fdb1c3c975956398731eac",
+    "total_sections_found": 10,
+    "metadata": {}
+  },
+  "byte_level_match": false,
+  "summary": {
+    "sections_in_snapshot": 8,
+    "exact_text_matches": 0,
+    "normalized_matches": 8,
+    "textual_differences": 0,
+    "missing_in_reference": 0,
+    "concordance_percentage": 100.0,
+    "sections_in_reference_omitted_from_snapshot_count": 2,
+    "sections_in_reference_omitted_from_snapshot": [
+      "11",
+      "12"
+    ]
+  },
+  "verification_outcome": {
+    "defensible_status": "CONTENT_MATCH_VERIFIED",
+    "verified_scope": [
+      "1",
+      "2",
+      "4",
+      "5",
+      "6",
+      "8",
+      "36",
+      "44"
+    ],
+    "unverified_scope": [],
+    "currentness_status": "CURRENTNESS_UNVERIFIED_PENDING_AMENDMENT_AUDIT",
+    "applicability_status": "REQUIRES_ADVOCATE_DETERMINATION",
+    "notes": "Content match verified for all 8 curated extract sections (0 exact, 8 normalized). Omitted central sections (2) remain unrepresented."
+  },
+  "epistemic_disclosures": {
+    "scope_limitation": "Content verification applies ONLY to the specific sections successfully matched. It does not verify the entire Act or omitted sections.",
+    "currentness_boundary": "Matching an official enactment publication verifies textual authenticity as enacted. It does not establish that subsequent amending Acts have been checked or that uncommenced rules have been notified.",
+    "applicability_boundary": "Textual equivalence does not establish legal applicability to any specific contract clause, dispute, or jurisdiction. Independent advocate evaluation is required."
+  },
+  "sections": [
+    {
+      "section_number": "1",
+      "heading": "Short title and commencement",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 461,
+      "char_count_reference": 463,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "2",
+      "heading": "Definitions",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 1154,
+      "char_count_reference": 1155,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "4",
+      "heading": "Grounds for processing personal data",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 394,
+      "char_count_reference": 396,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "5",
+      "heading": "Notice",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 467,
+      "char_count_reference": 469,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "6",
+      "heading": "Consent",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 509,
+      "char_count_reference": 527,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "8",
+      "heading": "General obligations of Data Fiduciary",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 933,
+      "char_count_reference": 934,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "36",
+      "heading": "Power of Central Government to call for information",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 226,
+      "char_count_reference": 228,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "44",
+      "heading": "Amendments to certain Acts",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 321,
+      "char_count_reference": 323,
+      "notes": "Text matches after normalizing typography and whitespace"
+    }
+  ]
+}

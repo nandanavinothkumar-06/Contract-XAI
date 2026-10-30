@@ -1,0 +1,99 @@
+{
+  "comparison_id": "comp_IN_ACT_2023_47_20261017103853",
+  "source_id": "IN_ACT_2023_47",
+  "timestamp": "2026-10-17T10:38:53.964790+00:00",
+  "snapshot": {
+    "file_path": "data/legal_sources/snapshots/IN_ACT_2023_47.txt",
+    "sha256": "18602768ec490fc0e89b88ed9af4b3eba2a4aea9a49fca2cd4dfdcdbf2171d25",
+    "total_sections_count": 3,
+    "section_numbers": [
+      "1",
+      "61",
+      "63"
+    ]
+  },
+  "reference": {
+    "file_path": "data/legal_sources/extracted_text/IN_ACT_2023_47/egazette_2023_250882/extracted.txt",
+    "sha256": "b642c2bfac9c0749f9d030d29d8528b56bbf6f052aea1554270e43dd81624695",
+    "total_sections_found": 5,
+    "metadata": {}
+  },
+  "byte_level_match": false,
+  "summary": {
+    "sections_in_snapshot": 3,
+    "exact_text_matches": 0,
+    "normalized_matches": 2,
+    "textual_differences": 1,
+    "missing_in_reference": 0,
+    "concordance_percentage": 66.67,
+    "sections_in_reference_omitted_from_snapshot_count": 2,
+    "sections_in_reference_omitted_from_snapshot": [
+      "2",
+      "62"
+    ]
+  },
+  "verification_outcome": {
+    "defensible_status": "PARTIALLY_VERIFIED",
+    "verified_scope": [
+      "61",
+      "63"
+    ],
+    "unverified_scope": [
+      "1"
+    ],
+    "currentness_status": "CURRENTNESS_UNVERIFIED_PENDING_AMENDMENT_AUDIT",
+    "applicability_status": "REQUIRES_ADVOCATE_DETERMINATION",
+    "notes": "Partial verification: 2 of 3 sections matched. 1 differing, 0 missing in reference."
+  },
+  "epistemic_disclosures": {
+    "scope_limitation": "Content verification applies ONLY to the specific sections successfully matched. It does not verify the entire Act or omitted sections.",
+    "currentness_boundary": "Matching an official enactment publication verifies textual authenticity as enacted. It does not establish that subsequent amending Acts have been checked or that uncommenced rules have been notified.",
+    "applicability_boundary": "Textual equivalence does not establish legal applicability to any specific contract clause, dispute, or jurisdiction. Independent advocate evaluation is required."
+  },
+  "sections": [
+    {
+      "section_number": "1",
+      "heading": "Short title, application and commencement",
+      "match_type": "TEXT_DIFFERENCE",
+      "diff": [
+        "--- snapshot_Section_1\n",
+        "+++ reference_Section_1\n",
+        "@@ -1,6 +1,7 @@\n",
+        "-Section 1. Short title, application and commencement.\u2014(1) This Act may be called the Bharatiya Sakshya Adhiniyam, 2023.\n",
+        "-(2) It applies to all judicial proceedings in or before any Court, including Courts-martial, but not to affidavits presented to any Court or officer, nor to proceedings before an arbitrator.\n",
+        "-(3) It shall come into force on such date as the Central Government may, by notification in the Official Gazette, appoint.\n",
+        "-[Note: Commenced on 1st July, 2024 vide Ministry of Home Affairs Notification S.O. 849(E) dated 23rd February, 2024. Supersedes the Indian Evidence Act, 1872.]\n",
+        "-\n",
+        "-PART III CHAPTER V OF DOCUMENTARY EVIDENCE",
+        "+Section 1. Short title, application and commencement.\u2014\n",
+        "+ (1) This Act may be called the Bharatiya Sakshya Adhiniyam, 2023. (2) It\n",
+        "+applies to all judicial proceedings in or before any Court, including\n",
+        "+Courts-martial, but not to affidavits presented to any Court or officer,\n",
+        "+nor to proceedings before an arbitrator. (3) It shall come into force on\n",
+        "+such date as the Central Government may, by notification in the Official\n",
+        "+Gazette, appoint. PART III CHAPTER V OF DOCUMENTARY EVIDENCE"
+      ],
+      "char_count_snapshot": 637,
+      "char_count_reference": 478,
+      "notes": "Textual divergence detected between snapshot and official reference"
+    },
+    {
+      "section_number": "61",
+      "heading": "Admissibility of electronic or digital record",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 328,
+      "char_count_reference": 330,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "63",
+      "heading": "Admissibility of electronic records",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 2359,
+      "char_count_reference": 2377,
+      "notes": "Text matches after normalizing typography and whitespace"
+    }
+  ]
+}

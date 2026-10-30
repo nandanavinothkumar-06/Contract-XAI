@@ -1,0 +1,43 @@
+THE DIGITAL PERSONAL DATA PROTECTION ACT, 2023
+ACT NO. 22 OF 2023
+[11th August, 2023]
+
+An Act to provide for the processing of digital personal data in a manner that recognises both the right of individuals to protect their personal data and the need to process such personal data for lawful purposes and for matters connected therewith or incidental thereto.
+
+BE it enacted by Parliament in the Seventy-fourth Year of the Republic of India as follows:—
+
+CHAPTER I PRELIMINARY
+
+Section 1. Short title and commencement.—(1) This Act may be called the Digital Personal Data Protection Act, 2023.
+(2) It shall come into force on such date as the Central Government may, by notification in the Official Gazette, appoint and different dates may be appointed for different provisions of this Act and any reference in any such provision to the commencement of this Act shall be construed as a reference to the coming into force of that provision.
+
+Section 2. Definitions.—In this Act, unless the context otherwise requires,—
+(i) "Data Fiduciary" means any person who alone or in conjunction with other persons determines the purpose and means of processing of personal data;
+(j) "Data Principal" means the individual to whom the personal data relates and where such individual is— (i) a child, includes the parents or lawful guardian of such a child; (ii) a person with disability, includes her lawful guardian, acting on her behalf;
+(k) "Data Processor" means any person who processes personal data on behalf of a Data Fiduciary;
+(t) "personal data" means any data about an individual who is identifiable by or in relation to such data;
+(x) "processing" in relation to personal data, means a wholly or partly automated operation or set of operations performed on digital personal data, and includes operations such as collection, recording, organisation, structuring, storage, adaptation, retrieval, use, alignment or combination, indexing, sharing, disclosure by transmission, dissemination or otherwise making available, restriction, erasure or destruction.
+
+CHAPTER II OBLIGATIONS OF DATA FIDUCIARY
+
+Section 4. Grounds for processing personal data.—(1) A person may process the personal data of a Data Principal only in accordance with the provisions of this Act and for a lawful purpose—
+(a) for which the Data Principal has given her consent; or
+(b) for certain legitimate uses.
+(2) For the purposes of this section, "lawful purpose" means any purpose which is not expressly forbidden by law.
+
+Section 5. Notice.—(1) On or before requesting for consent, the Data Fiduciary shall give to the Data Principal an itemised notice in such manner and containing such aspects as may be prescribed, description of personal data sought to be collected and the purpose for which it will be processed, manner in which she may exercise her rights under sub-section (4) of section 6 and section 13 and the manner in which the Data Principal may make a complaint to the Board.
+
+Section 6. Consent.—(1) The consent given by the Data Principal shall be free, specific, informed, unconditional and unambiguous with a clear affirmative action, and shall signify an agreement to the processing of her personal data for the specified purpose and be limited to such personal data as is necessary for such specified purpose.
+(4) The Data Principal shall have the right to withdraw her consent at any time, with the ease of doing so being comparable to the ease with which such consent was given.
+
+Section 8. General obligations of Data Fiduciary.—(1) A Data Fiduciary shall, irrespective of any agreement to the contrary or failure of a Data Principal to carry out the duties provided under this Act, be responsible for complying with the provisions of this Act and the rules made thereunder in respect of any processing undertaken by it or on its behalf by a Data Processor.
+(2) A Data Fiduciary may engage, appoint, use or otherwise involve a Data Processor to process personal data on its behalf for any activity related to offering of goods or services to Data Principals or for purposes authorized under this Act, only under a valid contract.
+(5) A Data Fiduciary shall protect personal data in its possession or under its control, including in respect of any processing undertaken by it or on its behalf by a Data Processor, by taking reasonable security safeguards to prevent personal data breach.
+
+CHAPTER IX MISCELLANEOUS
+
+Section 36. Power of Central Government to call for information.—The Central Government may, for the purposes of this Act, require the Board or any Data Fiduciary or intermediary to furnish such information as it may call for.
+
+Section 44. Amendments to certain Acts.—(1) In section 14 of the Telecom Regulatory Authority of India Act, 1997, in clause (c)...
+(2) The Information Technology Act, 2000 shall be amended in the manner specified in the Schedule.
+Schedule Amendment: "Section 43A of the Information Technology Act, 2000 shall be omitted."

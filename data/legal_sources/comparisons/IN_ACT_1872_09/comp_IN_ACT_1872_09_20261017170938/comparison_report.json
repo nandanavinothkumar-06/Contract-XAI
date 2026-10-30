@@ -1,0 +1,172 @@
+{
+  "comparison_id": "comp_IN_ACT_1872_09_20261017170938",
+  "source_id": "IN_ACT_1872_09",
+  "timestamp": "2026-10-17T17:09:38.727693+00:00",
+  "snapshot": {
+    "file_path": "data/legal_sources/snapshots/IN_ACT_1872_09.txt",
+    "sha256": "881177af2fa470ec85994f395b2a218af67a7afc9e3567abc3631fc62be51c06",
+    "total_sections_count": 11,
+    "section_numbers": [
+      "1",
+      "10",
+      "11",
+      "2",
+      "23",
+      "27",
+      "28",
+      "56",
+      "73",
+      "74",
+      "75"
+    ]
+  },
+  "reference": {
+    "file_path": "data/legal_sources/extracted_text/IN_ACT_1872_09/indiacode_1872_2187/extracted.txt",
+    "sha256": "a1b1ddd4ec0215f1b370a34e85008780b45e00bdfb1c1680956f05062cac4225",
+    "total_sections_found": 16,
+    "metadata": {}
+  },
+  "byte_level_match": false,
+  "summary": {
+    "sections_in_snapshot": 11,
+    "exact_text_matches": 0,
+    "normalized_matches": 11,
+    "textual_differences": 0,
+    "missing_in_reference": 0,
+    "concordance_percentage": 100.0,
+    "sections_in_reference_omitted_from_snapshot_count": 5,
+    "sections_in_reference_omitted_from_snapshot": [
+      "12",
+      "13",
+      "14",
+      "124",
+      "126"
+    ]
+  },
+  "verification_outcome": {
+    "defensible_status": "CONTENT_MATCH_VERIFIED",
+    "verified_scope": [
+      "1",
+      "2",
+      "10",
+      "11",
+      "23",
+      "27",
+      "28",
+      "56",
+      "73",
+      "74",
+      "75"
+    ],
+    "unverified_scope": [],
+    "currentness_status": "CURRENTNESS_UNVERIFIED_PENDING_AMENDMENT_AUDIT",
+    "applicability_status": "REQUIRES_ADVOCATE_DETERMINATION",
+    "notes": "Content match verified for all 11 curated extract sections (0 exact, 11 normalized). Omitted central sections (5) remain unrepresented."
+  },
+  "epistemic_disclosures": {
+    "scope_limitation": "Content verification applies ONLY to the specific sections successfully matched. It does not verify the entire Act or omitted sections.",
+    "currentness_boundary": "Matching an official enactment publication verifies textual authenticity as enacted. It does not establish that subsequent amending Acts have been checked or that uncommenced rules have been notified.",
+    "applicability_boundary": "Textual equivalence does not establish legal applicability to any specific contract clause, dispute, or jurisdiction. Independent advocate evaluation is required."
+  },
+  "sections": [
+    {
+      "section_number": "1",
+      "heading": "Short title",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 443,
+      "char_count_reference": 445,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "2",
+      "heading": "Interpretation",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 1324,
+      "char_count_reference": 1325,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "10",
+      "heading": "What agreements are contracts",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 488,
+      "char_count_reference": 490,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "11",
+      "heading": "Who are competent to contract",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 256,
+      "char_count_reference": 258,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "23",
+      "heading": "What considerations and objects are lawful, and what not",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 560,
+      "char_count_reference": 562,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "27",
+      "heading": "Agreement in restraint of trade, void",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 641,
+      "char_count_reference": 643,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "28",
+      "heading": "Agreements in restraint of legal proceedings, void",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 1343,
+      "char_count_reference": 1361,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "56",
+      "heading": "Agreement to do impossible act",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 781,
+      "char_count_reference": 783,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "73",
+      "heading": "Compensation for loss or damage caused by breach of contract",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 1156,
+      "char_count_reference": 1158,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "74",
+      "heading": "Compensation for breach of contract where penalty stipulated for",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 1275,
+      "char_count_reference": 1293,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "75",
+      "heading": "Party rightfully rescinding contract, entitled to compensation",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 229,
+      "char_count_reference": 231,
+      "notes": "Text matches after normalizing typography and whitespace"
+    }
+  ]
+}

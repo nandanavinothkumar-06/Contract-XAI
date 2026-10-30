@@ -1,0 +1,29 @@
+{
+  "source_id": "IN_ACT_2023_47",
+  "publication_id": "egazette_2023_250882",
+  "artifact_path": "C:\\Users\\Nandana\\.gemini\\antigravity-ide\\scratch\\contractrisk-xai\\data\\legal_sources\\reference_artifacts\\IN_ACT_2023_47\\egazette_2023_250882_v20261017092501\\original.pdf",
+  "extracted_text_path": "C:\\Users\\Nandana\\.gemini\\antigravity-ide\\scratch\\contractrisk-xai\\data\\legal_sources\\extracted_text\\IN_ACT_2023_47\\egazette_2023_250882\\extracted.txt",
+  "extraction_timestamp": "2026-10-17T09:25:01.825248+00:00",
+  "extraction_method": "PYPDF_DIGITAL_TEXT_EXTRACTOR",
+  "extraction_tool_version": "pypdf-6.20.1",
+  "page_count": 2,
+  "empty_page_count": 0,
+  "total_char_count": 4245,
+  "extracted_text_sha256": "b642c2bfac9c0749f9d030d29d8528b56bbf6f052aea1554270e43dd81624695",
+  "original_sha256": "760344a1f4b40aba23a241b1d74dfc27050c630bf8bdfe4526cdb70fdaff868f",
+  "ocr_used": false,
+  "ocr_engine": null,
+  "warnings": [],
+  "page_details": [
+    {
+      "page_number": 1,
+      "char_count": 2693,
+      "is_empty": false
+    },
+    {
+      "page_number": 2,
+      "char_count": 1522,
+      "is_empty": false
+    }
+  ]
+}

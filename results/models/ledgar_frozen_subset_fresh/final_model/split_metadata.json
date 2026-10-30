@@ -1,0 +1,20 @@
+{
+  "experiment_id": "TASK019_LEDGAR_LEGALBERT_FROZEN_SUBSET_FRESH",
+  "seed": 42,
+  "contract_ratio": 0.1,
+  "total_corpus_provisions": 846274,
+  "total_train_provisions": 674068,
+  "total_train_contracts": 48432,
+  "subset_train_provisions": 67776,
+  "subset_train_contracts": 4844,
+  "validation_provisions": 84250,
+  "test_provisions": 87956,
+  "total_labels_taxonomy": 12608,
+  "labels_covered_in_subset": 9775,
+  "label_coverage_pct": 77.5301,
+  "zero_example_labels": 2833,
+  "rare_example_labels": 8465,
+  "medium_example_labels": 1208,
+  "common_example_labels": 102,
+  "selected_contracts_sha256": "5f400e5e3b2fa5bdfc129ace322af285cd4ae44b32a03835d4643604c638a23d"
+}

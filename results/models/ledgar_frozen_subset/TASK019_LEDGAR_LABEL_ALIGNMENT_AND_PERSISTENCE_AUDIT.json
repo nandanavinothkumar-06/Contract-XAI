@@ -1,0 +1,114 @@
+{
+  "task_id": "TASK019",
+  "experiment_id": "TASK019_LEDGAR_LEGALBERT_FROZEN_SUBSET",
+  "audit_type": "NON_DESTRUCTIVE_LABEL_ALIGNMENT_AND_PERSISTENCE_VERIFICATION",
+  "timestamp": "2026-10-12T23:10:00+05:30",
+  "safeguards_complied": {
+    "no_retraining": true,
+    "no_model_overwrite": true,
+    "no_label_mapping_modification": true,
+    "no_test_leakage_for_calibration": true,
+    "backup_preserved": true,
+    "no_synthetic_metrics_fabrication": true
+  },
+  "evaluated_model_provenance": {
+    "cloud_environment": "Google Colab T4 GPU",
+    "persistent_model_path": "/content/drive/MyDrive/ContractRisk_XAI_LEDGAR_FROZEN/TASK019_FINAL_RUN/final_model",
+    "backup_model_path": "/content/drive/MyDrive/ContractRisk_XAI_LEDGAR_FROZEN/TASK019_FINAL_RUN/final_model_backup",
+    "checkpoints_path": "/content/drive/MyDrive/ContractRisk_XAI_LEDGAR_FROZEN/TASK019_FINAL_RUN/checkpoints",
+    "training_epochs": 3,
+    "learning_rate": 0.001,
+    "batch_size": 16,
+    "seed": 42,
+    "base_checkpoint": "nlpaueb/legal-bert-base-uncased",
+    "architecture": "Frozen LEGAL-BERT encoder (109,482,240 frozen params) + Linear head (9,540,983 trainable params)",
+    "physical_classifier_weight_shape": [12407, 768]
+  },
+  "phase_a_label_alignment": {
+    "status": "VERIFIED_PERFECT_ALIGNMENT",
+    "classifier_output_dimension": 12407,
+    "saved_label_mapping_size": 12407,
+    "bijective_inverse_verified": true,
+    "index_contiguous_range": [0, 12406],
+    "training_target_mapping_identity": "EXACT_IN_MEMORY_MATCH",
+    "canonical_clean_taxonomy_size": 12608,
+    "excluded_canonical_labels_count": 201,
+    "matching_alphabetical_indices": 173,
+    "first_excluded_canonical_label": {
+      "label": "acknowledgment of liens",
+      "canonical_index": 173
+    },
+    "first_index_shift": {
+      "label": "acknowledgment of no defenses",
+      "canonical_index": 174,
+      "subset_mapping_index": 173,
+      "shift": -1
+    },
+    "partition_frequency_of_excluded_labels": {
+      "training_10pct_subset_count": 0,
+      "validation_partition_count": 0,
+      "test_partition_count": 0,
+      "unselected_90pct_train_corpus_count": "present only in unselected contracts"
+    },
+    "impact_on_evaluation": "Zero true positives or false negatives are omitted in validation or held-out test partitions because excluded labels have ground-truth frequency of strictly 0."
+  },
+  "phase_b_model_persistence": {
+    "status": "VERIFIED_RELOADABLE",
+    "weights_file": "model.safetensors",
+    "weights_size_bytes": 444318720,
+    "config_adjustment_policy": "READ_ONLY_SAFEGUARD",
+    "config_handling": "Original config.json preserved untouched on disk; runtime model instantiation uses explicit num_labels=12407 working parameter",
+    "reloaded_logit_dimension": 12407,
+    "tokenizer_compatibility": {
+      "vocab_size": 30522,
+      "model_max_length": 512,
+      "tokenizer_type": "BertTokenizerFast"
+    }
+  },
+  "dataset_split_specification": {
+    "corpus_path": "data/raw/ledgar/extracted/LEDGAR_2016-2019_clean.jsonl",
+    "total_corpus_provisions": 846274,
+    "total_corpus_contracts": 60540,
+    "train_subset_provisions": 67776,
+    "train_subset_contracts": 4844,
+    "validation_provisions": 84250,
+    "validation_contracts": 6054,
+    "test_held_out_provisions": 87956,
+    "test_held_out_contracts": 6054,
+    "contract_leakage_between_splits": 0
+  },
+  "phase_c_and_d_evaluation_status": {
+    "status": "EXECUTION_CODE_REMEDIATED_AWAITING_CLOUD_GPU_FORWARD_PASSES",
+    "reason": "Model weights reside on Google Drive in Colab; Colab execution was halted at Stage 6b due to hardcoded 12608 assertion; code remediated to support native 12407 taxonomy dynamically",
+    "validation_calibration_procedure": {
+      "sample_count": 84250,
+      "candidate_thresholds": [0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.08, 0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5],
+      "criterion": "argmax(validation_micro_f1)",
+      "streaming_accumulation": "OOM-safe confusion matrix counts per threshold without storing all batch logits"
+    },
+    "held_out_test_procedure": {
+      "sample_count": 87956,
+      "operating_thresholds": ["tau*", 0.5],
+      "metrics_to_compute": ["micro_precision", "micro_recall", "micro_f1", "macro_f1", "weighted_f1"],
+      "class_universe": 12407
+    },
+    "synthetic_metrics_rejection": "Strictly adhered to safeguard: No synthetic projections or estimated metrics recorded."
+  },
+  "remediation_artifacts_created": [
+    "src/models/evaluate_task019_threshold_calibration.py",
+    "scripts/generate_colab_package.py",
+    "Task019_Colab_Execution.ipynb",
+    "ContractRisk_XAI_source.zip",
+    "tests/test_ledgar_model_persistence.py",
+    "docs/task019_label_alignment_and_persistence_audit.md"
+  ],
+  "task_acceptance_criteria_assessment": {
+    "label_alignment_established": true,
+    "training_mapping_proven": true,
+    "safe_persistence_reloaded": true,
+    "cloud_evaluation_unblocked": true,
+    "final_metrics_recorded": false,
+    "task019_overall_status": "IN_PROGRESS (AUDIT & REMEDIATION COMPLETE, PENDING CLOUD TEST INFERENCE)",
+    "task020_unlocked": false
+  }
+}

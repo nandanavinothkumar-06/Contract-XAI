@@ -1,0 +1,247 @@
+{
+  "evaluation_timestamp": "2026-10-14T19:14:44.529838+00:00Z",
+  "evaluation_label": "PRELIMINARY_ENGINEERING_VALIDATION (NOT LAWYER-CERTIFIED GROUND TRUTH)",
+  "total_test_cases": 10,
+  "passed_test_cases": 10,
+  "pass_rate_percent": 100.0,
+  "abstention_accuracy_percent": 100.0,
+  "retrieval_precision_percent": 100.0,
+  "case_results": [
+    {
+      "test_id": "TC_001_RESTRAINT_OF_TRADE",
+      "passed": true,
+      "failure_reasons": [],
+      "clause_text_excerpt": "The Consultant agrees that for a period of two years following termination of th...",
+      "expected": {
+        "status": "EVIDENCE_FOUND",
+        "section": "27",
+        "statute_id": "IN_ACT_1872_09",
+        "should_abstain": false,
+        "abstention_reason": null
+      },
+      "actual": {
+        "status": "EVIDENCE_FOUND",
+        "retrieved_sections": [
+          "27",
+          "28",
+          "63",
+          "66A",
+          "14A"
+        ],
+        "top_citation": "Section 27, The Indian Contract Act, 1872 (Act No. 9 of 1872)",
+        "top_score": 8.4392,
+        "abstention_reason": null
+      }
+    },
+    {
+      "test_id": "TC_002_ELECTRONIC_CONTRACT_FORMATION",
+      "passed": true,
+      "failure_reasons": [],
+      "clause_text_excerpt": "The parties acknowledge and agree that this Agreement and any amendment or accep...",
+      "expected": {
+        "status": "EVIDENCE_FOUND",
+        "section": "10A",
+        "statute_id": "IN_ACT_2000_21",
+        "should_abstain": false,
+        "abstention_reason": null
+      },
+      "actual": {
+        "status": "EVIDENCE_FOUND",
+        "retrieved_sections": [
+          "10A",
+          "7",
+          "66A",
+          "61",
+          "63"
+        ],
+        "top_citation": "Section 10A, The Information Technology Act, 2000 (Act No. 21 of 2000)",
+        "top_score": 17.1357,
+        "abstention_reason": null
+      }
+    },
+    {
+      "test_id": "TC_003_SPECIFIC_PERFORMANCE",
+      "passed": true,
+      "failure_reasons": [],
+      "clause_text_excerpt": "The parties agree that specific performance of this contract shall be enforced b...",
+      "expected": {
+        "status": "EVIDENCE_FOUND",
+        "section": "10",
+        "statute_id": "IN_ACT_1963_47",
+        "should_abstain": false,
+        "abstention_reason": null
+      },
+      "actual": {
+        "status": "EVIDENCE_FOUND",
+        "retrieved_sections": [
+          "14",
+          "10",
+          "16",
+          "56",
+          "73"
+        ],
+        "top_citation": "Section 14, The Specific Relief Act, 1963 (Act No. 47 of 1963)",
+        "top_score": 13.2972,
+        "abstention_reason": null
+      }
+    },
+    {
+      "test_id": "TC_004_ARBITRATION_AGREEMENT",
+      "passed": true,
+      "failure_reasons": [],
+      "clause_text_excerpt": "Any dispute, controversy, or claim arising out of or relating to this contract s...",
+      "expected": {
+        "status": "EVIDENCE_FOUND",
+        "section": "7",
+        "statute_id": "IN_ACT_1996_26",
+        "should_abstain": false,
+        "abstention_reason": null
+      },
+      "actual": {
+        "status": "EVIDENCE_FOUND",
+        "retrieved_sections": [
+          "7",
+          "28",
+          "9",
+          "8",
+          "34"
+        ],
+        "top_citation": "Section 7, The Arbitration and Conciliation Act, 1996 (Act No. 26 of 1996)",
+        "top_score": 15.0353,
+        "abstention_reason": null
+      }
+    },
+    {
+      "test_id": "TC_005_ELECTRONIC_RECORDS_EVIDENCE",
+      "passed": true,
+      "failure_reasons": [],
+      "clause_text_excerpt": "All computerized output, system logs, and digital records generated during perfo...",
+      "expected": {
+        "status": "EVIDENCE_FOUND",
+        "section": "61",
+        "statute_id": "IN_ACT_2023_47",
+        "should_abstain": false,
+        "abstention_reason": null
+      },
+      "actual": {
+        "status": "EVIDENCE_FOUND",
+        "retrieved_sections": [
+          "1",
+          "63",
+          "61",
+          "4",
+          "10"
+        ],
+        "top_citation": "Section 1, The Bharatiya Sakshya Adhiniyam, 2023 (Act No. 47 of 2023)",
+        "top_score": 12.7959,
+        "abstention_reason": null
+      }
+    },
+    {
+      "test_id": "TC_006_LIQUIDATED_DAMAGES_PENALTY",
+      "passed": true,
+      "failure_reasons": [],
+      "clause_text_excerpt": "If Vendor fails to deliver by the milestone date, Vendor shall pay fifty thousan...",
+      "expected": {
+        "status": "EVIDENCE_FOUND",
+        "section": "74",
+        "statute_id": "IN_ACT_1872_09",
+        "should_abstain": false,
+        "abstention_reason": null
+      },
+      "actual": {
+        "status": "EVIDENCE_FOUND",
+        "retrieved_sections": [
+          "74",
+          "72A",
+          "73",
+          "56",
+          "14A"
+        ],
+        "top_citation": "Section 74, The Indian Contract Act, 1872 (Act No. 9 of 1872)",
+        "top_score": 14.8381,
+        "abstention_reason": null
+      }
+    },
+    {
+      "test_id": "TC_007_UNCOMMENCED_DPDP_SUBSTANTIVE_NOTICE",
+      "passed": true,
+      "failure_reasons": [],
+      "clause_text_excerpt": "The data fiduciary must provide itemised notice to the data principal before req...",
+      "expected": {
+        "status": "ABSTAIN",
+        "section": "5",
+        "statute_id": "IN_ACT_2023_22",
+        "should_abstain": true,
+        "abstention_reason": "UNKNOWN_COMMENCEMENT"
+      },
+      "actual": {
+        "status": "ABSTAIN",
+        "retrieved_sections": [],
+        "top_citation": null,
+        "top_score": 0.0,
+        "abstention_reason": "UNKNOWN_COMMENCEMENT"
+      }
+    },
+    {
+      "test_id": "TC_008_STRUCK_DOWN_OFFENSIVE_SPEECH",
+      "passed": true,
+      "failure_reasons": [],
+      "clause_text_excerpt": "User shall not transmit any offensive message or communication causing annoyance...",
+      "expected": {
+        "status": "ABSTAIN",
+        "section": "66A",
+        "statute_id": "IN_ACT_2000_21",
+        "should_abstain": true,
+        "abstention_reason": "HISTORICAL_ONLY_VERSION"
+      },
+      "actual": {
+        "status": "ABSTAIN",
+        "retrieved_sections": [],
+        "top_citation": null,
+        "top_score": 0.0,
+        "abstention_reason": "HISTORICAL_ONLY_VERSION"
+      }
+    },
+    {
+      "test_id": "TC_009_NON_LEGAL_IRRELEVANT_QUERY",
+      "passed": true,
+      "failure_reasons": [],
+      "clause_text_excerpt": "Thermal dissipation in superconducting quantum circuits operates through relativ...",
+      "expected": {
+        "status": "ABSTAIN",
+        "section": null,
+        "statute_id": null,
+        "should_abstain": true,
+        "abstention_reason": "WEAK_RETRIEVAL_EVIDENCE"
+      },
+      "actual": {
+        "status": "ABSTAIN",
+        "retrieved_sections": [],
+        "top_citation": null,
+        "top_score": 0.0,
+        "abstention_reason": "WEAK_RETRIEVAL_EVIDENCE"
+      }
+    },
+    {
+      "test_id": "TC_010_FOREIGN_JURISDICTION_CLAUSE",
+      "passed": true,
+      "failure_reasons": [],
+      "clause_text_excerpt": "This Agreement and all internal corporate affairs shall be governed by the Delaw...",
+      "expected": {
+        "status": "ABSTAIN",
+        "section": null,
+        "statute_id": null,
+        "should_abstain": true,
+        "abstention_reason": "UNSUPPORTED_LEGAL_QUESTION"
+      },
+      "actual": {
+        "status": "ABSTAIN",
+        "retrieved_sections": [],
+        "top_citation": null,
+        "top_score": 0.0,
+        "abstention_reason": "UNSUPPORTED_LEGAL_QUESTION"
+      }
+    }
+  ]
+}

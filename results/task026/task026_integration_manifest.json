@@ -1,0 +1,81 @@
+{
+  "task_id": "026",
+  "task_name": "Run complete integration tests",
+  "status": "COMPLETED",
+  "execution_timestamp": "2026-10-14T22:13:00+05:30",
+  "phases_verified": {
+    "phase_1_environment_and_artifacts": {
+      "python_version": "3.13.5 (64-bit AMD64)",
+      "pytorch_version": "2.14.0+cpu",
+      "transformers_version": "5.17.0",
+      "reportlab_version": "5.0.1",
+      "pypdf_version": "6.20.1",
+      "flask_version": "3.1.0",
+      "scikit_learn_version": "1.7.1",
+      "model_weights_path": "results/models/ledgar_frozen_subset_fresh/final_model/model.safetensors",
+      "model_weights_size_bytes": 476116436,
+      "model_weights_sha256": "7cd08d2c086f5046eb2b5ef85aa68fec84b5ce7ae3c12bef50c1baea096a8e5f",
+      "all_manifests_verified": [
+        "results/baseline/contractnli/TASK018_CONTRACTNLI_TFIDF_SVM.json",
+        "results/models/ledgar_frozen_subset_fresh/calibrated/TASK019_LEDGAR_LEGALBERT_FROZEN_SUBSET_FRESH_CALIBRATED.json",
+        "results/task020/task020_cross_domain_manifest.json",
+        "results/task021/task021_ablation_manifest.json",
+        "results/task022/task022_robustness_manifest.json",
+        "results/task023/task023_error_analysis_manifest.json",
+        "results/task024/task024_dashboard_manifest.json",
+        "results/task025/task025_pdf_manifest.json"
+      ],
+      "status": "VERIFIED"
+    },
+    "phase_2_pipeline_integration": {
+      "dataset_adapters": "VERIFIED (DatasetRecord schema, EvidenceSpan, multi-task metadata)",
+      "preprocessing_pipeline": "VERIFIED (Non-destructive normalization, UTF-8 coordinate preservation)",
+      "clause_segmentation": "VERIFIED (SegmentationPipeline, structural hierarchy, numbering)",
+      "context_handling": "VERIFIED (ContextBuilder, <= 512 token budget adherence, target protection)",
+      "model_inference": "VERIFIED (LegalBERTClassifier, frozen encoder, 12,407 output logits)",
+      "evidence_extraction": "VERIFIED (aggregate_and_rank_evidence, 100% exact substring match)",
+      "relationship_graph": "VERIFIED (GraphBuilder, GraphQueryInterface, cross-reference and cycle safety)",
+      "status": "VERIFIED"
+    },
+    "phase_3_dashboard_integration": {
+      "live_service_framework": "Flask 3.1.0",
+      "routes_tested": [
+        {"endpoint": "/", "status_code": 200, "verified_content": ["ContractRisk-XAI", "NOT a validated legal decision-maker"]},
+        {"endpoint": "/api/health", "status_code": 200, "verified_status": "HEALTHY"},
+        {"endpoint": "/api/provenance", "status_code": 200, "verified_sha256": "7cd08d2c086f5046eb2b5ef85aa68fec84b5ce7ae3c12bef50c1baea096a8e5f"},
+        {"endpoint": "/api/ledgar", "status_code": 200, "verified_tau_star_f1": 0.1435, "zero_shot_classes": 2833},
+        {"endpoint": "/api/contractnli", "status_code": 200, "verified_accuracy": 0.6557, "dominant_error_count": 383},
+        {"endpoint": "/api/cross_domain", "status_code": 200, "concept_margin": 0.0686},
+        {"endpoint": "/api/robustness", "status_code": 200, "character_offset_invariant": true},
+        {"endpoint": "/api/cases", "status_code": 200, "cases_count": 4, "failure_modes_count": 5}
+      ],
+      "graceful_missing_artifact_fallback": "VERIFIED (Empty workspace returns UNAVAILABLE without crashing)",
+      "static_dashboard_build": "VERIFIED (results/task024/index.html, 33.9 KB, safety disclaimer embedded)",
+      "status": "VERIFIED"
+    },
+    "phase_4_reporting_integration": {
+      "historical_output_preservation": "VERIFIED (results/task025 preserved in results/task025_preserved_backup)",
+      "rebuild_command": "python -m src.reporting.build_academic_report",
+      "pdf_output_path": "results/task025/CONTRACTRISK_XAI_ACADEMIC_REPORT.pdf",
+      "pdf_file_size_bytes": 1466232,
+      "pdf_page_count": 7,
+      "all_18_sections_present": true,
+      "all_34_metrics_and_strings_present": true,
+      "running_footer_disclaimer_on_all_pages": true,
+      "all_6_figures_valid_png": true,
+      "status": "VERIFIED"
+    },
+    "phase_5_regression_testing": {
+      "command_executed": "pytest tests/",
+      "total_tests_collected": 304,
+      "passed": 304,
+      "failed": 0,
+      "skipped": 0,
+      "warnings": 7,
+      "execution_duration_seconds": 119.13,
+      "status": "VERIFIED"
+    }
+  },
+  "overall_integration_readiness": "READY_FOR_FINAL_DOCUMENTATION",
+  "next_task_authorization_required": "TASK_027"
+}

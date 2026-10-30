@@ -1,0 +1,91 @@
+{
+  "experiment_id": "TASK018_CONTRACTNLI_TFIDF_LR",
+  "task": "DOCUMENT_NLI",
+  "dataset": "ContractNLI",
+  "dataset_version": "1.0",
+  "input_path": "data/raw/contractnli/extracted/contract-nli/",
+  "model": "TFIDF_LOGISTIC_REGRESSION",
+  "hyperparameters": {
+    "random_state": 42,
+    "max_iter": 1000
+  },
+  "vectorizer_configuration": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "sublinear_tf": true,
+    "min_df": 2
+  },
+  "vocabulary_size": 118497,
+  "random_seed": 42,
+  "preprocessing_version": "Task 005 standard + NLI text pairing",
+  "split": "official_train_dev_test",
+  "training_size": 7191,
+  "validation_size": 1037,
+  "test_size": 2091,
+  "leakage_status": "VERIFIED_ZERO_LEAKAGE (0 doc ID overlap, 0 text hash overlap)",
+  "runtime_seconds": 7.328,
+  "validation_metrics": {
+    "accuracy": 0.6104146576663452,
+    "macro_f1": 0.40229032770436485,
+    "macro_precision": 0.43478877650656794,
+    "macro_recall": 0.430018630117019,
+    "weighted_f1": 0.5578017925172104
+  },
+  "test_metrics": {
+    "accuracy": 0.62649450023912,
+    "macro_f1": 0.43028207978639704,
+    "macro_precision": 0.4416675215526249,
+    "macro_recall": 0.4618100363343493,
+    "weighted_f1": 0.5794813457348172
+  },
+  "per_class_metrics": {
+    "Contradiction": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 220.0
+    },
+    "Entailment": {
+      "precision": 0.5815,
+      "recall": 0.907,
+      "f1": 0.7086,
+      "support": 968.0
+    },
+    "NotMentioned": {
+      "precision": 0.7435,
+      "recall": 0.4784,
+      "f1": 0.5822,
+      "support": 903.0
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "Contradiction",
+      "Entailment",
+      "NotMentioned"
+    ],
+    "matrix": [
+      [
+        0,
+        161,
+        59
+      ],
+      [
+        0,
+        878,
+        90
+      ],
+      [
+        0,
+        471,
+        432
+      ]
+    ]
+  },
+  "status": "COMPLETED",
+  "is_test_fixture": false,
+  "execution_type": "ACTUAL_EXPERIMENT",
+  "classification": "COMPLETED"
+}

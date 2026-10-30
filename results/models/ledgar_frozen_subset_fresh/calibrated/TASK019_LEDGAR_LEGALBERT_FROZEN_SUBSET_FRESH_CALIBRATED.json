@@ -1,0 +1,227 @@
+{
+  "experiment_id": "TASK019_LEDGAR_LEGALBERT_FROZEN_SUBSET_FRESH",
+  "evaluation_type": "EMPIRICAL_VALIDATION_THRESHOLD_CALIBRATION",
+  "model_dir": "/content/drive/MyDrive/ContractRisk_XAI_LEDGAR_FROZEN/TASK019_FINAL_RUN/final_model",
+  "model_verification": {
+    "status": "VERIFIED",
+    "model_dir": "/content/drive/MyDrive/ContractRisk_XAI_LEDGAR_FROZEN/TASK019_FINAL_RUN/final_model",
+    "weights_file": "model.safetensors",
+    "weights_size_bytes": 476116436,
+    "weights_sha256": "7cd08d2c086f5046eb2b5ef85aa68fec84b5ce7ae3c12bef50c1baea096a8e5f",
+    "num_labels": 12407
+  },
+  "stage1_validation_calibration": {
+    "dataset_split": "validation",
+    "selection_criterion": "argmax(validation_micro_f1)",
+    "optimal_threshold": 0.04,
+    "selected_metrics": {
+      "threshold": 0.04,
+      "micro_precision": 0.1559,
+      "micro_recall": 0.1223,
+      "micro_f1": 0.1371,
+      "macro_f1": 0.0044,
+      "true_positives": 12246,
+      "false_positives": 66305,
+      "false_negatives": 87883,
+      "predicted_positives": 78551
+    },
+    "threshold_curve": [
+      {
+        "threshold": 0.01,
+        "micro_precision": 0.0418,
+        "micro_recall": 0.2304,
+        "micro_f1": 0.0708,
+        "macro_f1": 0.0038,
+        "true_positives": 23071,
+        "false_positives": 528309,
+        "false_negatives": 77058,
+        "predicted_positives": 551380
+      },
+      {
+        "threshold": 0.02,
+        "micro_precision": 0.0864,
+        "micro_recall": 0.1697,
+        "micro_f1": 0.1145,
+        "macro_f1": 0.0044,
+        "true_positives": 16989,
+        "false_positives": 179698,
+        "false_negatives": 83140,
+        "predicted_positives": 196687
+      },
+      {
+        "threshold": 0.03,
+        "micro_precision": 0.1232,
+        "micro_recall": 0.1402,
+        "micro_f1": 0.1311,
+        "macro_f1": 0.0045,
+        "true_positives": 14036,
+        "false_positives": 99913,
+        "false_negatives": 86093,
+        "predicted_positives": 113949
+      },
+      {
+        "threshold": 0.04,
+        "micro_precision": 0.1559,
+        "micro_recall": 0.1223,
+        "micro_f1": 0.1371,
+        "macro_f1": 0.0044,
+        "true_positives": 12246,
+        "false_positives": 66305,
+        "false_negatives": 87883,
+        "predicted_positives": 78551
+      },
+      {
+        "threshold": 0.05,
+        "micro_precision": 0.1813,
+        "micro_recall": 0.1085,
+        "micro_f1": 0.1357,
+        "macro_f1": 0.0043,
+        "true_positives": 10859,
+        "false_positives": 49052,
+        "false_negatives": 89270,
+        "predicted_positives": 59911
+      },
+      {
+        "threshold": 0.06,
+        "micro_precision": 0.2,
+        "micro_recall": 0.098,
+        "micro_f1": 0.1315,
+        "macro_f1": 0.0042,
+        "true_positives": 9813,
+        "false_positives": 39251,
+        "false_negatives": 90316,
+        "predicted_positives": 49064
+      },
+      {
+        "threshold": 0.08,
+        "micro_precision": 0.2195,
+        "micro_recall": 0.081,
+        "micro_f1": 0.1184,
+        "macro_f1": 0.0039,
+        "true_positives": 8114,
+        "false_positives": 28854,
+        "false_negatives": 92015,
+        "predicted_positives": 36968
+      },
+      {
+        "threshold": 0.1,
+        "micro_precision": 0.2269,
+        "micro_recall": 0.0691,
+        "micro_f1": 0.106,
+        "macro_f1": 0.0035,
+        "true_positives": 6921,
+        "false_positives": 23576,
+        "false_negatives": 93208,
+        "predicted_positives": 30497
+      },
+      {
+        "threshold": 0.15,
+        "micro_precision": 0.2262,
+        "micro_recall": 0.0511,
+        "micro_f1": 0.0834,
+        "macro_f1": 0.0029,
+        "true_positives": 5120,
+        "false_positives": 17519,
+        "false_negatives": 95009,
+        "predicted_positives": 22639
+      },
+      {
+        "threshold": 0.2,
+        "micro_precision": 0.2289,
+        "micro_recall": 0.0392,
+        "micro_f1": 0.0669,
+        "macro_f1": 0.0025,
+        "true_positives": 3922,
+        "false_positives": 13213,
+        "false_negatives": 96207,
+        "predicted_positives": 17135
+      },
+      {
+        "threshold": 0.25,
+        "micro_precision": 0.2971,
+        "micro_recall": 0.0301,
+        "micro_f1": 0.0546,
+        "macro_f1": 0.0021,
+        "true_positives": 3013,
+        "false_positives": 7129,
+        "false_negatives": 97116,
+        "predicted_positives": 10142
+      },
+      {
+        "threshold": 0.3,
+        "micro_precision": 0.3654,
+        "micro_recall": 0.023,
+        "micro_f1": 0.0433,
+        "macro_f1": 0.0018,
+        "true_positives": 2303,
+        "false_positives": 4000,
+        "false_negatives": 97826,
+        "predicted_positives": 6303
+      },
+      {
+        "threshold": 0.4,
+        "micro_precision": 0.5031,
+        "micro_recall": 0.0146,
+        "micro_f1": 0.0283,
+        "macro_f1": 0.0012,
+        "true_positives": 1458,
+        "false_positives": 1440,
+        "false_negatives": 98671,
+        "predicted_positives": 2898
+      },
+      {
+        "threshold": 0.5,
+        "micro_precision": 0.6098,
+        "micro_recall": 0.0093,
+        "micro_f1": 0.0184,
+        "macro_f1": 0.0009,
+        "true_positives": 936,
+        "false_positives": 599,
+        "false_negatives": 99193,
+        "predicted_positives": 1535
+      }
+    ],
+    "validation_samples": 84250,
+    "validation_positives": 100129,
+    "total_labels": 12407
+  },
+  "stage2_held_out_test_evaluation": {
+    "metrics_at_calibrated_threshold": {
+      "threshold": 0.04,
+      "sample_count": 87956,
+      "total_classes": 12407,
+      "actual_positive_instances": 105283,
+      "predicted_positive_instances": 71646,
+      "true_positives": 12699,
+      "false_positives": 58947,
+      "false_negatives": 92584,
+      "micro_precision": 0.1772,
+      "micro_recall": 0.1206,
+      "micro_f1": 0.1435,
+      "macro_f1": 0.0045,
+      "weighted_f1": 0.0937,
+      "execution_mode": "EMPIRICAL_FORWARD_INFERENCE",
+      "weights_sha256": "7cd08d2c086f5046eb2b5ef85aa68fec84b5ce7ae3c12bef50c1baea096a8e5f"
+    },
+    "metrics_at_baseline_0_50": {
+      "threshold": 0.5,
+      "sample_count": 87956,
+      "total_classes": 12407,
+      "actual_positive_instances": 105283,
+      "predicted_positive_instances": 1427,
+      "true_positives": 989,
+      "false_positives": 438,
+      "false_negatives": 104294,
+      "micro_precision": 0.6931,
+      "micro_recall": 0.0094,
+      "micro_f1": 0.0185,
+      "macro_f1": 0.0009,
+      "weighted_f1": 0.0141,
+      "execution_mode": "EMPIRICAL_FORWARD_INFERENCE",
+      "weights_sha256": "7cd08d2c086f5046eb2b5ef85aa68fec84b5ce7ae3c12bef50c1baea096a8e5f"
+    },
+    "relative_f1_gain": 675.68,
+    "recall_gain_factor": 12.83
+  },
+  "execution_timestamp": "2026-10-13T16:51:29Z"
+}

@@ -1,0 +1,20 @@
+claim,claim_type,source,source_url,paper,dataset,evidence,verified,verification_date
+"LEGAL-BERT is a family of legal-domain BERT models pre-trained on 12 GB of legal text.",Model Fact,ACL Anthology,https://aclanthology.org/2020.findings-emnlp.261/,LEGAL-BERT,,Text summary,YES,2026-09-14
+"LEDGAR contains more than 12,000 labels, almost 100,000 provisions, and more than 60,000 contracts.",Dataset Fact,ACL Anthology,https://aclanthology.org/2020.lrec-1.55/,LEDGAR,LEDGAR,Text summary,YES,2026-09-14
+"ContractNLI contains 607 annotated contracts for document-level NLI.",Dataset Fact,ACL Anthology,https://aclanthology.org/2021.findings-emnlp.164/,ContractNLI,ContractNLI,Text summary,YES,2026-09-14
+"CLAUDETTE dataset has 21,063 sentences with 2,346 unfair sentences.",Dataset Fact,Springer,https://doi.org/10.1007/s10506-021-09288-2,Ruggeri et al.,CLAUDETTE,Text summary,YES,2026-09-14
+"Moon construction specification risk detection used 2,807 clauses from 56 specifications.",Dataset Fact,ScienceDirect,https://doi.org/10.1016/j.autcon.2022.104465,Moon et al.,Custom Construction,Text summary,YES,2026-09-14
+"Moon BERT achieved validation accuracy 0.889 and test F1 0.934 on construction risks.",Baseline Result,ScienceDirect,https://doi.org/10.1016/j.autcon.2022.104465,Moon et al.,Custom Construction,Text summary,YES,2026-09-14
+"Shuai unilateral contractual change risk framework uses rationale-augmented NLP.",Method Fact,ScienceDirect,https://doi.org/10.1016/j.compind.2023.103940,Shuai,,Text summary,YES,2026-09-14
+"Zhou missing clause detection model tested on 1,322 construction contracts.",Dataset Fact,Emerald Insight,https://doi.org/10.1108/ECAM-02-2023-0172,Zhou dataset (2023/2025),Custom Construction,Text summary,YES,2026-09-14
+"Zhou MatchPyramid+BERT achieved 93% classification and 83% similarity accuracy.",Baseline Result,Emerald Insight,https://doi.org/10.1108/ECAM-02-2023-0172,Zhou dataset (2023/2025),Custom Construction,Text summary,YES,2026-09-14
+"LCC survey identified 7 key tasks and 8 significant challenges.",Survey Fact,Springer,https://doi.org/10.1007/s10462-025-11359-8,Singh et al.,,Text summary,YES,2026-09-14
+"ContractEval evaluates LLM clause-level risk identification.",Benchmark Fact,ACL Anthology,https://aclanthology.org/2025.nllp-1.19/,ContractEval,ContractEval,Text summary,YES,2026-09-14
+"CUAD dataset is released under CC BY 4.0; underlying contract rights remain subject to the source/disclaimer conditions.",License Fact,Atticus Project,https://www.atticusprojectai.org/cuad,,CUAD,Text summary,YES,2026-09-14
+"ContractNLI dataset is licensed under CC BY 4.0 (baseline code is Apache 2.0).",License Fact,StanfordNLP,https://stanfordnlp.github.io/contract-nli/,,ContractNLI,Text summary,YES,2026-09-14
+"CLAUDETTE license is not explicitly verified from authoritative source.",License Fact,HuggingFace,https://huggingface.co/datasets/LawInformedAI/claudette_tos,,CLAUDETTE,Text summary,YES,2026-09-14
+"Moon et al. construction dataset has no official public dataset download/repository independently verified.",Access Fact,ScienceDirect,https://doi.org/10.1016/j.autcon.2022.104465,Moon et al.,Custom Construction,Text summary,YES,2026-09-14
+"Shuai construction dataset has no official public dataset download/repository independently verified.",Access Fact,ScienceDirect,https://doi.org/10.1016/j.compind.2023.103940,Shuai,Custom Construction,Text summary,YES,2026-09-14
+"Zhou construction dataset has no official public dataset download/repository independently verified.",Access Fact,Emerald Insight,https://doi.org/10.1108/ECAM-02-2023-0172,Zhou dataset (2023/2025),Custom Construction,Text summary,YES,2026-09-14
+"Frozen LEGAL-BERT LEDGAR subset experiment prepared for fresh GPU execution with dedicated Google Drive checkpoints, verified persistence, and validation calibration under experiment ID TASK019_LEDGAR_LEGALBERT_FROZEN_SUBSET_FRESH.",Experiment Fact,Local Repository,file:///results/models/task019_experiment_manifest.json,,LEDGAR,Task019_Colab_Execution.ipynb and src/models/run_task019_ledgar_frozen_subset.py,YES,2026-10-12
+

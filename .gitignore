@@ -1,0 +1,59 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches and testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Large model artifacts and weights (>100MB exceeds GitHub limit)
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.onnx
+*.ckpt
+*.h5
+
+# Raw benchmark datasets (>100MB)
+data/raw/
+
+# Archive files
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# Temporary and test output directories
+tmp/
+tmp_test_dir/
+
+# IDE and OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
+
+# Secrets and environment variables
+.env
+.env.*
+*.pem
+*.key

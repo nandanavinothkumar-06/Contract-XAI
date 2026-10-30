@@ -1,0 +1,10 @@
+{
+  "acquisition_id": "manual_IN_ACT_2023_47_egazette_2023_250882",
+  "source_id": "IN_ACT_2023_47",
+  "timestamp": "2026-10-17T09:09:23.178620+00:00",
+  "method": "MANUAL_ADVOCATE_REGISTRATION",
+  "input_file_path": "IN_MEMORY_BYTES",
+  "sha256": "d714b21ede1f49ab069a8a0905a9ac01a11b48e37aff9749617a804215a31a29",
+  "bytes_received": 4423,
+  "storage_path": "C:\\Users\\Nandana\\.gemini\\antigravity-ide\\scratch\\contractrisk-xai\\data\\legal_sources\\reference_artifacts\\IN_ACT_2023_47\\egazette_2023_250882\\original.pdf"
+}

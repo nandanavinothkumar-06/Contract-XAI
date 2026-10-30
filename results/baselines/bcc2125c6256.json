@@ -1,0 +1,26 @@
+{
+  "experiment_id": "bcc2125c6256",
+  "dataset": "TEST",
+  "task": "CLASSIFICATION",
+  "model": "TFIDF_LOGISTIC_REGRESSION",
+  "feature_type": "TF-IDF",
+  "parameters": {
+    "dataset": "TEST",
+    "task": "CLASSIFICATION",
+    "model": "TFIDF_LOGISTIC_REGRESSION",
+    "random_state": 42
+  },
+  "seed": 42,
+  "status": "COMPLETED",
+  "n_train": 3,
+  "n_validation": 0,
+  "n_test": 1,
+  "metrics": {
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "macro_precision": 0.0,
+    "macro_recall": 0.0,
+    "weighted_f1": 0.0
+  },
+  "timestamp": "2026-09-14T08:23:26.806792Z"
+}

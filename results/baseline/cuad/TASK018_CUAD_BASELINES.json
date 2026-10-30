@@ -1,0 +1,14 @@
+{
+  "experiment_id": "TASK018_CUAD_BASELINES",
+  "task": "QA_SPAN_EXTRACTION",
+  "dataset": "CUAD",
+  "dataset_version": "1.0",
+  "input_path": "data/raw/cuad/extracted/CUAD_v1/CUAD_v1.json",
+  "model": "NONE_TASK_MISMATCH",
+  "execution_type": "TASK_FORMULATION_AUDIT",
+  "classification": "NOT_APPLICABLE",
+  "status": "NOT_APPLICABLE_BASELINE_TASK_MISMATCH",
+  "reason": "The approved Task 007 TF-IDF classification baselines do not implement CUAD's original extractive question-answering/span-extraction task. CUAD was therefore not converted into an artificial classification task.",
+  "timestamp": "2026-09-14T18:36:25.743579Z",
+  "is_test_fixture": false
+}

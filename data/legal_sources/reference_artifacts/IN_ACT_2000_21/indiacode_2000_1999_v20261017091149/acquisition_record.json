@@ -1,0 +1,10 @@
+{
+  "acquisition_id": "manual_IN_ACT_2000_21_indiacode_2000_1999_v20261017091149",
+  "source_id": "IN_ACT_2000_21",
+  "timestamp": "2026-10-17T09:11:49.045391+00:00",
+  "method": "MANUAL_ADVOCATE_REGISTRATION",
+  "input_file_path": "IN_MEMORY_BYTES",
+  "sha256": "2bdad68e39d91ffdc1e24de875e879fc42f7aa8ee6ace9931aa232915a465f70",
+  "bytes_received": 6049,
+  "storage_path": "C:\\Users\\Nandana\\.gemini\\antigravity-ide\\scratch\\contractrisk-xai\\data\\legal_sources\\reference_artifacts\\IN_ACT_2000_21\\indiacode_2000_1999_v20261017091149\\original.pdf"
+}

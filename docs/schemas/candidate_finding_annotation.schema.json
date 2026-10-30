@@ -1,0 +1,652 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://contractrisk-xai.org/schemas/candidate_finding_annotation.schema.json",
+  "title": "CandidateFindingAnnotationRecord",
+  "description": "Standardized schema for human legal annotation of candidate contract risk findings, supporting rigorous evaluation of confidence-only versus evidence-aware abstention policies without label leakage or circular dependencies.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "annotation_id",
+    "identification",
+    "prediction_assessment",
+    "evidence_support",
+    "evidence_sufficiency",
+    "source_status",
+    "source_applicability",
+    "version_consistency",
+    "final_reference_decision",
+    "epistemic_firewall_attestation",
+    "annotation_provenance"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "description": "Semantic version of the annotation schema.",
+      "enum": ["1.0.0"]
+    },
+    "annotation_id": {
+      "type": "string",
+      "description": "Unique identifier for this annotation instance (UUID v4 or deterministic digest).",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+    },
+    "is_synthetic_fixture": {
+      "type": "boolean",
+      "description": "Explicitly flags whether this record is a synthetic pedagogical example or software test fixture rather than an authentic legal annotation by an enrolled advocate."
+    },
+    "identification": {
+      "$ref": "#/definitions/Identification"
+    },
+    "prediction_assessment": {
+      "$ref": "#/definitions/PredictionAssessment"
+    },
+    "evidence_support": {
+      "$ref": "#/definitions/EvidenceSupport"
+    },
+    "evidence_sufficiency": {
+      "$ref": "#/definitions/EvidenceSufficiency"
+    },
+    "source_status": {
+      "$ref": "#/definitions/SourceStatus"
+    },
+    "source_applicability": {
+      "$ref": "#/definitions/SourceApplicability"
+    },
+    "version_consistency": {
+      "$ref": "#/definitions/VersionConsistency"
+    },
+    "final_reference_decision": {
+      "$ref": "#/definitions/FinalReferenceDecision"
+    },
+    "epistemic_firewall_attestation": {
+      "$ref": "#/definitions/EpistemicFirewallAttestation"
+    },
+    "annotation_provenance": {
+      "$ref": "#/definitions/AnnotationProvenance"
+    }
+  },
+  "definitions": {
+    "Identification": {
+      "type": "object",
+      "description": "Metadata isolating the contract, clause, model, and candidate finding under evaluation. NOTE: The annotation interface presentation layer must filter out candidate_confidence and model_identifier during human labeling to enforce blinding firewalls.",
+      "required": [
+        "contract_id",
+        "contract_cluster_id",
+        "contract_version",
+        "clause_id",
+        "clause_text",
+        "candidate_finding_id",
+        "candidate_finding_text",
+        "prediction_category",
+        "model_identifier",
+        "model_version",
+        "candidate_confidence"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "contract_id": {
+          "type": "string",
+          "description": "Unique identifier for the contract document."
+        },
+        "contract_cluster_id": {
+          "type": "string",
+          "description": "Identifier grouping contracts sharing identical boilerplate, template origin, or counterparties to enforce independent split firewalls."
+        },
+        "contract_version": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Monotonically increasing version integer of the contract document snapshot."
+        },
+        "clause_id": {
+          "type": "string",
+          "description": "Unique identifier for the clause segment within the contract."
+        },
+        "clause_text": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Exact textual content of the clause segment being evaluated."
+        },
+        "candidate_finding_id": {
+          "type": "string",
+          "description": "Unique identifier of the candidate prediction produced by the model."
+        },
+        "candidate_finding_text": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Verbatim risk observation or provision label asserted by the candidate model finding."
+        },
+        "prediction_category": {
+          "type": "string",
+          "description": "High-level category of legal risk (e.g., LIMITATION_OF_LIABILITY, GOVERNING_LAW, INDEMNIFICATION, DATA_PROTECTION, ARBITRATION)."
+        },
+        "model_identifier": {
+          "type": "string",
+          "description": "Architecture or HuggingFace model hub ID (e.g., nlpaueb/legal-bert-base-uncased)."
+        },
+        "model_version": {
+          "type": "string",
+          "description": "Specific checkpoint or release tag of the model wrapper."
+        },
+        "candidate_confidence": {
+          "type": "object",
+          "description": "Model confidence signals associated with the finding, recorded for policy benchmarking.",
+          "required": [
+            "score",
+            "metric_type",
+            "is_calibrated"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "score": {
+              "type": "number",
+              "minimum": 0.0,
+              "maximum": 1.0,
+              "description": "Derived numerical confidence score."
+            },
+            "metric_type": {
+              "type": "string",
+              "enum": [
+                "SOFTMAX_PROBABILITY",
+                "SIGMOID_PROBABILITY",
+                "MARGIN_SCORE",
+                "NORMALIZED_LOGIT"
+              ],
+              "description": "Mathematical origin of the numerical confidence score."
+            },
+            "is_calibrated": {
+              "type": "boolean",
+              "description": "Whether the score represents an empirically calibrated probability (must be false for engineering defaults)."
+            }
+          }
+        }
+      }
+    },
+    "PredictionAssessment": {
+      "type": "object",
+      "description": "Independent evaluation of whether the substantive risk asserted by the model is legally and commercially valid.",
+      "required": [
+        "status",
+        "rationale"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "type": "string",
+          "description": "Substantive accuracy of the candidate risk finding against the contract clause.",
+          "enum": [
+            "CORRECT",
+            "PARTIALLY_CORRECT",
+            "INCORRECT",
+            "UNCLEAR",
+            "NOT_ASSESSABLE"
+          ]
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 10,
+          "description": "Detailed legal and contractual reasoning explaining the correctness judgment."
+        },
+        "identified_risk_severity": {
+          "type": "string",
+          "enum": [
+            "HIGH",
+            "MEDIUM",
+            "LOW",
+            "NEGLIGIBLE",
+            "NOT_APPLICABLE"
+          ],
+          "description": "Independent legal assessment of the actual severity of the identified risk, if present."
+        }
+      }
+    },
+    "EvidenceSupport": {
+      "type": "object",
+      "description": "Evaluation of whether retrieved or cited evidence passages substantively support the candidate finding.",
+      "required": [
+        "status",
+        "rationale",
+        "passages"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "type": "string",
+          "description": "Degree to which cited passages substantively substantiate the specific risk claim.",
+          "enum": [
+            "SUPPORTED",
+            "PARTIALLY_SUPPORTED",
+            "UNSUPPORTED",
+            "INSUFFICIENT_INFORMATION",
+            "NOT_APPLICABLE",
+            "NOT_ASSESSABLE"
+          ]
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 10,
+          "description": "Explanation of how the cited evidence relates to or fails to substantiate the finding."
+        },
+        "passages": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PassageSupportAssessment"
+          },
+          "description": "Individual passage-level support assessments."
+        }
+      }
+    },
+    "PassageSupportAssessment": {
+      "type": "object",
+      "description": "Assessment of an individual cited evidence passage.",
+      "required": [
+        "passage_id",
+        "statute_id",
+        "section_number",
+        "passage_text",
+        "support_status"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "passage_id": {
+          "type": "string",
+          "description": "Identifier of the retrieved passage from the statutory corpus."
+        },
+        "statute_id": {
+          "type": "string",
+          "description": "Standard statutory identifier (e.g., IN_ACT_1872_09, IN_ACT_2000_21, IN_ACT_2023_22, IN_ACT_1963_47, IN_ACT_1996_26, IN_ACT_2023_47)."
+        },
+        "section_number": {
+          "type": "string",
+          "description": "Specific statutory provision number (e.g., 'Section 27', 'Section 73', 'Section 43A')."
+        },
+        "passage_text": {
+          "type": "string",
+          "description": "Quoted excerpt of the statutory provision cited."
+        },
+        "support_status": {
+          "type": "string",
+          "enum": [
+            "DIRECTLY_SUPPORTS",
+            "ANALOGOUS_PRINCIPLE",
+            "TOPICALLY_RELATED_ONLY",
+            "IRRELEVANT",
+            "CONTRADICTS",
+            "NOT_APPLICABLE"
+          ],
+          "description": "Substantive evidentiary relationship between this passage and the candidate finding."
+        },
+        "key_phrases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Operative legal terms in the passage that ground the finding (if any)."
+        }
+      }
+    },
+    "EvidenceSufficiency": {
+      "type": "object",
+      "description": "Independent judgment on whether the total evidence base is adequate to sustain the finding without speculation.",
+      "required": [
+        "status",
+        "rationale"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "type": "string",
+          "description": "Adequacy of the totality of evidence to justify the finding legally.",
+          "enum": [
+            "SUFFICIENT",
+            "INSUFFICIENT",
+            "CONFLICTING",
+            "MISSING",
+            "NOT_APPLICABLE",
+            "NOT_ASSESSABLE"
+          ]
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 10,
+          "description": "Detailed justification explaining why the evidence is deemed sufficient, insufficient, conflicting, or not applicable."
+        },
+        "missing_elements": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Specific legal or contractual elements missing from the evidence base (e.g., proof of breach standard, exception clauses, definitions)."
+        }
+      }
+    },
+    "SourceStatus": {
+      "type": "object",
+      "description": "Verification of statutory source artifact authenticity, integrity, and provenance.",
+      "required": [
+        "status",
+        "source_repository",
+        "provenance_classification"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "type": "string",
+          "description": "Source artifact verification state under the formal research protocol.",
+          "enum": [
+            "VERIFIED_RESEARCH_PROTOCOL",
+            "PARTIALLY_VERIFIED",
+            "UNVERIFIED",
+            "HISTORICAL_CURRENTNESS_UNCERTAIN",
+            "NOT_APPLICABLE",
+            "NOT_ASSESSABLE"
+          ]
+        },
+        "source_repository": {
+          "type": "string",
+          "description": "Official repository or originating gazette authority (e.g., India Code, eGazette, Legislative Department)."
+        },
+        "provenance_classification": {
+          "type": "string",
+          "enum": [
+            "OFFICIAL_SOVEREIGN_PKCS7_VERIFIED",
+            "OFFICIAL_ORIGIN_SUPPORTED_BUT_NOT_INDEPENDENTLY_CONFIRMED",
+            "CURATED_EDITORIAL_EXTRACT",
+            "UNVERIFIED_THIRD_PARTY",
+            "NOT_APPLICABLE"
+          ],
+          "description": "Audited provenance classification for the statutory artifact."
+        },
+        "source_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-fA-F]{64}$",
+          "description": "Cryptographic SHA-256 digest of the local reference snapshot file."
+        },
+        "notes": {
+          "type": "string",
+          "description": "Audit notes regarding snapshot completeness, missing schedules, or editorial insertions."
+        }
+      }
+    },
+    "SourceApplicability": {
+      "type": "object",
+      "description": "Legal assessment of whether the statutory provision is legally in force and applies to this contract.",
+      "required": [
+        "currentness_status",
+        "applicability_status",
+        "rationale"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "currentness_status": {
+          "type": "string",
+          "description": "Legislative enforceability and amendment status of the cited provision in Indian law.",
+          "enum": [
+            "IN_FORCE_CONFIRMED",
+            "COMMENCEMENT_PENDING",
+            "REPEALED_OR_SUPERSEDED",
+            "JUDICIALLY_INVALIDATED",
+            "CURRENTNESS_UNVERIFIED"
+          ]
+        },
+        "applicability_status": {
+          "type": "string",
+          "description": "Contractual applicability of the statutory rule to this specific contract and clause.",
+          "enum": [
+            "APPLICABLE_TO_CONTRACT",
+            "INAPPLICABLE_JURISDICTION_OR_SCOPE",
+            "CONTRACTUAL_OVERRIDE_PERMITTED",
+            "REQUIRES_ADVOCATE_DETERMINATION",
+            "NOT_APPLICABLE"
+          ]
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 10,
+          "description": "Legal analysis explaining the currentness and applicability determination."
+        }
+      }
+    },
+    "VersionConsistency": {
+      "type": "object",
+      "description": "Audit of document version alignment between the finding, evidence, and current contract text.",
+      "required": [
+        "status",
+        "finding_contract_version",
+        "active_contract_version",
+        "text_hash_matches"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "type": "string",
+          "description": "Whether the finding reflects the current, active version of the contract clause.",
+          "enum": [
+            "CONSISTENT",
+            "STALE",
+            "UNKNOWN",
+            "NOT_APPLICABLE"
+          ]
+        },
+        "finding_contract_version": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Version number of the contract at the time the model finding was generated."
+        },
+        "active_contract_version": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Current active version number of the contract in the lifecycle."
+        },
+        "text_hash_matches": {
+          "type": "boolean",
+          "description": "True if the SHA-256 hash of the clause text matches the hash recorded when the finding was generated."
+        },
+        "version_mismatch_details": {
+          "type": "string",
+          "description": "Description of textual modifications between versions, if stale."
+        }
+      }
+    },
+    "FinalReferenceDecision": {
+      "type": "object",
+      "description": "Independent ground-truth benchmark decision for policy evaluation, decoupled from automated policy output.",
+      "required": [
+        "reference_action",
+        "decision_rationale",
+        "confidence_in_decision"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "reference_action": {
+          "type": "string",
+          "description": "Ground-truth standard for how an ideal system should handle this finding.",
+          "enum": [
+            "RETAIN",
+            "WITHHOLD",
+            "HUMAN_REVIEW_REQUIRED",
+            "NOT_ASSESSABLE"
+          ]
+        },
+        "decision_rationale": {
+          "type": "string",
+          "minLength": 10,
+          "description": "Comprehensive explanation justifying why the finding should be retained, withheld, or routed for review."
+        },
+        "confidence_in_decision": {
+          "type": "string",
+          "enum": [
+            "HIGH",
+            "MODERATE",
+            "LOW"
+          ],
+          "description": "Annotator confidence in this reference decision."
+        },
+        "failure_category_if_withhold": {
+          "type": "string",
+          "enum": [
+            "INCORRECT_PREDICTION",
+            "UNSUPPORTED_FINDING",
+            "INSUFFICIENT_EVIDENCE",
+            "UNVERIFIED_SOURCE",
+            "INAPPLICABLE_OR_SUPERSEDED_STATUTE",
+            "STALE_DOCUMENT_VERSION",
+            "MULTIPLE_FAILURES",
+            "NOT_APPLICABLE"
+          ],
+          "description": "Primary root cause category if the reference action is WITHHOLD."
+        }
+      }
+    },
+    "EpistemicFirewallAttestation": {
+      "type": "object",
+      "description": "Explicit attestation by the annotator / adjudicator that independent epistemic boundaries were strictly respected.",
+      "required": [
+        "rule_traceable_not_treated_as_correct",
+        "rule_bm25_not_treated_as_ground_truth_sufficiency",
+        "rule_checksum_not_treated_as_official_authenticity",
+        "rule_authenticity_not_treated_as_applicability",
+        "rule_policy_output_not_treated_as_reference_decision"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "rule_traceable_not_treated_as_correct": {
+          "type": "boolean",
+          "enum": [true],
+          "description": "Attestation that TRACEABLE evidence status was NOT used as proof that the candidate legal finding is correct."
+        },
+        "rule_bm25_not_treated_as_ground_truth_sufficiency": {
+          "type": "boolean",
+          "enum": [true],
+          "description": "Attestation that lexical BM25 similarity scores were NOT used as ground-truth evidence sufficiency."
+        },
+        "rule_checksum_not_treated_as_official_authenticity": {
+          "type": "boolean",
+          "enum": [true],
+          "description": "Attestation that a local SHA-256 checksum was NOT treated as proof of sovereign official authenticity."
+        },
+        "rule_authenticity_not_treated_as_applicability": {
+          "type": "boolean",
+          "enum": [true],
+          "description": "Attestation that source authenticity was NOT treated as proof of legal applicability to this contract."
+        },
+        "rule_policy_output_not_treated_as_reference_decision": {
+          "type": "boolean",
+          "enum": [true],
+          "description": "Attestation that automated policy outputs were NOT observed prior to labeling and NOT treated as ground truth."
+        }
+      }
+    },
+    "AnnotationProvenance": {
+      "type": "object",
+      "description": "Audit trail recording annotator identity, blinding conditions, adjudication details, and timestamps.",
+      "required": [
+        "annotator_code",
+        "annotator_qualification",
+        "annotation_phase",
+        "blinding_conditions",
+        "disagreement_flag",
+        "created_at"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "annotator_code": {
+          "type": "string",
+          "pattern": "^(ANN|ADJ)-[0-9]{3,}$",
+          "description": "Pseudonymous identifier for the annotator (e.g., ANN-001, ADJ-002)."
+        },
+        "annotator_qualification": {
+          "type": "string",
+          "enum": [
+            "ENROLLED_ADVOCATE_INDIA",
+            "SENIOR_LEGAL_COUNSEL",
+            "LEGAL_RESEARCHER",
+            "TRAINED_STUDENT_ANNOTATOR"
+          ],
+          "description": "Formal legal qualification level of the annotator."
+        },
+        "annotation_phase": {
+          "type": "string",
+          "enum": [
+            "PILOT_CALIBRATION",
+            "MAIN_STUDY",
+            "HELD_OUT_BENCHMARK",
+            "ADJUDICATION_DISAGREEMENT"
+          ],
+          "description": "Study stage during which this annotation record was produced."
+        },
+        "blinding_conditions": {
+          "type": "object",
+          "required": [
+            "blinded_to_model_identity",
+            "blinded_to_confidence_score",
+            "blinded_to_policy_decisions"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "blinded_to_model_identity": {
+              "type": "boolean",
+              "enum": [true],
+              "description": "Annotator was blinded to the model architecture and training source."
+            },
+            "blinded_to_confidence_score": {
+              "type": "boolean",
+              "enum": [true],
+              "description": "Annotator was blinded to raw logits, probabilities, and margin values."
+            },
+            "blinded_to_policy_decisions": {
+              "type": "boolean",
+              "enum": [true],
+              "description": "Annotator was blinded to baseline and evidence-aware policy decisions."
+            }
+          }
+        },
+        "disagreement_flag": {
+          "type": "boolean",
+          "description": "Flagged true if primary annotators diverged on final_reference_decision, triggering adjudication."
+        },
+        "adjudication_record": {
+          "type": "object",
+          "required": [
+            "adjudicator_code",
+            "outcome",
+            "adjudication_rationale",
+            "adjudicated_at"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "adjudicator_code": {
+              "type": "string",
+              "pattern": "^ADJ-[0-9]{3,}$",
+              "description": "Pseudonymous code of the senior supervising advocate adjudicating the disagreement."
+            },
+            "outcome": {
+              "type": "string",
+              "enum": [
+                "CONFIRMED_PRIMARY_1",
+                "CONFIRMED_PRIMARY_2",
+                "CONSENSUS_COMPROMISE",
+                "EXCLUDED_GENUINE_AMBIGUITY"
+              ],
+              "description": "Adjudication outcome category."
+            },
+            "adjudication_rationale": {
+              "type": "string",
+              "minLength": 10,
+              "description": "Detailed reasoning by the adjudicator resolving the inter-annotator disagreement."
+            },
+            "adjudicated_at": {
+              "type": "string",
+              "format": "date-time",
+              "description": "UTC timestamp of adjudication completion."
+            }
+          }
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "UTC timestamp when the annotation was completed."
+        }
+      }
+    }
+  }
+}

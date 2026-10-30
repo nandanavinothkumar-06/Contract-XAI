@@ -1,0 +1,2 @@
+disclaimer,status,tolerance,baseline_threshold,baseline_ufc,evidence_policy_ufc,coverage_difference,baseline_ufr,evidence_policy_ufr,delta_ufr,baseline_uar_total,evidence_policy_uar_total,baseline_sear_stale,evidence_policy_sear_stale,baseline_hrw,evidence_policy_hrw,notes
+SYNTHETIC,MATCHED_COVERAGE_ACHIEVED,0.02,0.57,0.6818,0.6818,0.0000,0.4167,0.1667,0.2500,0.1228,0.1228,0.0833,0.0000,0.0172,0.2931,Coverage matched within prespecified tolerance of 0.02.

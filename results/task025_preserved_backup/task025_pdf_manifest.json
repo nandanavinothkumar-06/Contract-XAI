@@ -1,0 +1,69 @@
+{
+  "task_id": "025",
+  "task_name": "Build PDF reporting",
+  "status": "COMPLETED",
+  "execution_timestamp": "2026-10-14T21:53:18.878277",
+  "pdf_document_metadata": {
+    "title": "ContractRisk-XAI: An Evidence-Grounded Legal Language Modeling & Explainability Benchmark for Commercial Contracts",
+    "document_id": "CRXAI-ACAD-2026-T025-V1.0",
+    "file_path": "results\\task025\\CONTRACTRISK_XAI_ACADEMIC_REPORT.pdf",
+    "file_size_bytes": 1466232,
+    "sha256": "ee992623d9feade9f5c9d1637a38e904cf27b4a189a64dcaabaf6eb5169ac81c",
+    "page_count": 7,
+    "generator_library": "ReportLab 5.0.1",
+    "layout": "Academic Letter, two-pass NumberedCanvas with running headers and footers"
+  },
+  "markdown_source_metadata": {
+    "file_path": "results\\task025\\CONTRACTRISK_XAI_ACADEMIC_REPORT.md",
+    "file_size_bytes": 33127,
+    "sha256": "fc5bd8dfb546ad442bf5cea613e7e719f3f3fc3d12d135b6889e23a1d5efec4d"
+  },
+  "figures_metadata": {
+    "figures_directory": "results\\task025\\figures",
+    "figures_count": 6,
+    "dpi": 300
+  },
+  "verification_audit": {
+    "model_weights_verified": true,
+    "all_sections_present": true,
+    "all_metrics_grounded_in_artifacts": true,
+    "legal_safety_notice_present": true,
+    "zero_fabricated_results": true,
+    "status": "VERIFIED"
+  },
+  "source_artifacts": {
+    "model_weights": {
+      "path": "results\\models\\ledgar_frozen_subset_fresh\\final_model\\model.safetensors",
+      "size_bytes": 476116436,
+      "sha256": "7cd08d2c086f5046eb2b5ef85aa68fec84b5ce7ae3c12bef50c1baea096a8e5f"
+    },
+    "task019_calibrated_eval": {
+      "path": "results/models/ledgar_frozen_subset_fresh/calibrated/TASK019_LEDGAR_LEGALBERT_FROZEN_SUBSET_FRESH_CALIBRATED.json",
+      "sha256": "fbd05ced725508b3c9d6d5eb9f5991d8bdc601d23578ec3067bcc0362d607b27"
+    },
+    "task018_contractnli_baseline": {
+      "path": "results/baseline/contractnli/TASK018_CONTRACTNLI_TFIDF_SVM.json",
+      "sha256": "0e6eb4db9f406f1f13ae648d5902889562f81cffafbcb87e137f1c6261dc1b01"
+    },
+    "task020_cross_domain_manifest": {
+      "path": "results/task020/task020_cross_domain_manifest.json",
+      "sha256": "77faa3e6fc066d9db4683b337c11aa2e9c6584a7c5ded7c5f03b9ad7469db197"
+    },
+    "task021_ablation_manifest": {
+      "path": "results/task021/task021_ablation_manifest.json",
+      "sha256": "730b5b500ed827b042df01b09270865188d6486d75af50900d385e147e22be1f"
+    },
+    "task022_robustness_manifest": {
+      "path": "results/task022/task022_robustness_manifest.json",
+      "sha256": "a9f75b8e86428202df4667e943e205e6db47b8f5fd49a3aceca7f036c7445cf5"
+    },
+    "task023_error_analysis_manifest": {
+      "path": "results/task023/task023_error_analysis_manifest.json",
+      "sha256": "1df0170fccb731c48e0a10ce0cfd7e3f74bfb6bd138d6c425110bf2649302fd6"
+    },
+    "task024_dashboard_manifest": {
+      "path": "results/task024/task024_dashboard_manifest.json",
+      "sha256": "66805ba5be8b071114da06aa1dd14bebf73369f5f23f118a67c357a882cc9d6a"
+    }
+  }
+}

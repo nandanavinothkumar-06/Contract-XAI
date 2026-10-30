@@ -1,0 +1,91 @@
+{
+  "experiment_id": "TASK018_CONTRACTNLI_TFIDF_OVR_SVM",
+  "task": "DOCUMENT_NLI",
+  "dataset": "ContractNLI",
+  "dataset_version": "1.0",
+  "input_path": "data/raw/contractnli/extracted/contract-nli/",
+  "model": "TFIDF_OVR_LINEAR_SVM",
+  "hyperparameters": {
+    "random_state": 42,
+    "max_iter": 2000
+  },
+  "vectorizer_configuration": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "sublinear_tf": true,
+    "min_df": 2
+  },
+  "vocabulary_size": 118497,
+  "random_seed": 42,
+  "preprocessing_version": "Task 005 standard + NLI text pairing",
+  "split": "official_train_dev_test",
+  "training_size": 7191,
+  "validation_size": 1037,
+  "test_size": 2091,
+  "leakage_status": "VERIFIED_ZERO_LEAKAGE (0 doc ID overlap, 0 text hash overlap)",
+  "runtime_seconds": 7.141,
+  "validation_metrics": {
+    "accuracy": 0.6586306653809064,
+    "macro_f1": 0.5955102960017713,
+    "macro_precision": 0.6410099526136268,
+    "macro_recall": 0.5867522151283454,
+    "weighted_f1": 0.6419222320808268
+  },
+  "test_metrics": {
+    "accuracy": 0.6556671449067432,
+    "macro_f1": 0.5843925325659886,
+    "macro_precision": 0.621894555823827,
+    "macro_recall": 0.5782451516066738,
+    "weighted_f1": 0.6424602131928255
+  },
+  "per_class_metrics": {
+    "Contradiction": {
+      "precision": 0.4909,
+      "recall": 0.3682,
+      "f1": 0.4208,
+      "support": 220.0
+    },
+    "Entailment": {
+      "precision": 0.6381,
+      "recall": 0.8616,
+      "f1": 0.7332,
+      "support": 968.0
+    },
+    "NotMentioned": {
+      "precision": 0.7367,
+      "recall": 0.505,
+      "f1": 0.5992,
+      "support": 903.0
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "Contradiction",
+      "Entailment",
+      "NotMentioned"
+    ],
+    "matrix": [
+      [
+        81,
+        90,
+        49
+      ],
+      [
+        20,
+        834,
+        114
+      ],
+      [
+        64,
+        383,
+        456
+      ]
+    ]
+  },
+  "status": "COMPLETED",
+  "is_test_fixture": false,
+  "execution_type": "ACTUAL_EXPERIMENT",
+  "classification": "COMPLETED"
+}

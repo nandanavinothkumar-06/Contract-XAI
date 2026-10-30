@@ -1,0 +1,114 @@
+{
+  "comparison_id": "comp_IN_ACT_1996_26_20261017103853",
+  "source_id": "IN_ACT_1996_26",
+  "timestamp": "2026-10-17T10:38:53.981002+00:00",
+  "snapshot": {
+    "file_path": "data/legal_sources/snapshots/IN_ACT_1996_26.txt",
+    "sha256": "3f572ff48747e12c81b8a415015a23d09197ba2c86998561349b7388bf05c362",
+    "total_sections_count": 6,
+    "section_numbers": [
+      "1",
+      "16",
+      "34",
+      "7",
+      "8",
+      "9"
+    ]
+  },
+  "reference": {
+    "file_path": "data/legal_sources/extracted_text/IN_ACT_1996_26/indiacode_1996_1978/extracted.txt",
+    "sha256": "cac8f72e444cec0896611e8cc887340d7726bb74c7198da2f8dfc95c29abe37c",
+    "total_sections_found": 8,
+    "metadata": {}
+  },
+  "byte_level_match": false,
+  "summary": {
+    "sections_in_snapshot": 6,
+    "exact_text_matches": 0,
+    "normalized_matches": 6,
+    "textual_differences": 0,
+    "missing_in_reference": 0,
+    "concordance_percentage": 100.0,
+    "sections_in_reference_omitted_from_snapshot_count": 2,
+    "sections_in_reference_omitted_from_snapshot": [
+      "2",
+      "11"
+    ]
+  },
+  "verification_outcome": {
+    "defensible_status": "CONTENT_MATCH_VERIFIED",
+    "verified_scope": [
+      "1",
+      "7",
+      "8",
+      "9",
+      "16",
+      "34"
+    ],
+    "unverified_scope": [],
+    "currentness_status": "CURRENTNESS_UNVERIFIED_PENDING_AMENDMENT_AUDIT",
+    "applicability_status": "REQUIRES_ADVOCATE_DETERMINATION",
+    "notes": "Content match verified for all 6 curated extract sections (0 exact, 6 normalized). Omitted central sections (2) remain unrepresented."
+  },
+  "epistemic_disclosures": {
+    "scope_limitation": "Content verification applies ONLY to the specific sections successfully matched. It does not verify the entire Act or omitted sections.",
+    "currentness_boundary": "Matching an official enactment publication verifies textual authenticity as enacted. It does not establish that subsequent amending Acts have been checked or that uncommenced rules have been notified.",
+    "applicability_boundary": "Textual equivalence does not establish legal applicability to any specific contract clause, dispute, or jurisdiction. Independent advocate evaluation is required."
+  },
+  "sections": [
+    {
+      "section_number": "1",
+      "heading": "Short title, extent and commencement",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 329,
+      "char_count_reference": 330,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "7",
+      "heading": "Arbitration agreement",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 1108,
+      "char_count_reference": 1110,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "8",
+      "heading": "Power to refer parties to arbitration where there is an arbitration agreement",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 769,
+      "char_count_reference": 771,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "9",
+      "heading": "Interim measures, etc",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 828,
+      "char_count_reference": 845,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "16",
+      "heading": "Competence of arbitral tribunal to rule on its jurisdiction",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 733,
+      "char_count_reference": 734,
+      "notes": "Text matches after normalizing typography and whitespace"
+    },
+    {
+      "section_number": "34",
+      "heading": "Application for setting aside arbitral award",
+      "match_type": "NORMALIZED_TEXT_MATCH",
+      "diff": [],
+      "char_count_snapshot": 713,
+      "char_count_reference": 715,
+      "notes": "Text matches after normalizing typography and whitespace"
+    }
+  ]
+}

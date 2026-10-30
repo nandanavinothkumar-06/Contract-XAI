@@ -1,0 +1,16 @@
+{
+  "experiment_id": "TASK019_CONTRACTNLI_LEGALBERT",
+  "task": "DOCUMENT_NLI",
+  "dataset": "ContractNLI",
+  "model": "LEGAL_BERT",
+  "execution_type": "FEASIBILITY_ASSESSMENT",
+  "classification": "FEASIBILITY_ASSESSMENT",
+  "status": "NOT_RUN_RESOURCE_LIMITATION",
+  "reason": "ContractNLI full training is not feasible on the given CPU hardware. Pilot training indicated 16.87s per step, projecting 12.64 hours for full training.",
+  "feasibility_assessment": {
+    "avg_step_time_sec": 16.871481943130494,
+    "total_steps": 2697,
+    "projected_time_hr": 12.639551889061927
+  },
+  "timestamp": "2026-09-14T14:26:24Z"
+}

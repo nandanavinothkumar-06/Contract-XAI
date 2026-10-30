@@ -1,0 +1,11 @@
+COMMERCIAL VENDOR EQUIPMENT AND SUPPLY AGREEMENT
+
+1. Scope of Supply and Specifications. The Vendor shall deliver the IT hardware, industrial server racks, and peripheral infrastructure specified in Schedule A in accordance with the agreed technical specifications, delivery milestones, and quality standards.
+
+2. Liquidated Damages for Delay. If the Vendor fails to deliver any equipment within the scheduled milestone date, the Purchaser shall automatically deduct liquidated damages at the rate of 5% of the total contract price per day of delay, up to a maximum forfeiture penalty of 80% of the entire contract consideration, regardless of actual loss suffered.
+
+3. Complete Disclaimer of Warranties. The equipment is delivered strictly on an "AS-IS, WHERE-IS" basis. The Vendor expressly disclaims all statutory and implied warranties, including warranties of merchantability, fitness for a particular commercial purpose, and title, to the fullest extent permitted under law.
+
+4. Limitation of Vendor Liability. The Vendor's maximum cumulative liability arising out of breach of contract, tort, or product defect shall not exceed the fees actually paid by Purchaser during the one (1) month immediately preceding the event giving rise to liability.
+
+5. Force Majeure and Statutory Frustration. Neither party shall be liable for failure to perform any obligation due to events beyond reasonable control, including natural disasters, acts of government, strikes, or pandemics, subject to prompt written notice within forty-eight (48) hours of occurrence.
